@@ -827,6 +827,7 @@ background-color: white;
 
 font-size: small;
 text-align: justify;
+
 }
 .footer-bg ul li {
 
@@ -1743,7 +1744,11 @@ justify-content: center;
     p{
       text-align: justify;
     }
+.p-3 a{
+  text-decoration: none;
+  color: white;
 
+}
 
     
   

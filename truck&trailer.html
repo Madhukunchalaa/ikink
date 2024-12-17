@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2097aac339.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Truck</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="assets/images/cropped-website-logo.webp" alt="Logo" width="90" height="auto">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- Offcanvas -->
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="about.html">ABOUT US</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  PRODUCTS
+                              </a>
+                              <ul class="dropdown-menu">
+                                <div class="row drp">
+                                  <div class="col-4">
+                                   <ul>
+                                    <a href="hotel.html"><li>Hotel Insurance</li></a> 
+                                     <a href="restuarent.html"><li>Restaurant Insurance</li></a>
+                                     <a href="truck&trailer.html"><li>Truck Trailer Insurance</li></a>
+                                     <a href="Professional Indemnity.html"><li>Professional Indemnity Insurance</li></a>
+                                     <a href="other.html"><li>Other Insurances</li></a>
+                                   </ul>
+                                  </div>
+                                  <div class="col-4">
+                                   <ul>
+                                     <a href="cargo.html"><li>Marine Cargo Insurance</li></a>
+                                     <a href="cyber.html"><li>Cyber Insurance</li></a>
+                                     <a href="scaffolding.html"><li>Scaffolding Insurance</li></a>
+                                     <a href="commercial.html"><li>Commercial Building Insurance</li></a>
+                                    
+                                    
+                                   </ul>
+                                  </div>
+                                  <div class="col-4">
+                                   <ul>
+                                     <a href="plant-machinery.html"><li>
+                                       Plant Machinery Insurance
+                                       </li></a>
+                                     <a href="accident.html"><li>Accident & Sickness Insurance</li></a>
+                                     <a href="business.html"><li>Business Insurance</li></a>
+                                     <a href="asebestos.html"><li>Asbestos Insurance</li></a>
+                                     <a href="Public and Products Liability.html"><li>Public & Products Liability</li></a>
+                                     <a href="builder.html"><li>Builders Insurance</li></a>
+                                    
+                                   </ul>
+                                  </div>
+  
+                                 </div>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="doc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  DOCUMENTS
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="claims.html">CLAIMS</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  BLOG
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="blog1.html">Business Interruption Insurance For Restaurants</a></li>
+                                  <li><a class="dropdown-item" href="blog2.html">Scaffolding Liability Insurance Coverage</a></li>
+                                  <li><a class="dropdown-item" href="blog3.html">What Type of Insurance Does a Scaffolding Company Need?</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="contact.html">CONTACT US</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fa-regular fa-envelope" style="color:#F26121;font-size:20px"></i>&nbsp; EMAIL</a>
+                          </li>
+                          <a class="nav-link" href="tel:+611300170328">
+                            <i class="fa-solid fa-phone" style="color:#F26121; font-size:20px"></i>
+                            &nbsp;1300170328
+                        </a>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </nav>
+      </div>
+      </div>
+    <div class="container-fluid prhero3">
+
+        <div class="display-4">Truck & Trailer Insurance</div>
+        <button>
+            <h4><a href="#form"style="text-decoration:none;color:white">REQUEST INSTANT QUOTE</a> </h4>
+        </button>
+        <div class="rqst-box">
+            <a href="#form">REQUEST A QUOTE</a>
+          </div>
+
+    </div>
+    <div class="container text-center">
+        <div class="row sect-2">
+            <h3 class="text-center">Truck & Trailer Insurance for:</h3>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Transport Operators</li>
+                    <li><i class="fa-solid fa-check"></i>Trade People & Builders</li>
+                    <li><i class="fa-solid fa-check"></i>Long Haul & Short Haul</li>
+                    <li><i class="fa-solid fa-check"></i>Prime movers</li>
+                    <li><i class="fa-solid fa-check"></i>Refrigerated trucks</li>
+                    <li><i class="fa-solid fa-check"></i>Owned trailers & non-owned trailers (in control)</li>
+                    <li><i class="fa-solid fa-check"></i>Commercial Vehicles fleet</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Skip bin trucks</li>
+                    <li><i class="fa-solid fa-check"></i>Concrete agitators & Hotmix / Bitumen carriers</li>
+                    <li><i class="fa-solid fa-check"></i>Tipper trucks</li>
+                    <li><i class="fa-solid fa-check"></i>Mobile Crane trucks</li>
+                    <li><i class="fa-solid fa-check"></i>Livestock carrier</li>
+                    <li><i class="fa-solid fa-check"></i>Petrol tankers</li>
+                    <li><i class="fa-solid fa-check"></i>Garbage trucks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid toll">
+        <h3>Our Toll-Free Number:</h3>
+        <h3 style="color: #F26121;"><i class="fa-solid fa-phone"></i>&nbsp;1300 170 328</h3>
+        <h3>Call us if you have any questions - We are happy to help you</h3>
+    </div>
+    
+
+    <div class="conatiner-fluid" style="background-color:#F0F0F0">
+        <div class="container transport-op">
+            <div class="text-center">
+                <h3>Truck Insurance (Transport Operators)</h3>
+            </div>
+            <p>Driving a truck is actually much harder than it looks. And the brave drivers that dedicate their lives to
+                transporting goods throughout the country are at a constant risk from nature, careless drivers and
+                malfunctioning equipment. We sincerely hope nothing goes wrong on the next trip. However, our job is to
+                protect your assets in the event of something totally unforeseen. Truck insurance ensures that truck
+                drivers can drive long hours knowing that their asset is well protected by us. We have you covered in
+                the face of small and large unfortunate events.</p>
+
+            <div class="text-center">
+                <h4>Truck Insurance is provided for:</h4>
+                <div class="row">
+                    <div class="col-6">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Rigid Trucks</li>
+                            <li><i class="fa-solid fa-check"></i>Prime Movers </li>
+                            <li><i class="fa-solid fa-check"></i>Trailers</li>
+                            <li><i class="fa-solid fa-check"></i>Refrigerated Goods Carriers</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Tippers</li>
+                            <li><i class="fa-solid fa-check"></i>Goods Carrying Vehicles</li>
+                            <li><i class="fa-solid fa-check"></i>Mobile plants, including Mobile cranes</li>
+                            <li><i class="fa-solid fa-check"></i>Bulk Hazardous Goods Carriers</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="congtainer package">
+        <div class="text-center">
+            <h3>Furthermore, we offer the following packages:</h3>
+
+            <ul class="mt-3">
+                <li>
+                    Trailer in Control Insurance: This cover protects you against any loss of or damage to your
+                    vehicles, as well as compensation for third party vehicles and property.</li>
+                <li>Marine Cargo Insurance: This insurance provides cover for those goods that are in transit. Marine
+                    insurance helps to protect the value of goods in transit via sea.</li>
+                <li>Third Party Liability Insurance: This cover protects the third parties involved in incidents and
+                    your day to day business activities.</li>
+                <li>Public Liability Insurance: The public liability insurance protects your customers and other third
+                    parties against personal injury or damage to property due to any unfortunate incident or negligence
+                    on the part of the operator.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="container-fluid choose">
+        <div class="container ">
+            <div class="row">
+                <div class="col-5">
+                    <div class="col-6">
+                        <h2>
+                            Why Choose iLink Insurance as your go to Truck Insurance Broker</h2>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <ul>
+
+                        <div class="line"><i class="fa-solid fa-chevron-right"></i>
+                            <li>We provide tailor made truck insurance quotes for each of our clients. Every business is
+                                subject to different kinds of liabilities and we take into account every detail of the
+                                business to provide an ‘end to end’ solution.</li>
+                        </div>
+
+                        <div class="line"><i class="fa-solid fa-chevron-right"></i>
+                            <li>As reliable brokers, our first goal is to arrange the best insurance deal for you based
+                                on your requirements. After the best deal has been agreed upon, the ideal insurance
+                                provider is then contemplated for cheap truck insurance that fits your budget while
+                                guaranteeing sufficient protection.</li>
+                        </div>
+                        <div class="line">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <li>Our team comprises of young and proactive members that are up to date with every new
+                                insurance product. This means that you have an edge over your competitors when it comes
+                                to having your fleet covered.</li>
+
+                        </div>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container my-4">
+        <h2 class="text-center text-uppercase fw-bold">Request a Quote</h2>
+        <div class="d-flex  mb-4">
+            <ul class="nav nav-tabs" id="quoteTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="single-tab" data-bs-toggle="tab" data-bs-target="#single-truck"
+                        type="button" role="tab" aria-controls="single-truck" aria-selected="true">Single Truck</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="multiple-tab" data-bs-toggle="tab" data-bs-target="#multiple-trucks"
+                        type="button" role="tab" aria-controls="multiple-trucks" aria-selected="false">Multiple
+                        Trucks</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="quoteTabContent">
+            <!-- Single Truck Tab -->
+            <div class="tab-pane fade show active" id="single-truck" role="tabpanel" aria-labelledby="single-tab">
+                <form>
+                    <div class="row g-3"id="form">
+                        <div class="col-md-4">
+                            <label for="fullName" class="form-label">Full Name <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="address" class="form-label">Full Address <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter a location"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="contactNumber" class="form-label">Contact Number <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="email" class="form-label">Email <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="companyName" class="form-label">Company Name (if any) <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="companyName" placeholder="Company Name">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="occupation" class="form-label">Occupation <span
+                                    class="text-danger">(Required)</span></label>
+                            <select id="occupation" class="form-select" required>
+                                <option selected>Please Select</option>
+                                <option value="Transport Operator">Transport Operator (goods carrying)</option>
+                                <option value="Excavation and Earthmoving">Excavation & Earthmoving</option>
+                                <option value="Builders and Tradesmen">Builders & Tradesmen</option>
+                                <option value="Construction and engineering">Construction and engineering</option>
+                                <option value="Manufacturer/wholeseller">Manufacturer/wholeseller</option>
+                                <option value="other">Other</option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="renewalDate" class="form-label">Renewal Date / Proposed Start Date <span
+                                    class="text-danger">(Required)</span></label>
+                            <div class="d-flex gap-2">
+                                <input type="text" class="form-control" placeholder="Month" required>
+                                <input type="text" class="form-control" placeholder="Day" required>
+                                <input type="text" class="form-control" placeholder="Year" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="mt-3">Coverage Details</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="vehicleType" class="form-label">Type of Vehicle <span
+                                    class="text-danger">(Required)</span></label>
+                            <select id="vehicleType" class="form-select" required>
+                                <option selected>Please Select</option>
+                                <option value="Prime Mover">Prime Mover</option>
+                                <option value="RIGID-Cab Chassis">RIGID-Cab Chassis</option>
+                                <option value="RIGID-Pantech body">RIGID-Pantech body</option>
+                                <option value="RIGID-Refrigerated Pantech">RIGID-Refrigerated Pantech</option>
+                                <option value="RIGID-Tautliner body">RIGID-Tautliner body</option>
+                                <option value="RIGID-Concrete Agitator/pumping">RIGID-Concrete Agitator/pumping</option>
+                                <option value="RIGID-Compactor body">RIGID-Compactor body</option>
+                                <option value="RIGID-Tipper body">RIGID-Tipper body</option>
+                                <option value="RIGID-Tow Truck">RIGID-Tow Truck</option>
+                                <option value="RIGID-Table-top">RIGID-Table-top"</option>
+                                <option value="RIGID-Skip Bin body">RIGID-Skip Bin body"</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label">Carrying Capacity <span
+                                    class="text-danger">(Required)</span></label>
+                            <select id="carryingCapacity" class="form-select" required>
+                                <option selected>Please Select</option>
+                                <option value="10 ton">10 ton and over</option>
+                                <option value="5 ton">5 ton to 9.9 ton</option>
+                                <option value="3.5 ton">3.5 ton to 4.99 ton</option>
+                                <option value="2 ton">2 ton to 3.349 ton</option>
+                                <option value="under 2 ton">under 2 ton</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label">
+                                Trailer cover required<span class="text-danger">(Required)</span></label>
+                            <select id="carryingCapacity" class="form-select" required>
+                                <option selected>Please Select</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No Tons</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="address" class="form-label">Year, Make and Model ( Truck details ) <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="Year, Make and Model ( Truck details )"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="address" class="form-label">Base operation postcode and Suburb <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="
+Base operation postcode and Suburb" placeholder="Enter a location" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label">
+                                Public Liability cover required<span class="text-danger">(Required)</span></label>
+                            <select id="Public Liability cover required" class="form-select" required>
+                                <option selected>Please Select</option>
+                                <option value="Not required">Not Required</option>
+                                <option value="10m">$10M</option>
+                                <option value="20M">$20M</option>
+                                <option value="30M">$30M</option>
+                                <option value="More">More</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="address" class="form-label">Sum Insured (Vehicle value) $ <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="address" placeholder=required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label">
+                                Radius of operation<span class="text-danger">(Required)</span></label>
+                            <select id="Radius of operation" class="form-select" required>
+                                <option selected>Please Select</option>
+                                <option value="250km">250km</option>
+                                <option value="400km">400km</option>
+                                <option value="600km">600km</option>
+                                <option value="1000km">1000km</option>
+                                <option value="1500km">1500km</option>
+                                <option value="Australia-wide">Australia-wide</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label">
+
+                                Marine ( goods in transit cover)
+                                <span class="text-danger">(Required)</span></label>
+                            <select id="
+Marine ( goods in transit cover)
+" class="form-select" required>
+                                <option value="Not Required">Not required</option>
+                                <option value="$50000">$50,000</option>
+                                <option value="$100000">$100,000</option>
+                                <option value="$200000">$200,000</option>
+                                <option value="$300000">$300,000</option>
+                                <option value="$500000">$500,000</option>
+                                <option value="$1M">$1M</option>
+                                <option value="More">More</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="address" class="form-label">Registration Number<span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="Registration Number"
+                                placeholder="Enter Registration Number" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label">
+                                Type of goods carried<span class="text-danger">(Required)</span></label>
+                            <select id="Type of goods carried" class="form-select" required>
+                                <option selected>Please Select</option>
+                                <option value="General Goods">General Goods</option>
+                                <option value="Waste Disposal">Waste Disposal</option>
+                                <option value="Refrigerared Goods">Refrigerared Goods</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="Bulk Hazardous">Bulk Hazardous</option>
+                                <option value="vehicle Carrier">vehicle Carrier</option>
+                                <option value="Live stock">Live stock</option>
+                                <option value="Building Industry">Building industry</option>
+                                <option value="Plant and Equipment">Plant and Equipment</option>
+                                <option value="Tipping">Tipping</option>
+                                <option value="Logging">Logging</option>
+                                <option value="others">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="finance" class="form-label">Do you require finance for the vehicle? <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="finance" placeholder="" required>
+                        </div>
+                        <h5 class="mt-3">Disclosure Questions</h5>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label"> Number of year’s business established
+                                <span class="text-danger">(Required)</span></label>
+                            <select id="
+Number of year’s business established
+" class="form-select" required>
+                                <option value="New Venture">New Venture</option>
+                                <option value="1year">1 year</option>
+                                <option value="2 year">2 year</option>
+                                <option value="3 year">3 year</option>
+                                <option value="4 year">4 year</option>
+                                <option value="5 year">5 year</option>
+                                <option value="5+ year">5+year</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="finance" class="form-label">
+                                Name of current insurer
+                                <span class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="finance" placeholder="" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="finance" class="form-label">Age of the regular driver<span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="number" class="form-control" id="age" placeholder="" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label">
+
+                                Number of years continuously insured
+                                <span class="text-danger">(Required)</span></label>
+                            <select id="
+Number of year
+" class="form-select" required>
+                                <option value="">Please Select</option>
+                                <option value="No previous">No previous Insurance</option>
+                                <option value="1 year">1 years</option>
+                                <option value="2 year">2 years</option>
+                                <option value="3 year">3 years</option>
+                                <option value="4 year">4 years</option>
+                                <option value="5 year">5 years</option>
+                                <option value="5+ year">5+ years</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label">
+
+                                Number of truck insurance claims made in last 5 years ?
+                                <span class="text-danger">(Required)</span></label>
+                            <select id="
+Number of truck insurances
+" class="form-select" required>
+                                <option value="None">none</option>
+                                <option value="one">one</option>
+                                <option value="two">two</option>
+                                <option value="three">three</option>
+                                <option value="four">four</option>
+                                <option value="four+">four+</option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label">
+
+                                Number of years relevant truck licence held
+                                <span class="text-danger">(Required)</span></label>
+                            <select id="
+number of years
+" class="form-select" required>
+                                <option value="1 year">1 years</option>
+                                <option value="">please select</option>
+                                <option value="2 year">2 years</option>
+                                <option value="3 year">3 years</option>
+                                <option value="4 year">4 years</option>
+                                <option value="5 year">5 years</option>
+                                <option value="5+ year">5+ years</option>
+
+
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="carryingCapacity" class="form-label">
+
+                                Have you or any driver had any of the following driving convictions in the last 5 years?
+                                <span class="text-danger">(Required)</span></label>
+                            <select id="
+driving convictions
+" class="form-select" required>
+                                <option value="">please select</option>
+                                <option value="None">DUI or PCA</option>
+                                <option value="licence">Licence Suspended/cancelled</option>
+                                <option value="Traffic offences">Morethan traffic offences/speeding fines</option>
+                                <option value="criminal convictions">criminal convictions in last 10 years</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                </form>
+            </div>
+
+            <!-- Multiple Trucks Tab -->
+            <div class="tab-pane fade" id="multiple-trucks" role="tabpanel" aria-labelledby="multiple-tab">
+                <p class="text-muted">This section is under development.</p>
+
+                <form action="">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label for="fullName" class="form-label">Full Name <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="address" class="form-label">Full Address <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter a location"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="contactNumber" class="form-label">Contact Number <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="email" class="form-label">Email <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="companyName" class="form-label">Company Name (if any) <span
+                                    class="text-danger">(Required)</span></label>
+                            <input type="text" class="form-control" id="companyName" placeholder="Company Name">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="occupation" class="form-label">Occupation <span
+                                    class="text-danger">(Required)</span></label>
+                            <select id="occupation" class="form-select" required>
+                                <option selected>Please Select</option>
+                                <option value="Transport Operator">Transport Operator (goods carrying)</option>
+                                <option value="Excavation and Earthmoving">Excavation & Earthmoving</option>
+                                <option value="Builders and Tradesmen">Builders & Tradesmen</option>
+                                <option value="Construction and engineering">Construction and engineering</option>
+                                <option value="Manufacturer/wholeseller">Manufacturer/wholeseller</option>
+                                <option value="other">Other</option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="renewalDate" class="form-label">Renewal Date / Proposed Start Date <span
+                                    class="text-danger">(Required)</span></label>
+                            <div class="d-flex gap-2">
+                                <input type="text" class="form-control" placeholder="Month" required>
+                                <input type="text" class="form-control" placeholder="Day" required>
+                                <input type="text" class="form-control" placeholder="Year" required>
+                            </div>
+                        </div>
+                    <h3>Coverage Details</h3>
+                    <div class="col-md-4">
+                        <label for="Number of trucks" class="form-label">Number of trucks<span
+                                class="text-danger">(Required)</span></label>
+                        <select id="Number of trucks" class="form-select" required>
+                           <option value=" 1">1</option>
+                           <option value="2-5">2-5</option>
+                           <option value="5-10">5-10</option>
+                           <option value="10+">10+</option>
+
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="Base operation postcode
+" class="form-label">Base operation postcode
+                            <span
+                                class="text-danger">(Required)</span></label>
+                        <input type="text" class="form-control" id="Base operation postcode
+" placeholder="Company Name">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="occupation" class="form-label">Trailer cover required<span
+                                class="text-danger">(Required)</span></label>
+                        <select id="Trailer cover required" class="form-select" required>
+                           <option value="Yes">Yes</option>
+                           <option value="No">No</option>
+                         
+
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="vehicleType" class="form-label">Type of Vehicle <span
+                                class="text-danger">(Required)</span></label>
+                        <select id="vehicleType" class="form-select" required>
+                            <option selected>Please Select</option>
+                            <option value="Prime Mover">Prime Mover</option>
+                            <option value="RIGID-Cab Chassis">RIGID-Cab Chassis</option>
+                            <option value="RIGID-Pantech body">RIGID-Pantech body</option>
+                            <option value="RIGID-Refrigerated Pantech">RIGID-Refrigerated Pantech</option>
+                            <option value="RIGID-Tautliner body">RIGID-Tautliner body</option>
+                            <option value="RIGID-Concrete Agitator/pumping">RIGID-Concrete Agitator/pumping</option>
+                            <option value="RIGID-Compactor body">RIGID-Compactor body</option>
+                            <option value="RIGID-Tipper body">RIGID-Tipper body</option>
+                            <option value="RIGID-Tow Truck">RIGID-Tow Truck</option>
+                            <option value="RIGID-Table-top">RIGID-Table-top"</option>
+                            <option value="RIGID-Skip Bin body">RIGID-Skip Bin body"</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="carryingCapacity" class="form-label">Radius of operation<span
+                                class="text-danger">(Required)</span></label>
+                        <select id="Radius of operation" class="form-select" required>
+                            <option selected>Please Select</option>
+                            <option value="10 ton">250km</option>
+                            <option value="5 ton">400km</option>
+                            <option value="3.5 ton">600km</option>
+                            <option value="2 ton">1000km</option>
+                            <option value="under 2 ton">1500km</option>
+                            <option value="aus-wide">Australia-wide</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="carryingCapacity" class="form-label">Public Liability cover <span
+                                class="text-danger">(Required)</span></label>
+                        <select id="Public Liability cover" class="form-select" required>
+                            <option selected>Please Select</option>
+                            <option value="Not Required">Not Required</option>
+                            <option value="$10M">$10M</option>
+                            <option value="$20M">$20M</option>
+                            <option value="$30M">$30M</option>
+                            <option value="More">More</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="occupation" class="form-label">Trailer cover required<span
+                                class="text-danger">(Required)</span></label>
+                        <select id="Trailer cover required" class="form-select" required>
+                           <option value="Yes">Yes</option>
+                           <option value="No">No</option>
+                         
+
+                        </select>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <label for="occupation" class="form-label">Type of goods carried<span
+                                class="text-danger">(Required)</span></label>
+                        <select id="occupation" class="form-select" required>
+                            <option value="">please select</option>
+                           <option value="General Goods">General Goods</option>
+                           <option value="Waste Disposal">Waste Disposal</option>
+                           <option value="Refrigerated">Refrigerated</option>
+                           <option value="furniture">Furniture</option>
+                           <option value="Bulk hazards">Bulk Hazards</option>
+                           <option value="vehicle Carrier">vehicle Carrier</option>
+                           <option value="live stock">live stock</option>
+                           <option value="Building industry">Building Industry</option>
+                           <option value="Plant and equipment">Plant and equipment</option>
+                           <option value="tipping">Tipping</option>
+                           <option value="logging">logging</option>
+                           <option value="others">others</option>
+
+                        </select>
+                        
+                      
+                          
+                    </div>
+                    <div class="col-md-4">
+                        <label for="carryingCapacity" class="form-label">
+
+                            Marine ( goods in transit cover)
+                            <span class="text-danger">(Required)</span></label>
+                        <select id="
+Marine ( goods in transit cover)
+" class="form-select" required>
+                            <option value="Not Required">Not required</option>
+                            <option value="$50000">$50,000</option>
+                            <option value="$100000">$100,000</option>
+                            <option value="$200000">$200,000</option>
+                            <option value="$300000">$300,000</option>
+                            <option value="$500000">$500,000</option>
+                            <option value="$1M">$1M</option>
+                            <option value="More">More</option>
+                        </select>
+                    </div>
+                   
+                    <h3>Disclosure Questions</h3>
+                    <div class="col-md-4">
+                        <label for="occupation" class="form-label">Number of year’s business established <span
+                                class="text-danger">(Required)</span></label>
+                        <select id="years" class="form-select" required>
+                           <option value="1 year">1 year</option>
+                           <option value="2 year">2 year</option>
+                           <option value="3 year">3 year</option>
+                           <option value="4  year">4 year</option>
+                           <option value="5 year">5 years</option>
+                           <option value="5+year">5+years</option>
+
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="companyName" class="form-label">Name of current insurer
+                            <span
+                                class="text-danger">(Required)</span></label>
+                        <input type="text" class="form-control" id="Name of current insurer" placeholder="">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="occupation" class="form-label">
+                            Number of years continuously insured<span
+                                class="text-danger">(Required)</span></label>
+                        <select id="continues" class="form-select" required>
+                            <option value="">please select</option>
+                           <option value="no">no previous Insurance</option>
+                           <option value="1 year">1 year</option>
+                           <option value="2 year">2 year</option>
+                           <option value="3 year">3 year</option>
+                           <option value="4  year">4 year</option>
+                           <option value="5 year">5 years</option>
+                           <option value="5+year">5+years</option>
+
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="occupation" class="form-label">Number of truck insurance claims made in last 5 years ?
+                            (Required) <span
+                                class="text-danger">(Required)</span></label>
+                        <select id="occupation" class="form-select" required>
+                           <option value="">please select</option>
+                           <option value="None">None</option>
+                           <option value="one">one</option>
+                           <option value="two">two</option>
+                           <option value="three">three</option>
+                           <option value="four">four</option>
+                           <option value="four+">four+</option>
+
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="carryingCapacity" class="form-label">
+
+                            Have you or any driver had any of the following driving convictions in the last 5 years?
+                            <span class="text-danger">(Required)</span></label>
+                        <select id="
+driving convictions
+" class="form-select" required>
+                            <option value="">please select</option>
+                            <option value="None">DUI or PCA</option>
+                            <option value="licence">Licence Suspended/cancelled</option>
+                            <option value="Traffic offences">Morethan traffic offences/speeding fines</option>
+                            <option value="criminal convictions">criminal convictions in last 10 years</option>
+
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                    </div>
+                    </div>
+                    
+
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+    <footer class="footer-bg text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-3 col-md-6 mb-4 mt-3">
+                    <h3>Useful links</h3>
+                    <div class="mt-4"></div>
+                    <li><a href="https://www.cbn.au/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://www.cbn.au/complaints-disputes-handling">Complaints & Disputes Handling
+                            Policy</a></li>
+                    <li><a href="https://www.niba.com.au/insurance-brokers-code-of-practice">Insurance Brokers Code of
+                            Practice</a></li>
+                    <li><a
+                            href="https://ilinkinsurance.com.au/wp-content/uploads/2022/12/Statement-of-Services-1-1.pdf">Statement
+                            Of Services</a></li>
+                    <li><a
+                            href="https://ilinkinsurance.com.au/wp-content/uploads/2024/10/FSG___iLink_Insurance_Brokers_Pty_Ltd_V021_08_October_2024.pdf">Financial
+                            Services Guide</a></li>
+                    <li><a
+                            href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/Major-Uninsured-Risks-Review.pdf">Major
+                            Uninsured Risks Review</a></li>
+                    <li><a
+                            href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/JLG-Emergeny-Response-Flyer_iLink-Insurance.pdf">iLink
+                            -JLG Emergeny Response Flyer</a></li>
+
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6 mb-4 mt-3">
+                    <h3>Products</h3>
+                    <ul class="list-unstyled mt-4" style="list-style:none">
+                      <li><a href="business.html">Business Insurance</a></li>
+                      <li><a href="truck&trailer.html">Truck & Trailer Insurance</a></li>
+                      <li><a href="Public and Products Liability.html">Public & Products Liability</a></li>
+                      <li><a href="Professional Indemnity.html">Professional Indemnity Insurance</a></li>
+                     
+                    </ul>
+                  </div>
+                  <!-- Contact Information -->
+                  <div class="col-lg-3 col-md-12 mt-3">
+                    <h5 class="mt-4">&nbsp;</h5>
+                    
+                    <li><a href="scaffolding.html">Scaffolding Insurance</a></li>
+                    <li><a href="commercial.html">Commercial Property Insurance</a></li>
+                    <li><a href="hotel.html">Hotel Insurances</a></li>
+                    <li><a href="restuarent.html">Restaurant Insurance</a></li>
+                    <!-- Social Media Icons -->
+                    
+                  </div>
+                <div class="col-lg-3 col-md-12 mt-3">
+
+                    <div class="logo">
+                        <img src="assets/images/white-logo.png" alt="">
+                    </div>
+                    <p>Offering a wide range of General Insurance products and Risk Management solutions to clients.</p>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 Your Company Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container-fluid footer-btm text-center">
+        <div class="container">
+            <p class="p-3"><i class="fa-solid fa-location-dot" style="color:#F26121;font-size:20px"></i>&nbsp;Suite 16,
+                Level 2, 1 Ricketts Road, Mount Waverley VIC 3149 &nbsp;&nbsp;
+                <i class="fa-brands fa-whatsapp" style="color: #F26121;font-size:20px"></i>&nbsp;1300 170 328
+                &nbsp;&nbsp;
+                <i class="fa-regular fa-envelope" style="color:#F26121;font-size:20px"></i>
+                &nbsp;info@ilinkinsurance.com.au &nbsp;&nbsp;
+                <a href="https://www.facebook.com/iLinkInsuranceBrokers/"><i class="fa-brands fa-square-facebook" style="color: #F26121;font-size:20px"></i></a>   
+            </p>
+            <i class="fa-thin fa-phone"></i>
+            <div class="hr-foot"></div>
+            <div class="row">
+                <div class="col-8 foot-para mt-3 text-center">
+                    <p>iLink Insurance Brokers Pty Ltd (CAR 418137) | ABN 91 155 898 525 Corporate Authorised
+                        Representative of Community Broker Network Pty Ltd | AFSL 233750 | ACN 096 916 184 © Copyright
+                        2016 iLink Insurance Brokers Pty Ltd, All rights reserved.</p>
+
+                </div>
+                <div class="col-4"><img src="assets/images/new-steadfast-logo.png" alt=""></div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

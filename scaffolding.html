@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ilink</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/2097aac339.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/cropped-website-logo.webp" alt="Logo" width="90" height="auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  PRODUCTS
+                </a>
+                <ul class="dropdown-menu">
+                  <div class="row drp">
+                    <div class="col-lg-4 col-md-12">
+                      <ul>
+                        <a href="hotel.html">
+                          <li>Hotel Insurance</li>
+                        </a>
+                        <a href="restuarent.html">
+                          <li>Restaurant Insurance</li>
+                        </a>
+                        <a href="truck&trailer.html">
+                          <li>Truck Trailer Insurance</li>
+                        </a>
+                        <a href="Professional Indemnity.html">
+                          <li>Professional Indemnity Insurance</li>
+                        </a>
+                        <a href="other.html">
+                          <li>Other Insurances</li>
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <ul>
+                        <a href="cargo.html">
+                          <li>Marine Cargo Insurance</li>
+                        </a>
+                        <a href="cyber.html">
+                          <li>Cyber Insurance</li>
+                        </a>
+                        <a href="scaffolding.html">
+                          <li>Scaffolding Insurance</li>
+                        </a>
+                        <a href="commercial.html">
+                          <li>Commercial Building Insurance</li>
+                        </a>
+
+
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <ul>
+                        <a href="plant-machinery.html">
+                          <li>
+                            Plant Machinery Insurance
+                          </li>
+                        </a>
+                        <a href="accident.html">
+                          <li>Accident & Sickness Insurance</li>
+                        </a>
+                        <a href="business.html">
+                          <li>Business Insurance</li>
+                        </a>
+                        <a href="asebestos.html">
+                          <li>Asbestos Insurance</li>
+                        </a>
+                        <a href="Public and Products Liability.html">
+                          <li>Public & Products Liability</li>
+                        </a>
+                        <a href="builder.html">
+                          <li>Builders Insurance</li>
+                        </a>
+
+                      </ul>
+                    </div>
+
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="doc.html" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  DOCUMENTS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="claims.html">CLAIMS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  BLOG
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="blog1.html">Business Interruption Insurance For Restaurants</a>
+                  </li>
+                  <li><a class="dropdown-item" href="blog2.html">Scaffolding Liability Insurance Coverage</a></li>
+                  <li><a class="dropdown-item" href="blog3.html">What Type of Insurance Does a Scaffolding Company
+                      Need?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-regular fa-envelope"
+                    style="color:#F26121;font-size:20px"></i>&nbsp; EMAIL</a>
+              </li>
+              <a class="nav-link" href="tel:+611300170328">
+                <i class="fa-solid fa-phone" style="color:#F26121; font-size:20px"></i>
+                &nbsp;1300170328
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </div>
+
+  <div class="container-fluid prhero7">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 hero-text">
+        <h5 class="text">Scaffolding Insurance</h5>
+        <h1>Insurance plans that
+          work for you.</h1>
+
+        <button class="btn btn-outline-light"><a href="claims.html">Get Quote</a></button>
+      </div>
+    </div>
+    <div class="rqst-box">
+      <a href="#form">REQUEST A QUOTE</a>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="container-fluid paras" style="background-color: #F5F0E0;">
+    <div class="container">
+
+
+      <h3>Scaffolding insurance</h3>
+      <p>Scaffolding is a high risk business, where your work is mostly on temporary structures erected too high from the ground. Whether you are a worker, contractor, or own a scaffolding business, onsite activities are beyond your control and are prone to uncertainties including falls, equipment damage, and accidents or injuries occurring to third parties. Hence, it is crucial for anyone involved in scaffolding business to have scaffolding insurance to reduce business risks.</p>
+
+      <h3>Scaffolding Insurance is designed to cover</h3>
+     <p>Restaurant owners, and food business operators whether dine-in or takeaway businesses are recommended to have restaurant insurance. Depending on the nature of the food business, size, location, and turnover, you can seek help from our insurance experts to get you the most suitable restaurant insurance policy.</p>
+
+      
+
+      <h3>When to take the insurance?</h3>
+      <ul>
+        <div class="line"><i class="fa-solid fa-check"></i>
+          <li>
+            Commercial scaffolding</li>
+        </div>
+        <div class="line"><i class="fa-solid fa-check"></i>
+       <li>CBD scaffolding</li>
+        </div> 
+        <div class="line"><i class="fa-solid fa-check"></i>
+          <li>
+            Industrial scaffolding</li>
+           </div> 
+           <div class="line"><i class="fa-solid fa-check"></i>
+            <li>
+              Residential scaffolding</li>
+             </div> 
+    </ul>
+
+      <h3>Why do you need to have scaffolding insurance:</h3>
+     <p>The need for scaffolding insurance is directly connected to the level of risk this business holds. So whether you are a trader, contractor, or someone who is involved in the direct scaffolding business, a scaffolding public liability insurance can help you overcome the following business associated risks:</p>
+     <ul>
+      <li>1.Risks accompanied with installation, use, maintenance, and during the dismantling process of scaffolders</li>
+      <li>2.In transit risks that include falls, slips, trips, and resultant damage/loss</li>
+      <li>3.Damage to onsite property, people, and also to that of others</li>
+      <li>4.Theft of scaffolding/support equipment</li>
+    
+     </ul>
+    
+      <h3>Benefit from a wide range of insurance plans</h3>
+     <p>Insurance cover for a multi-line scaffolding with features customized to your business/individual needs. We are Australia’s most preferred and trusted insurance company with expert scaffold brokers making every process easy for you.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <div class="line"><i class="fa-solid fa-check"></i>
+              <li>
+                Public & Products Liability </li>
+            </div>
+            <div class="line"><i class="fa-solid fa-check"></i>
+           <li>Contractors and subcontractors claims</li>
+            </div> 
+            <div class="line"><i class="fa-solid fa-check"></i>
+              <li>
+                Cover for health & safety breach</li>
+               </div> 
+               <div class="line"><i class="fa-solid fa-check"></i>
+                <li>
+                  Public liability insurance</li>
+                 </div> 
+                 <div class="line"><i class="fa-solid fa-check"></i>
+                  <li>
+                    Scaffolding equipment cover</li>
+                   </div> 
+                   <div class="line"><i class="fa-solid fa-check"></i>
+                    <li>
+                      Scaffolders tools cover  </li>
+                     </div> 
+          </ul>
+        
+          
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <div class="line"><i class="fa-solid fa-check"></i>
+              <li>
+                Own plant and hired-in insurance </li>
+            </div>
+            <div class="line"><i class="fa-solid fa-check"></i>
+           <li>Contractors Insurance</li>
+            </div> 
+            <div class="line"><i class="fa-solid fa-check"></i>
+              <li>
+                Business interruption cover</li>
+               </div> 
+               <div class="line"><i class="fa-solid fa-check"></i>
+                <li>
+                  Roofing contractors insurance </li>
+                 </div> 
+                 
+                   <div class="line"><i class="fa-solid fa-check"></i>
+                    <li>
+                      Excess layer  </li>
+                     </div> 
+          </ul>
+
+        </div>
+      </div>
+
+        <h3>Key Scaffolding insurance services</h3>
+        <p>The scaffolding business’s biggest threat is improper scaffolding that leads to serious injury/loss of life. The onsite activities are beyond your control, and claims may fall on you even before you can be at the site to get hold of the situation. Hence public liability insurance is seen as vital.</p>
+        <p>Scaffolding comes with a risk of property damage, a severe human injury or sometimes even a loss of life on the job. As the risks to scaffolding are higher so are the costs and financial consequences that you may have to incur, if your business is found to be at fault. The eventualities of such damages against your business and your repute can be covered by the public liability insurance. From accidental claim costs, professional negligence claim, to the legal expenses that you may have to incur during such a claim process are covered.</p>
+        <h3>2. Income Protection</h3>
+        <p>Income protection insurance is highly recommended for self-employed individuals. Unlike worker’s compensation where the employer compensates for the employee’s loss, if you work on your own or are employed on wages, income protection insurance helps you to financially sustain the period. Scaffolding is prone to high risk injuries and income protection insurance will ensure that you are provided for, and your income is safeguarded until you get back to work.</p>
+        <h3>3. Tools, Equipment & Stock Insurance</h3>
+        <p>This insurance provides a cover for theft, fire, damage, and loss of scaffolders equipment one that is used as part of the projects and another that covers the loss, theft, or damage to the ones stocked on a client’s site. An insurance cover will help you with the expenses of tool replacements. For larger scaffolding specific equipment used on the site, a specific plant cover insurance may be provided.</p>
+        <h3>4. Hired-in Equipment Insurance</h3>
+        <p>This insurance provides a cover against loss, theft, and damage of scaffolding equipment on the project site, for an array of equipment including mobile scaffolding towers or lift machines that had been rented as part of your project. Save on the expense of repair/loss/replacement of scaffolding equipment by getting them insured.</p>
+        <h3>5. Contract Works Insurance</h3>
+        <p>Contract works insurance provides for any claims done while the project is under tender or post completion period.</p>
+        <h3>6. Professional Indemnity</h3>
+        <p>Unlike public liability insurance, a professional indemnity is something that protects you and your company’s reputation. It provides a cover for any kind of error or breach of your professional duty</p>
+        <h2>How Much Is Covered Under The Coverage?</h2>
+        <ul>
+          <div class="line"><i class="fa-solid fa-check"></i>
+            <li>
+             
+$5 - $10 million, and $20 million coverage is provided under public liability insurance, higher limits are available on client request </li>
+          </div>
+          <div class="line"><i class="fa-solid fa-check"></i>
+         <li>As per the client’s request, we offer cover for sub-contractors too</li>
+          </div> 
+          <div class="line"><i class="fa-solid fa-check"></i>
+            <li>
+              
+Both commercial and residential scaffolding is covered under scaffolding insurance</li>
+             </div> 
+             <div class="line"><i class="fa-solid fa-check"></i>
+              <li>
+                High level works over 10 meters </li>
+               </div> 
+               
+                 <div class="line"><i class="fa-solid fa-check"></i>
+                  <li>
+                   
+We provide cover for high risk situations including mine sites, marine, and the like </li>
+                   </div> 
+        </ul>
+
+        <h2>What Sort Of Claims Do Scaffolders Have?</h2>
+        <ul>
+          <div class="line"><i class="fa-solid fa-check"></i>
+            <li>
+             
+
+              Dropping of equipment from height</li>
+          </div>
+          <div class="line"><i class="fa-solid fa-check"></i>
+         <li>Collapse of scaffolding due to poor construction</li>
+          </div> 
+          <div class="line"><i class="fa-solid fa-check"></i>
+            <li>
+              
+              Collapse of scaffolding due to unforeseen weather events</li>
+             </div> 
+             <div class="line"><i class="fa-solid fa-check"></i>
+              <li>
+                Trip and fall claims for people on your job site </li>
+               </div> 
+               
+                 <div class="line"><i class="fa-solid fa-check"></i>
+                  <li>
+                   
+                    Worker to worker claims for contractors and sub-contractors who injure themselves on your job site. </li>
+                   </div> 
+
+                   <div class="line">
+                    <i class="fa-solid fa-check"></i>
+                    <li>Damage of structures scaffolders are working on</li>
+                   </div>
+                   
+                   <div class="line">
+                    <i class="fa-solid fa-check"></i>
+                    <li>Getting sued by local state workers compensation due to claim made by contractors and sub-contractors</li>
+                   </div>
+                   
+                   <div class="line">
+                    <i class="fa-solid fa-check"></i>
+                    <li>Fines due to occupation health and safety breaches</li>
+                   </div>
+        </ul>
+        <h3>How To Renew The Insurance?</h3>
+        <p>Based on your insurance plan and the renewal tenure, premiums need to be paid. You would get a notification about the due date along with the insurance policy details. You can reach our team and they would be happy to help you with the renewal process and may also suggest any upgradation in the plan that may be of benefit to you.
+        </p>
+        <h3>Claim Process & What Are The Documents Required?</h3>
+        <p>Whether you are a scaffolding company, a scaffolding contract worker, or a scaffolding employee, the documents and the claim process will be specific to your unique situation. Consult our insurance experts and have all your queries answered. As scaffolding Insurance brokers we work with some of the top insurance companies in Australia. This enables us to represent you and bring the best appropriate insurance policy for your scaffolding business and your situation.</p>
+
+    </div>
+  </div>
+    <div class="container-fluid htl py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Cards Section -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="exp-card-container d-flex flex-wrap justify-content-center">
+              <div class="htl-card text-center p-3 mx-2 my-2">
+                <img src="assets/images/liability.png" alt="Property Insurance" class="img-fluid">
+                <p>Public Liabilit</p>
+              </div>
+              <div class="htl-card text-center p-3 mx-2 my-2">
+                <img src="assets/images/workers.png" alt="Cyber Liability Insurance" class="img-fluid">
+                <p>Professional Indemnity
+                </p>
+              </div>
+              <div class="htl-card text-center p-3 mx-2 my-2">
+                <img src="assets/images/maintenance.png" alt="Business Interruption Insurance" class="img-fluid">
+                <p>Equipment Damage Cover</p>
+              </div>
+              <div class="htl-card text-center p-3 mx-2 my-2">
+                <img src="assets/images/income.png" alt="Equipment/Asset Damage Cover" class="img-fluid">
+                <p>Income Protection</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Text Section -->
+          <div class="col-lg-6 col-md-12 text-center text-lg-start">
+            <h3>What Can You Expect
+              Under Scaffolding Insurance?</h3>
+            <h4 class="mt-3">Specific, comprehensive, fast turnaround
+              and instant cover</h4>
+            <p class="mt-3">
+              Find excellent professional services provided by experts who have complete knowledge of your business, and give cost-effective solutions.
+            </p>
+            <a href="claims.html" class="btn btn-primary mt-3">Claim Process</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  
+  
+  <div class="container-fluid text-center py-5 ">
+    <div class="container">
+      <h1>Why Choose Us</h1>
+      <p>
+        We have worked and supported an extensive portfolio of clients across Australia for different scaffolding business scenarios
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-start">
+            <img src="assets/images/scaffolding (1).png" alt="E" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>No Height restriction</h4>
+              <p>
+                We bring you tailored insurance plans that are up-to-date, benefitting your hotel business for its
+                value and specific risks associated.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mt-3">
+            <img src="assets/images/help-hotel.png" alt="Best of Premiums" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Expert to help</h4>
+            <p>Dedicated insurance brokers are committed to supporting you at every step to find you an appropriate insurance and claims policy</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-start">
+            <img src="assets/images/premium-hotel.png" alt="Pay for What’s Needed" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Competitive premiums</h4>
+              <p>
+                A network of over 100+ APRA authorized insurers enables us to negotiate the best deal suitable to your need
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mt-3">
+            <img src="assets/images/benefits-hotel.png" alt="Unique & Up-to-Date" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Public liability value</h4>
+              <p>The most important service for scaffolding companies, we get the maximum value benefit for you</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <section class="testimonials-section py-5">
+
+    <div class="container">
+      
+      <div class="testi">
+        <div class="heading">
+          <h1>What Our customers have to say</h1>
+        </div>
+        <div class="par">
+          <p>We aim to keep you and your business covered and protected from potential business risks, so that you can
+            run your business uninterrupted</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- First Testimonial -->
+
+        <div class="col-md-6">
+
+
+          <div class="testimonial-card">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+              <img src="assets/images/unnamed.webp" alt="Google Icon" style="width: 40px; height: 40px;">
+              <!-- Replace with your image -->
+            </div>
+            <h5 class="text-center">Joshua Savage</h5>
+            <div class="text-warning mb-2 star text-center">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-center">I have dealt with Shalin and he has made the process stress-free, easy, and very
+              responsive. Thank you.</p>
+            <div class="quote-icon">“</div>
+          </div>
+        </div>
+        <!-- Second Testimonial -->
+        <div class="col-md-6 ">
+
+          <div class="testimonial-card">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+              <img src="assets/images/unnamed.webp" alt="Google Icon" style="width: 60px; height: 60px;">
+              <!-- Replace with your image -->
+            </div>
+            <h5 class="text-center">Adrian Gadaldi</h5>
+            <div class="text-warning mb-2 star text-center">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-center">Friendly, fast, and good.</p>
+            <div class="quote-icon">“</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="container-fluid">
+    <div class="container form" id="form">
+      <form>
+        <h4 class="text-center p-4" style="font-weight: bold;">REQUEST A QUOTE</h4>
+        <div class="row">
+          <!-- Full Name and Company Name -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="full-name" class="form-label">Full Name <span class="text-danger">*</span></label>
+            <input type="text" id="full-name" class="form-control" name="full-name" required>
+          </div>
+          <div class="col-md-6 mb-3 p-2">
+            <label for="company-name" class="form-label">Company Name <span class="text-danger">*</span></label>
+            <input type="text" id="company-name" class="form-control" name="company-name" required>
+          </div>
+      
+          <!-- Contact and Email -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="contact-number" class="form-label">Contact No <span class="text-danger">*</span></label>
+            <input type="tel" id="contact-number" class="form-control" name="contact-number" required>
+          </div>
+          <div class="col-md-6 mb-3 p-2">
+            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+            <input type="email" id="email" class="form-control" name="email" required>
+          </div>
+      
+          <!-- Occupation and Turnover -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="occupation" class="form-label">Your Occupation <span class="text-danger">*</span></label>
+            <input type="text" id="occupation" class="form-control" name="occupation" required>
+          </div>
+          <div class="col-md-6 mb-3 p-2">
+            <label for="revenue" class="form-label">Estimated Annual Turnover of Business <span class="text-danger">*</span></label>
+            <input type="text" id="revenue" class="form-control" name="revenue" required>
+          </div>
+      
+          <!-- Employees and Liability Cover -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="employees" class="form-label">Total Number of Employees (Including Directors) <span class="text-danger">*</span></label>
+            <input type="text" id="employees" class="form-control" name="employees" required>
+          </div>
+          <div class="col-md-6 mb-3 p-2">
+            <label for="liability-cover" class="form-label">Public Liability Cover Required <span class="text-danger">(Required)</span></label>
+            <select id="liability-cover" class="form-select" name="liability-cover" required>
+              <option selected>Please Select</option>
+              <option value="Not required">Not Required</option>
+              <option value="10m">$10M</option>
+              <option value="20m">$20M</option>
+            </select>
+          </div>
+      
+          <!-- Other Insurances -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="other-insurances" class="form-label">Any Other Insurances You Need (Please Specify) <span class="text-danger">*</span></label>
+            <input type="text" id="other-insurances" class="form-control" name="other-insurances" required>
+          </div>
+        </div>
+      
+        <!-- Submit Button -->
+        <div class="col-12 text-end mt-3">
+          <button type="submit" class="btn btn-danger" style="font-weight: bold; padding: 10px 25px; border-radius: 25px; background-color: #f77c2f; border: none;">REQUEST A QUOTE</button>
+        </div>
+      </form>
+      
+      
+      
+    </div>
+
+  </div>
+
+
+  <div class="container faq">
+    <h2 class="text-center mb-5 mt-5">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne"
+                aria-expanded="true" aria-controls="faqCollapseOne">
+                1. What are the benefits of having scaffolding insurance?
+              </button>
+            </h2>
+            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <p>A high-risk sector, the scaffolding business is prone to accidents, falls, slips, and severe injuries. Apart from these, scaffolding companies are often made to face the brunt of a situation even if they are not at fault. A worker not following guidelines, or onsite negligence can put your business responsible for any property damage/injury or loss of life. Scaffolding insurance can save you money for legal expenses, protect your reputation, and safeguard you from all such claims from third parties. Having scaffolding insurance will ensure that you carry your business uninterrupted by keeping you well-prepared for any unforeseen uncertainties.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                2. Who is liable for scaffolding?
+              </button>
+            </h2>
+            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <p>Typically, scaffolding liability can fall on the following parties:</p>
+                <ul>
+                  <li>1. Scaffolding installer or manufacturer – If the accident or injury is caused due to faulty scaffolding, the installer or manufacturer is liable.</li>
+                  <li>2. Property owners – If property owners are directing the construction work and arrangements for scaffolding, they are responsible for any accidents due to negligence.</li>
+                  <li>3. Employees from other companies – Construction sites often have multiple contractors, and employees from other companies may also be liable for damage/injury caused.</li>
+                  <li>4. Contractor, sub-contractor, or construction manager – Supervisors are responsible for providing a safe working environment and warning about the risks of scaffolding work.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                3. What insurance do I need for scaffolding?
+              </button>
+            </h2>
+            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <p>iLink insurance provides a wide range of insurance for scaffolders and scaffolding businesses. Some of the key insurance services include:</p>
+                <ul>
+                  <li>1. Public liability insurance</li>
+                  <li>2. Contract works insurance</li>
+                  <li>3. Income protection insurance</li>
+                  <li>4. Tools, equipment, and stock insurance</li>
+                  <li>5. Professional indemnity insurance</li>
+                </ul>
+                <p>Based on your requirements, whether you're a scaffolding company, contractor, employee, or wage worker, our scaffold insurance brokers will guide you through the options and find the best fit for your needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                4. Do scaffolding companies need professional indemnity insurance?
+              </button>
+            </h2>
+            <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <p>Professional indemnity insurance covers businesses from being sued for errors or professional negligence. Given the high-risk nature of scaffolding work, it’s crucial for scaffolding companies to have this insurance to protect against legal claims and compensation demands.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                5. How much does scaffolding insurance cost?
+              </button>
+            </h2>
+            <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <p>The cost of scaffolding insurance depends on various factors, including the size of your business, coverage requirements, and the risks involved. Our insurance experts can provide a free quote to help you find the most suitable scaffolding insurance with broad coverage and flexible payment options.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer-bg text-white mt-5 py-5">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mt-3">
+          <h3>Useful links</h3>
+          <div class="mt-4"></div>
+          <li><a href="https://www.cbn.au/privacy-policy">Privacy Policy</a></li>
+          <li><a href="https://www.cbn.au/complaints-disputes-handling">Complaints & Disputes Handling Policy</a></li>
+          <li><a href="https://www.niba.com.au/insurance-brokers-code-of-practice">Insurance Brokers Code of
+              Practice</a></li>
+          <li><a href="https://ilinkinsurance.com.au/wp-content/uploads/2022/12/Statement-of-Services-1-1.pdf">Statement
+              Of Services</a></li>
+          <li><a
+              href="https://ilinkinsurance.com.au/wp-content/uploads/2024/10/FSG___iLink_Insurance_Brokers_Pty_Ltd_V021_08_October_2024.pdf">Financial
+              Services Guide</a></li>
+          <li><a href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/Major-Uninsured-Risks-Review.pdf">Major
+              Uninsured Risks Review</a></li>
+          <li><a
+              href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/JLG-Emergeny-Response-Flyer_iLink-Insurance.pdf">iLink
+              -JLG Emergeny Response Flyer</a></li>
+
+        </div>
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 mb-4 mt-3">
+          <h3>Products</h3>
+          <ul class="list-unstyled mt-4" style="list-style:none">
+            <li><a href="business.html">Business Insurance</a></li>
+            <li><a href="truck&trailer.html">Truck & Trailer Insurance</a></li>
+            <li><a href="Public and Products Liability.html">Public & Products Liability</a></li>
+            <li><a href="Professional Indemnity.html">Professional Indemnity Insurance</a></li>
+           
+          </ul>
+        </div>
+        <!-- Contact Information -->
+        <div class="col-lg-3 col-md-12 mt-3">
+          <h5 class="mt-4">&nbsp;</h5>
+          
+          <li><a href="scaffolding.html">Scaffolding Insurance</a></li>
+          <li><a href="commercial.html">Commercial Property Insurance</a></li>
+          <li><a href="hotel.html">Hotel Insurances</a></li>
+          <li><a href="restuarent.html">Restaurant Insurance</a></li>
+          <!-- Social Media Icons -->
+          
+        </div>
+        <div class="col-lg-3 col-md-12 mt-3">
+
+          <div class="logo">
+            <img src="assets/images/white-logo.png" alt="">
+          </div>
+          <p>Offering a wide range of General Insurance products and Risk Management solutions to clients.</p>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2024 Your Company Name. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="container-fluid footer-btm text-center">
+    <div class="container">
+      <p class="p-3"><i class="fa-solid fa-location-dot" style="color:#F26121;font-size:20px"></i>&nbsp;Suite 16, Level
+        2, 1 Ricketts Road, Mount Waverley VIC 3149 &nbsp;&nbsp;
+        <i class="fa-brands fa-whatsapp" style="color: #F26121;font-size:20px"></i>&nbsp;1300 170 328 &nbsp;&nbsp;
+        <i class="fa-regular fa-envelope" style="color:#F26121;font-size:20px"></i> &nbsp;info@ilinkinsurance.com.au
+        &nbsp;&nbsp;
+        <a href="https://www.facebook.com/iLinkInsuranceBrokers/"><i class="fa-brands fa-square-facebook" style="color: #F26121;font-size:20px"></i></a>   
+      </p>
+      <i class="fa-thin fa-phone"></i>
+      <div class="hr-foot"></div>
+      <div class="row">
+        <div class="col-8 foot-para mt-3 text-center">
+          <p>iLink Insurance Brokers Pty Ltd (CAR 418137) | ABN 91 155 898 525 Corporate Authorised Representative of
+            Community Broker Network Pty Ltd | AFSL 233750 | ACN 096 916 184 © Copyright 2016 iLink Insurance Brokers
+            Pty Ltd, All rights reserved.</p>
+
+        </div>
+        <div class="col-4"><img src="assets/images/new-steadfast-logo.png" alt=""></div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ilink</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/2097aac339.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="assets/images/cropped-website-logo.webp" alt="Logo" width="90" height="auto">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Offcanvas -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">ABOUT US</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              PRODUCTS
+                          </a>
+                          <ul class="dropdown-menu">
+                            <div class="row drp">
+                              <div class="col-lg-4 col-md-12">
+                               <ul>
+                                <a href="hotel.html"><li>Hotel Insurance</li></a> 
+                                 <a href="restuarent.html"><li>Restaurant Insurance</li></a>
+                                 <a href="truck&trailer.html"><li>Truck Trailer Insurance</li></a>
+                                 <a href="Professional Indemnity.html"><li>Professional Indemnity Insurance</li></a>
+                                 <a href="other.html"><li>Other Insurances</li></a>
+                               </ul>
+                              </div>
+                              <div class="col-lg-4 col-md-12">
+                               <ul>
+                                 <a href="cargo.html"><li>Marine Cargo Insurance</li></a>
+                                 <a href="cyber.html"><li>Cyber Insurance</li></a>
+                                 <a href="scaffolding.html"><li>Scaffolding Insurance</li></a>
+                                 <a href="commercial.html"><li>Commercial Building Insurance</li></a>
+                                
+                                
+                               </ul>
+                              </div>
+                              <div class="col-lg-4 col-md-12">
+                               <ul>
+                                 <a href="plant-machinery.html"><li>
+                                   Plant Machinery Insurance
+                                   </li></a>
+                                 <a href="accident.html"><li>Accident & Sickness Insurance</li></a>
+                                 <a href="business.html"><li>Business Insurance</li></a>
+                                 <a href="asebestos.html"><li>Asbestos Insurance</li></a>
+                                 <a href="Public and Products Liability.html"><li>Public & Products Liability</li></a>
+                                 <a href="builder.html"><li>Builders Insurance</li></a>
+                                
+                               </ul>
+                              </div>
+
+                             </div>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="doc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              DOCUMENTS
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="claims.html">CLAIMS</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              BLOG
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="blog1.html">Business Interruption Insurance For Restaurants</a></li>
+                              <li><a class="dropdown-item" href="blog2.html">Scaffolding Liability Insurance Coverage</a></li>
+                              <li><a class="dropdown-item" href="blog3.html">What Type of Insurance Does a Scaffolding Company Need?</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">CONTACT US</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="fa-regular fa-envelope" style="color:#F26121;font-size:20px"></i>&nbsp; EMAIL</a>
+                      </li>
+                      <a class="nav-link" href="tel:+611300170328">
+                        <i class="fa-solid fa-phone" style="color:#F26121; font-size:20px"></i>
+                        &nbsp;1300170328
+                    </a>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+  </div>
+  </div>
+
+  <div class="container-fluid prhero8">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 hero-text">
+        <h5 class="text">Commercial Property Insurance(Occupied Or Vacant)</h5>
+        <h1>
+          
+            Building/Property Insurance plans that work for you</h1>
+
+        <button class="btn btn-outline-light"><a href="claims.html">Get Quote</a></button>
+      </div>
+    </div>
+    <div class="rqst-box">
+      <a href="#form">REQUEST A QUOTE</a>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="container-fluid paras" style="background-color: #F5F0E0;">
+    <div class="container sec-1">
+
+
+      <h3>Commercial Property Insurance</h3>
+     <p>Commercial property insurance also called building insurance varies from business to business given their unique needs and disparity. It helps to keep your business afloat in the occurrence of any unforeseen event. Commercial property insurance/building insurance will help you pay out for any sort of repair, replacement, or rebuild of the damaged property at the same site or of a different one.</p>
+     <p>You can also claim a cover on the asset/stock loss that occurred due to a mishap to your commercial property. A comprehensive business insurance package will be sufficient to provide broad coverage. However, depending on the size of your property and the nature of your business we could recommend a suitable insurance policy and an additional plant cover if required.</p>
+
+      <h3>Commercial Property Insurance Covers:</h3>
+    
+
+      
+
+      
+      <ul>
+        <div class="line"><i class="fa-solid fa-check"></i>
+          <li>
+            Fire/floods/natural calamities</li>
+        </div>
+        <div class="line"><i class="fa-solid fa-check"></i>
+       <li>Theft/ Burglary</li>
+        </div> 
+        <div class="line"><i class="fa-solid fa-check"></i>
+          <li>
+            Glass</li>
+           </div> 
+           <div class="line"><i class="fa-solid fa-check"></i>
+            <li>Public & product liability</li>
+             </div> 
+             <div class="line"><i class="fa-solid fa-check"></i>
+                <li>Machinery breakdown</li>
+                 </div> 
+                 <div class="line"><i class="fa-solid fa-check"></i>
+                    <li>Supplies and equipment</li>
+                     </div>
+                     <div class="line"><i class="fa-solid fa-check"></i>
+                        <li>
+                            Inventory</li>
+                         </div>
+             
+                         <div class="line"><i class="fa-solid fa-check"></i>
+                            <li>Business interruption</li>
+                             </div>
+                     
+             
+    </ul>
+
+      <h3>Why Is Commercial Insurance Needed</h3>
+     <p>Unforeseen calamities resulting in severe property damage due to fire, electricity damage, and natural calamities including storms can leave you with a huge loss. Not just the property you own or have on a lease, if your business also has assets and equipment stocked, you have all these put at risk.</p>
+    
+  <p>A well-assessed commercial property or building insurance can save you from a substantial loss of income, which can otherwise leave you all devastated. In the case of business traders, you are at high risk for material theft and its financial consequences. Having a cover for materials and equipment is crucial in such a case</p>
+    
+      <h3>Who Needs The commercial property/building Insurance</h3>
+     <p>If you are commercial property owner or even have a commercial building taken under the lease (occupied/vacant), you are advised to have commercial property insurance. Any business irrespective of the sector, from manufacturers, and wholesalers to any business owners who have high value assets, get your assets and property insured from theft, fire mishap, or natural disasters that come unannounced.</p>
+
+    <h3>When To Take The Insurance</h3>
+    <p>It is always recommended to get commercial property insurance as soon as you get a new property or lease out a building for business purposes.</p>
+    <p>Depending on the nature of the property, size, location, and occupancy, commercial property insurance is tailored in a manner that it can sustain and get your property back into the same financial position as it was, after an un-eventful incident. It is also recommended to review and upgrade your commercial building insurance, whether your property is owned/rented or leased out.</p>
+    <p>Your insurance should reflect the changed value of the property, and then include features that can rightly provide a cover for your current property value and scenario.</p>
+    <h3>Benefits Of Having The Insurance</h3>
+    <p>Commercial property insurance safeguards the building from where businesses operate. Having this insurance can help you cover a wide range of rather costly scenarios, which can otherwise lead to a heavy financial and material loss.</p>
+    <h4>1. Property Insurance</h4>
+    <p>Commercial property insurance covers the repair or replacement of owned/rented/leased equipment/tools and inventory against fire, theft, and any damage. While basic property insurance gives coverage for the building, there are others that provide a cover to its contents too.</p>
+    <h4>2. Strata Title Insurance</h4>
+    <p>Corporate insurance provides protection to properties that fall under a shared property. Damage to the building or the common places is covered under this insurance.</p>
+    <h4>3. Employer’s Liability Insurance</h4>
+    <p>If you have anyone employed for the property or your building premises, an employer’s liability insurance helps to cover claims for injuries that occurred as a result of property damage</p>
+    <h4>4. Industrial special risks insurance</h4>
+    <p>If you are an owner of a commercial property or in a relevant business with high value physical assets including equipment, materials, or machinery worth more than $5 million, it is recommended that you have industrial special risks insurance. Apart from the property, the loss of material can be a significant financial burden to get over without having an insurance policy.</p>
+    <h4>5. Owner’s liability insurance</h4>
+    <p>If you are a landlord, an owner’s liability insurance will provide a cover for claims done by third party injuries or damage.</p>
+    <h3>Other insurances that also are opted for include:</h3>
+    <h4>1. Business Interruption Insurance</h4>
+    <p>Business interruption insurance enables you to claim for the loss due to interruptions in business caused by natural calamities.</p>
+    <h4>2. Cyber Insurance</h4>
+    <p>Cyber liability insurance provides a cover for any kind of data breaches and the cost arising from events such as customer notification or legal expenses.</p>
+    <h3>What Is Covered Under The Insurance:</h3>
+    <p>Commercial property insurance enables you to cover the following aspects and situations for your property. Largely commercial property insurance handles the loss and damage to the property, however, additional business insurance can cover business interruption</p>
+      
+<ul>
+  <div class="line"><i class="fa-solid fa-check"></i>
+    <li>Structure of your building - roof, wall, and ceilings</li>
+     </div>
+     <div class="line"><i class="fa-solid fa-check"></i>
+      <li>Glass panels and doors</li>
+       </div>
+       <div class="line"><i class="fa-solid fa-check"></i>
+        <li>External/internal fixtures and fittings</li>
+         </div>
+         <div class="line"><i class="fa-solid fa-check"></i>
+          <li>Furniture and inventory</li>
+           </div>
+           <div class="line"><i class="fa-solid fa-check"></i>
+            <li>
+              Office equipment and machinery</li>
+             </div>
+             <div class="line"><i class="fa-solid fa-check"></i>
+              <li>
+                Accidental damage to the property</li>
+               </div>
+               <div class="line"><i class="fa-solid fa-check"></i>
+                <li>
+               
+Loss or damage to contents, unexpected leaks, fittings, and tenant improvements</li>
+                 </div>
+</ul>
+    </div>
+  </div>
+
+<div class="container">
+  <h3>Unoccupied/Vacant Commercial Property Insurance</h3>
+  <h4>ILINK INSURANCE can offer insurance coverage for property owners of Unoccupied/ Vacant Commercial (Retail or office) and Industrial property. </h4>
+  <p>1. Unoccupied commercial cover for when a property is unoccupied for no minimum or maximum periods. Including, on a case by case basis, perils such as:</p>
+  <ul>
+    <div class="line"><i class="fa-solid fa-check"></i>
+      <li>
+     
+        Property (Building & Contents)</li>
+       </div>
+       <div class="line"><i class="fa-solid fa-check"></i>
+        <li>
+          Damage caused by theft or Malicious damage</li>
+         </div>
+         <div class="line"><i class="fa-solid fa-check"></i>
+          <li>Impact</li>
+           </div>
+         
+  </ul>
+  <p>2. Property Owners Liability:</p>
+  <div class="line"><i class="fa-solid fa-check"></i>
+    <li>
+      Public Liability cover of $10m or $20m</li>
+     </div>
+     <p>We can tailor the package exclusively for your property to suit your needs and budget. You can have peace of mind that your assets and liabilities are covered by a specialist policy designed for short term and long term unoccupied commercial property.</p>
+
+     <h4>Property Owners And Handling An Unoccupied/Vacant Property:</h4>
+     <p>It is natural for commercial property to stay vacant/ unoccupied in between for certain periods of time, before re-tenanting. One is to overcome a period of not having a rental income, but the other important aspect is to still protect your property from any kind of natural disasters, fire accidents, and vandalism.</p>
+     <div class="line"><i class="fa-solid fa-check"></i>
+      <li>
+       
+The kind of tenants and their business can impact your property depending on their business associated risks. Thus, it will also affect your insurance and the level of protection you hold.</li>
+       </div>
+       <div class="line">
+        <i class="fa-solid fa-check"></i> property that’s been vacant for more than three months, as a property owner you are recommended to inform your insurance broker about the same. Consulting your insurance broker for a vacant property or a change of tenant can help you optimize/rerate/upgrade your commercial insurance policy accordingly, for you to get maximum coverage.</i>
+       </div>
+       <div class="line">
+        <i class="fa-solid fa-check"></i> property that’s been vacant for more than three months, as a property owner you are recommended to inform your insurance broker about the same. Consulting your insurance broker for a vacant property or a change of tenant can help you optimize/rerate/upgrade your commercial insurance policy accordingly, for you to get maximum coverage.</i>
+       </div>
+      
+
+       <p>Never miss out on access to insurers because of a lack of information or timely professional guidance.</p>
+</div>
+
+<div class="container-fluid"style="background-color:#F5F0E0;padding:30px">
+
+
+<div class="container">
+  <h3>How Much Is Covered Under The Coverage?</h3>
+  <p>Whether you own a factory, warehouse, or office space as part of a property, or you have a property that you have leased/rented out for commercial purposes, the coverage would vary to the unique needs of your situation. Comprehensive business insurance coverage may be sufficient for some, whereas others may require additional coverage.</p>
+  <p>The coverage is calculated based on the present financial value of your property and assets, and the replacement cost required to recover the loss. Talk to one of our experts who can help you get multiple quotes from leading insurers and packages that can give you appropriate coverage.</p>
+  <h3>How To Renew The Insurance?</h3>
+  <p>Our team of insurance experts can help you with the regular renewal of your insurance policy. However, when it comes to commercial property insurance a lot of it can change depending on the kind of property, age of the property, ownership, change in tenants, and its usage. It is important for you to assess your property with time and make changes to your policy as and when needed. At Ilink insurance, our insurance specialists can help you review your policies and suggest relevant building insurance options that can best suit and benefit your scenario.</p>
+  <h3>Claim Process & What Are The Documents Required?</h3>
+  <p>Consult our insurance experts and have all your queries answered regarding property, legal documents required as well as claim process in case of an occurrence. We will be right there when it comes to any sort of claims. As commercial property insurance brokers, our insurance plans are tailored to be inclusive of all the property associated risks specific to your business, to bring you the most appropriate insurance solution and coverage.</p>
+</div>
+</div>
+        
+
+    
+
+    <div class="container-fluid htl py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Cards Section -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="card-container d-flex flex-wrap justify-content-center">
+              <div class="htl-card text-center p-3 mx-2 my-2">
+                <img src="assets/images/earthquake.png" alt="Property Insurance" class="img-fluid">
+                <p>Property Damage Insurance</p>
+              </div>
+              <div class="htl-card text-center p-3 mx-2 my-2">
+                <img src="assets/images/liability.png" alt="Cyber Liability Insurance" class="img-fluid">
+                <p>Owner’s Liability Insurance
+                </p>
+              </div>
+              <div class="htl-card text-center p-3 mx-2 my-2">
+                <img src="assets/images/fixed-asset.png" alt="Business Interruption Insurance" class="img-fluid">
+                <p>Equipment/Asset Damage Cover</p>
+              </div>
+              <div class="htl-card text-center p-3 mx-2 my-2">
+                <img src="assets/images/office.png" alt="Equipment/Asset Damage Cover" class="img-fluid">
+                <p>Strata Title Insurance
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Text Section -->
+          <div class="col-lg-6 col-md-12 text-center text-lg-start">
+            <h3>What Can You Expect
+              Under Commercial Building Insurance?</h3>
+            <h4 class="mt-3">Specific, comprehensive, fast turnaround and instant cover</h4>
+            <p class="mt-3">
+              Find excellent professional services provided by experts who have complete knowledge of your business, and give cost-effective solutions.
+            </p>
+            <a href="claims.html" class="btn btn-primary mt-3">Claim Process</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  
+  
+  <div class="container-fluid text-center py-5 ">
+    <div class="container">
+      <h1>Why Choose Us</h1>
+      <p>
+        We have worked and supported an extensive portfolio of clients across Australia for different scaffolding business scenarios
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-start">
+            <img src="assets/images/cl.png" alt="E" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Bespoke solutions</h4>
+              <p>
+                We bring you insurance plans depending on the value, use of your property, and specific risks associated
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mt-3">
+            <img src="assets/images/help-hotel.png" alt="Best of Premiums" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Expert to help</h4>
+            <p>Dedicated insurance brokers are committed to supporting you at every step to find you an appropriate insurance and claims policy</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-start">
+            <img src="assets/images/premium-hotel.png" alt="Pay for What’s Needed" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Competitive premiums</h4>
+              <p>
+                A network of over 100+ APRA authorized insurers enables us to negotiate the best deal suitable to your need
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mt-3">
+            <img src="assets/images/benefits-hotel.png" alt="Unique & Up-to-Date" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Committed to clients</h4>
+              <p>We respect your time and money, so we uncomplicate and make things easier and quicker in the best possible ways</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <section class="testimonials-section py-5">
+
+    <div class="container">
+      
+      <div class="testi">
+        <div class="heading">
+          <h1>What Our customers have to say</h1>
+        </div>
+        <div class="par">
+          <p>We aim to keep you and your business covered and protected from potential business risks, so that you can
+            run your business uninterrupted</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- First Testimonial -->
+
+        <div class="col-md-6">
+
+
+          <div class="testimonial-card">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+              <img src="assets/images/unnamed.webp" alt="Google Icon" style="width: 40px; height: 40px;">
+              <!-- Replace with your image -->
+            </div>
+            <h5 class="text-center">Joshua Savage</h5>
+            <div class="text-warning mb-2 star text-center">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-center">I have dealt with Shalin and he has made the process stress-free, easy, and very
+              responsive. Thank you.</p>
+            <div class="quote-icon">“</div>
+          </div>
+        </div>
+        <!-- Second Testimonial -->
+        <div class="col-md-6 ">
+
+          <div class="testimonial-card">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+              <img src="assets/images/unnamed.webp" alt="Google Icon" style="width: 60px; height: 60px;">
+              <!-- Replace with your image -->
+            </div>
+            <h5 class="text-center">Adrian Gadaldi</h5>
+            <div class="text-warning mb-2 star text-center">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-center">Friendly, fast, and good.</p>
+            <div class="quote-icon">“</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="container-fluid">
+    <div class="container form">
+      <form>
+        <h4 class="text-center p-4">REQUEST A QUOTE</h4>
+        <div class="row">
+          <!-- Full Name and Company Name -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="full-name" class="form-label visually-hidden">Full Name *</label>
+            <input type="text" id="full-name" class="form-control" placeholder="Full Name *" required>
+          </div>
+          <div class="col-md-6 mb-3 p-2">
+            <label for="company-name" class="form-label visually-hidden">Company Name *</label>
+            <input type="text" id="company-name" class="form-control" placeholder="Company Name *" required>
+          </div>
+      
+          <!-- Contact and Email -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="contact-number" class="form-label visually-hidden">Contact *</label>
+            <input type="tel" id="contact-number" class="form-control" placeholder="Contact *" required>
+          </div>
+          <div class="col-md-6 mb-3 p-2">
+            <label for="email" class="form-label visually-hidden">Email *</label>
+            <input type="email" id="email" class="form-control" placeholder="Email *" required>
+          </div>
+      
+          <!-- Coverage Required -->
+          <div class="col-12 mb-3 p-2">
+            <label for="coverage-required" class="form-label">Coverage Required (Select all that apply):</label>
+          </div>
+          <div class="col-12">
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="property-damage">
+              <label class="form-check-label" for="property-damage">Property Damage (Building and/or Contents/Stock)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="business-interruption">
+              <label class="form-check-label" for="business-interruption">Business Interruption (Loss of Income)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="burglary-theft">
+              <label class="form-check-label" for="burglary-theft">Burglary/Theft (Contents and Stock)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="cash">
+              <label class="form-check-label" for="cash">Cash (money)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="plate-glass">
+              <label class="form-check-label" for="plate-glass">Plate Glass (internal and external)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="public-liability">
+              <label class="form-check-label" for="public-liability">Public and Products Liability</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="machinery-breakdown">
+              <label class="form-check-label" for="machinery-breakdown">Machinery Breakdown</label>
+            </div>
+          </div>
+      
+          <!-- Submit Button -->
+          <div class="col-12 text-end mt-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+      
+    </div>
+
+  </div>
+
+
+  
+
+ 
+
+
+  <div class="container faq">
+    <h2 class="text-center mb-5 mt-5">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne"
+                aria-expanded="true" aria-controls="faqCollapseOne">
+                1. What kind of building Insurance covers your commercial property?
+              </button>
+            </h2>
+            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+               <p>Although every commercial property insurance differs widely in the level and the kinds of coverage they provide, policy exclusions, payment options, terms, and conditions; the following are some of the key insurance that is covered by insurance companies for commercial properties.</p>
+               <ul>
+                <li>Property Insurance</li>
+                <li>Strata Title Insurance</li>
+                <li>Employer’s Liability Insurance</li>
+                <li>Industrial special risks insurance</li>
+                <li>Owner’s liability insurance</li>
+               </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                2. Who pays building insurance on commercial property in Australia?
+              </button>
+            </h2>
+            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+               <p>The property owner or the landlord is the one who pays for the commercial property insurance. For rented out commercial buildings, if you are the landlord, you are responsible to have the building insurance in place. In most cases where the commercial property is leased out, the cost of the building insurance is passed on to the tenant to pay.</p>
+               <p>In case of mixed-use property, where you have your space allotted to different tenants, the insurance is taken separately depending on the risk exposure, and a premium is set accordingly. Commercial property insurance brokers at Ilink insurance can help you provide appropriate insurance policy plans depending on your property and the kind of occupancy it has.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                3. Which commercial insurance is best?
+              </button>
+            </h2>
+            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+<p>Taking a comprehensive business package insurance can give a commercial property a wide cover to risks such as legal liabilities, business interruption, and cybercrime insurance. However, if you are a property owner with your buildings leased out to several other businesses, you would benefit more from having standalone commercial property insurance and landlord insurance.</p>
+<p>Speak to our expert insurance brokers, who can review your property under different grounds such as risk exposure, nature of occupancy, age of the property, and others, and guide you towards the best possible policy with comprehensive coverage.</p>
+              </div><
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                4. Is insurance mandatory for commercial building?
+              </button>
+            </h2>
+            <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <p>Yes, having an insurance policy is mandatory in Australia, especially for the ones who fall under the high risk categories and operate businesses having high value assets worth over $5 million.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                5. What do I need to know about commercial property insurance?
+              </button>
+            </h2>
+            <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <p>1 Insurance coverage can widely differ from one policy to another, so be very careful while looking into the features of every policy.</p>
+                <p>2.The terms and conditions can be quite complex and the PDS documents can be confusing to understand. Insurance brokers are trained in these, so it is advisable for you to take support of them while getting a commercial property insurance</p>
+                <p>3.Every policy will come with a set of exclusions, be clear about your requirements and queries with your insurer or insurance broker.</p>
+                <p>4.Be mindful to update your insurance coverage with an annual review of your business and property. Your commercial property insurance should reflect the increased value of your property be interns of renovations or the rising costs of the building. Never keep your property under insured.</p>
+                <p>5.Often property owners tend to underestimate the costs that they would have to incur to reinstate a building post an accident or a natural disaster. This fails to give you a proper cover for rebuilding and replacement. Take that extra cover, if you are advised to.</p>
+                <p>6.Business interruption insurance is generally not covered under the commercial building insurance. Do speak to the insurance broker and know what are additional covers your property and business scenario requires.</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer-bg text-white mt-5 py-5">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mt-3">
+          <h3>Useful links</h3>
+          <div class="mt-4"></div>
+          <li><a href="https://www.cbn.au/privacy-policy">Privacy Policy</a></li>
+          <li><a href="https://www.cbn.au/complaints-disputes-handling">Complaints & Disputes Handling Policy</a></li>
+          <li><a href="https://www.niba.com.au/insurance-brokers-code-of-practice">Insurance Brokers Code of
+              Practice</a></li>
+          <li><a href="https://ilinkinsurance.com.au/wp-content/uploads/2022/12/Statement-of-Services-1-1.pdf">Statement
+              Of Services</a></li>
+          <li><a
+              href="https://ilinkinsurance.com.au/wp-content/uploads/2024/10/FSG___iLink_Insurance_Brokers_Pty_Ltd_V021_08_October_2024.pdf">Financial
+              Services Guide</a></li>
+          <li><a href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/Major-Uninsured-Risks-Review.pdf">Major
+              Uninsured Risks Review</a></li>
+          <li><a
+              href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/JLG-Emergeny-Response-Flyer_iLink-Insurance.pdf">iLink
+              -JLG Emergeny Response Flyer</a></li>
+
+        </div>
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 mb-4 mt-3">
+          <h3>Products</h3>
+          <ul class="list-unstyled mt-4" style="list-style:none">
+            <li><a href="business.html">Business Insurance</a></li>
+            <li><a href="truck&trailer.html">Truck & Trailer Insurance</a></li>
+            <li><a href="Public and Products Liability.html">Public & Products Liability</a></li>
+            <li><a href="Professional Indemnity.html">Professional Indemnity Insurance</a></li>
+           
+          </ul>
+        </div>
+        <!-- Contact Information -->
+        <div class="col-lg-3 col-md-12 mt-3">
+          <h5 class="mt-4">&nbsp;</h5>
+          
+          <li><a href="scaffolding.html">Scaffolding Insurance</a></li>
+          <li><a href="commercial.html">Commercial Property Insurance</a></li>
+          <li><a href="hotel.html">Hotel Insurances</a></li>
+          <li><a href="restuarent.html">Restaurant Insurance</a></li>
+          <!-- Social Media Icons -->
+          
+        </div>
+        <div class="col-lg-3 col-md-12 mt-3">
+
+          <div class="logo">
+            <img src="assets/images/white-logo.png" alt="">
+          </div>
+          <p>Offering a wide range of General Insurance products and Risk Management solutions to clients.</p>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2024 Your Company Name. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="container-fluid footer-btm text-center">
+    <div class="container">
+      <p class="p-3"><i class="fa-solid fa-location-dot" style="color:#F26121;font-size:20px"></i>&nbsp;Suite 16, Level
+        2, 1 Ricketts Road, Mount Waverley VIC 3149 &nbsp;&nbsp;
+        <i class="fa-brands fa-whatsapp" style="color: #F26121;font-size:20px"></i>&nbsp;1300 170 328 &nbsp;&nbsp;
+        <i class="fa-regular fa-envelope" style="color:#F26121;font-size:20px"></i> &nbsp;info@ilinkinsurance.com.au
+        &nbsp;&nbsp;
+        <a href="https://www.facebook.com/iLinkInsuranceBrokers/"><i class="fa-brands fa-square-facebook" style="color: #F26121;font-size:20px"></i></a>   
+      </p>
+      <i class="fa-thin fa-phone"></i>
+      <div class="hr-foot"></div>
+      <div class="row">
+        <div class="col-8 foot-para mt-3 text-center">
+          <p>iLink Insurance Brokers Pty Ltd (CAR 418137) | ABN 91 155 898 525 Corporate Authorised Representative of
+            Community Broker Network Pty Ltd | AFSL 233750 | ACN 096 916 184 © Copyright 2016 iLink Insurance Brokers
+            Pty Ltd, All rights reserved.</p>
+
+        </div>
+        <div class="col-4"><img src="assets/images/new-steadfast-logo.png" alt=""></div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

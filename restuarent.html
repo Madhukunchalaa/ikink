@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ilink</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2097aac339.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/cropped-website-logo.webp" alt="Logo" width="90" height="auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  PRODUCTS
+                </a>
+                <ul class="dropdown-menu">
+                  <div class="row drp">
+                    <div class="col-lg-4 col-md-12">
+                      <ul>
+                        <a href="hotel.html">
+                          <li>Hotel Insurance</li>
+                        </a>
+                        <a href="restuarent.html">
+                          <li>Restaurant Insurance</li>
+                        </a>
+                        <a href="truck&trailer.html">
+                          <li>Truck Trailer Insurance</li>
+                        </a>
+                        <a href="Professional Indemnity.html">
+                          <li>Professional Indemnity Insurance</li>
+                        </a>
+                        <a href="other.html">
+                          <li>Other Insurances</li>
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <ul>
+                        <a href="cargo.html">
+                          <li>Marine Cargo Insurance</li>
+                        </a>
+                        <a href="cyber.html">
+                          <li>Cyber Insurance</li>
+                        </a>
+                        <a href="scaffolding.html">
+                          <li>Scaffolding Insurance</li>
+                        </a>
+                        <a href="commercial.html">
+                          <li>Commercial Building Insurance</li>
+                        </a>
+
+
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <ul>
+                        <a href="plant-machinery.html">
+                          <li>
+                            Plant Machinery Insurance
+                          </li>
+                        </a>
+                        <a href="accident.html">
+                          <li>Accident & Sickness Insurance</li>
+                        </a>
+                        <a href="business.html">
+                          <li>Business Insurance</li>
+                        </a>
+                        <a href="asebestos.html">
+                          <li>Asbestos Insurance</li>
+                        </a>
+                        <a href="Public and Products Liability.html">
+                          <li>Public & Products Liability</li>
+                        </a>
+                        <a href="builder.html">
+                          <li>Builders Insurance</li>
+                        </a>
+
+                      </ul>
+                    </div>
+
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="doc.html" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  DOCUMENTS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="claims.html">CLAIMS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  BLOG
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="blog1.html">Business Interruption Insurance For Restaurants</a>
+                  </li>
+                  <li><a class="dropdown-item" href="blog2.html">Scaffolding Liability Insurance Coverage</a></li>
+                  <li><a class="dropdown-item" href="blog3.html">What Type of Insurance Does a Scaffolding Company
+                      Need?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-regular fa-envelope"
+                    style="color:#F26121;font-size:20px"></i>&nbsp; EMAIL</a>
+              </li>
+              <a class="nav-link" href="tel:+611300170328">
+                <i class="fa-solid fa-phone" style="color:#F26121; font-size:20px"></i>
+                &nbsp;1300170328
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </div>
+
+  <div class="container-fluid prhero2">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 prhero-text">
+        <h5 class="text">Restaurant Insurance</h5>
+        <h1>Restaurant Insurance plans that work for you.</h1>
+
+        <button class="btn btn-outline-light"><a href="claims.html">Get Quote</a></button>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="container-fluid paras" style="background-color: #F5F0E0;">
+    <div class="container">
+
+
+      <h3>Restaurant Insurance</h3>
+      <p>Restaurant insurance has a combination of policies that provides to protect property, staff, and reputation from risks that are likely to be encountered by restaurants. Ilink insurance helps to look into your business, to suggest which policies are critical to have and the ones you can avoid. Ultimately it is important that you pay only for what is crucial and required by your restaurant business</p>
+
+      <h3>Who needs restaurant insurance?</h3>
+     <p>Restaurant owners, and food business operators whether dine-in or takeaway businesses are recommended to have restaurant insurance. Depending on the nature of the food business, size, location, and turnover, you can seek help from our insurance experts to get you the most suitable restaurant insurance policy.</p>
+
+      
+
+      <h3>When to take the insurance?</h3>
+     <p>Wet floors, broken glass, or faults found in food served, are some aspects that are common and real in the hospitality business. For the customer, it is a place to have food, but for the restaurateurs, it is a daily business to handle food, logistics, food quality, staff, and customer service. Given a such scenario, the restaurant business is vulnerable to risks, and so it is highly recommended to take an insurance policy that can safeguard you and provide for costs when unforeseen accidents and claims occur.</p>
+
+      <h3>Benefits of having the insurance</h3>
+     <p>The restaurant business is high on investment business when it comes to property, equipment, and also comes with risks as you deal with a number of customers on an everyday basis. Hence, having well-designed restaurant insurance can help you cover and cater to sudden costs for property damage, repair and replacement of equipment, customer/third party claims any such insured events.</p>
+     <p>Review, upgrade, and renewals of policies every year, help you determine the risks, estimate assets and accordingly decide on the right level of coverage.</p>
+      <h3>Benefits Of Having The Insurance</h3>
+      <p>The restaurant business is high on investment business when it comes to property, equipment, and also comes with risks as you deal with a number of customers on an everyday basis. Hence, having well-designed restaurant insurance can help you cover and cater to sudden costs for property damage, repair and replacement of equipment, customer/third party claims any such insured events.</p>
+      <p>
+        Review, upgrade, and renewals of policies every year, help you determine the risks, estimate assets and accordingly decide on the right level of coverage.</p>
+
+        <h3>What is covered under the insurance?</h3>
+        <ul>
+          <li><h4>1. Public & product liability</h4>
+            <p>Public liability insurance provides you a cover for a list of accidents from slips and falls to food poisoning and the claims done by a customer, supplier, or anyone else who has suffered an injury/ illness or loss due to such an occurrence. Public liability insurance not only provides cover for the compensations to be paid to the affected individual but also helps you to handle the legal and defense costs for claims for an insured event.</p>
+          </li>
+          <li>
+            <h4>2. Property insurance</h4>
+            <p>Restaurant insurance for property provides a protective cover to your restaurant space whether owned/rented or taken for lease against fire, theft, or any damage. In comparison to the premiums paid, you end up saving on a lot of expenses for an insured event.</p>
+          </li>
+          <li>
+            <h4>3. Liquor liability insurance</h4>
+            <p>Liquor liability insurance can be an add-on insurance saver, as it helps to cover any kind of damage to your property, or injuries and claims done by intoxicated customers.</p>
+          </li>
+          <li>
+            <h4>4. Business interruption insurance</h4>
+            <p>Business interruption insurance is a policy that helps to claim for the loss due to interruptions in the restaurant business caused by natural calamities and unforeseen events that are beyond your control. It helps to cover the costs for food spoilage and provides to cover expenses such as wages or leasing costs for an insured event.</p>
+          </li>
+          <li>
+            <h4>5. Equipment breakdown insurance</h4>
+            <p>A sudden equipment breakdown like that of cold storage can mean so much for a restaurant that relies on frozen foods. Equipment breakdown insurance provides a cover for the repair, loss, or replacement of damaged equipment. Although a common type of insurance, it is crucial for you to know the list of items that are eligible for a cover while taking one for your business. As an add-on to this, you can also get a cover for stock loss/food spoilage or deterioration depending on the size of your business activity.</p>
+
+          </li>
+          <li>
+            <h4>6 Worker’s compensation insurance</h4>
+            <p>Worker’s compensation insurance is mandatory across Australia for all kinds of restaurant businesses. It provides for all the costs, where any of your staff falls sick or gets injured while at work.</p>
+          </li>
+          <li><h4>7. Theft insurance cover</h4>
+          <p>Theft or attempted theft of the contents and stock of your restaurant, and employee dishonesty involving in fraudulent are aspects covered under the theft insurance cover.</p></li>
+          <li><h4>8. Cyber liability</h4>
+          <p>Customer’s personal and payment data can be prone to hacks through compromised Wi-Fi networks. A cyber threat and data breach can become expensive damage to your business and the repute. Cyber liability insurance can provide help cover costs related to data breaches and also protect you from customer sue.</p></li>
+          <li><h4>9. Automobile liability insurance</h4>
+          <p>n cases where your restaurant has its own chain of delivery service, you may need to have automobile liability insurance in place. This automobile insurance will help cover drivers for damages, medical expenses, and accidental claims. It is not applicable for restaurants that have a third-party outsourced for your food delivery services</p></li>
+        </ul>
+        <h3>How to renew restaurant insurance?</h3>
+        <p>From friendly notifications on premium payments and due dates to suggestions on policy upgrades/changes with every renewal cycle, ilink insurance can help you to carefully review your restaurant insurance, and coverage levels, and professionally advise the best step forward.</p>
+        <h3>What is the claim process and what are the documents required?</h3>
+        <p>Ilink insurance has been one of the most trusted insurance companies for its customer service and continued support. When it comes to claiming process and getting the required documents ready, it is important for any business to have an expert look into the nitty-gritty of the matter. We are a team of expert insurance specialists, who have worked with a number of restaurant businesses across Australia, helping them with their policies and claims.</p>
+        <p>Helping you through the claim process for an insurance policy that you have taken through us.</p>
+
+    </div>
+  </div>
+  <div class="container-fluid expect py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Cards Section -->
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="htl-card text-center p-3 mx-2 my-2">
+                  <img src="assets/images/earthquake.png" alt="Property Insurance" class="img-fluid">
+                  <p>Property Insurance</p>
+                </div>
+                <div class="htl-card text-center p-3 mx-2 my-2">
+                  <img src="assets/images/office.png" alt="Equipment/Asset Damage Cover" class="img-fluid">
+                  <p>Equipment/Asset Damage Cover</p>
+                </div>
+
+              </div>
+              <div class="col-md-6">
+                <div class="htl-card text-center p-3 mx-2 my-2">
+                  <img src="assets/images/liability.png" alt="Cyber Liability Insurance" class="img-fluid">
+                  <p>Liability Insurance</p>
+                </div>
+                <div class="htl-card text-center p-3 mx-2 my-2">
+                  <img src="assets/images/fixed-asset.png" alt="Business Interruption Insurance" class="img-fluid">
+                  <p>Business Interruption Insurance</p>
+                </div>
+
+              </div>
+            </div>
+              
+             
+              
+              
+            </div>
+          </div>
+    
+          <!-- Text Section -->
+          <div class="col-lg-6 col-md-12 text-center text-lg-start">
+            <h3>What Can You Expect
+              Under Restaurant Insurance?</h3>
+            <h4 class="mt-3">Specific, comprehensive, fast turnaround and instant cover</h4>
+            <p class="mt-3">
+              Find excellent professional services provided by experts who have
+              complete knowledge of your business, and give cost-effective solutions.
+            </p>
+            <a href="claims.html" class="btn btn-primary mt-3">Claim Process</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  
+  
+  <div class="container-fluid text-center py-5 ">
+    <div class="container">
+      <h1>Why Choose Us</h1>
+      <p>
+        We have worked and supported an extensive portfolio of small and medium business clients across Australia falling under the different hotel and hospitality businesses.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-start">
+            <img src="assets/images/claim (1)-hotel.png" alt="Expert to Help" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Unique & Up-to-Date</h4>
+              <p>
+                We bring you tailored insurance plans that are up-to-date, benefitting your hotel business for its
+                value and specific risks associated.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mt-3">
+            <img src="assets/images/help-hotel.png" alt="Best of Premiums" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Expert to help</h4>
+            <p>Access 100+ APRA authorized insurers and benefit from competitive plans, broad coverage, and suitable premiums</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-start">
+            <img src="assets/images/premium-hotel.png" alt="Pay for What’s Needed" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Best of premiums</h4>
+              <p>
+                A network of over 100+ APRA-authorized insurers enables us to bring you competitive plans, broad
+                coverage, and premiums.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mt-3">
+            <img src="assets/images/benefits-hotel.png" alt="Unique & Up-to-Date" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Pay for what’s needed</h4>
+              <p>Access to tailored insurance policies ensures to avoid expensive of overlaps and rightly caters to your business associated risks and needs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <div class="container-fluid my-5 mt-4" style="background-color:#F5F5F5">
+    <div class="container">
+      <div class="row company">
+        <div class="col-6 col-md-12 col-sm-12">
+          <h2 class=" mt-5 ">How Our Insurance
+            Company Works</h2>
+
+        </div>
+        <div class="col-6 col-md-12 col-sm-12 mt-5">
+          <p class="text-end text-muted mb-5 " style="text-align: justify;">ILINK INSURANCE offers a wide range of General Insurance products and
+            Risk Management solutions to SME clients. We provide you with insurance solutions that are value-for-money,
+            with unsurpassed support from insurance experts. We provide end-to-end insurance solutions based on the risk
+            exposure to you and your business, for you to successfully achieve your business goals.</p>
+
+        </div>
+      </div>
+
+
+      <div class="row justify-content-center align-items-center">
+
+
+        <div class="col-md-3 col-12 process-step link">
+          <div class="step-number link">01</div>
+          <img src="assets/images/quick-note.jpg" alt="Step 1">
+          <h5>Obtain a quick quote</h5>
+          <p class="text-muted">Connect with an insurance expert, share your concerns and requirements, and get an
+            initial quote.</p>
+
+        </div>
+        <div class="col-md-3 col-12 process-step link">
+          <div class="step-number">02</div>
+          <img src="assets/images/detail.jpg" alt="Step 2">
+          <h5>Detailed consultation</h5>
+          <p class="text-muted">We take time to understand your business and risk factors to find the best insurance.
+          </p>
+
+        </div>
+        <div class="col-md-3 col-12 process-step link">
+          <div class="step-number">03</div>
+          <img src="assets/images/policy.jpg" alt="Step 3">
+          <h5>Submit documents</h5>
+          <p class="text-muted">Mail us the required documents. We ensure minimal and easy paperwork.</p>
+
+        </div>
+        <div class="col-md-3 col-12 process-step">
+          <div class="step-number">04</div>
+          <img src="assets/images/insurance-covered-1.jpg" alt="Step 4">
+          <h5>You are covered!</h5>
+          <p class="text-muted">Broad policy coverage at competitive prices, delivered through a hassle-free process.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="testimonials-section py-5">
+
+    <div class="container">
+      
+      <div class="testi">
+        <div class="heading">
+          <h1>What Our customers have to say</h1>
+        </div>
+        <div class="par">
+          <p>We aim to keep you and your business covered and protected from potential business risks, so that you can
+            run your business uninterrupted</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- First Testimonial -->
+
+        <div class="col-md-6">
+
+
+          <div class="testimonial-card">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+              <img src="assets/images/unnamed.webp" alt="Google Icon" style="width: 40px; height: 40px;">
+              <!-- Replace with your image -->
+            </div>
+            <h5 class="text-center">Joshua Savage</h5>
+            <div class="text-warning mb-2 star text-center">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-center">I have dealt with Shalin and he has made the process stress-free, easy, and very
+              responsive. Thank you.</p>
+            <div class="quote-icon">“</div>
+          </div>
+        </div>
+        <!-- Second Testimonial -->
+        <div class="col-md-6 ">
+
+          <div class="testimonial-card">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+              <img src="assets/images/unnamed.webp" alt="Google Icon" style="width: 60px; height: 60px;">
+              <!-- Replace with your image -->
+            </div>
+            <h5 class="text-center">Adrian Gadaldi</h5>
+            <div class="text-warning mb-2 star text-center">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-center">Friendly, fast, and good.</p>
+            <div class="quote-icon">“</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="container-fluid">
+    <div class="container form" id="form">
+      <form>
+        <h4 class="text-center p-4">REQUEST A QUOTE</h4>
+        <div class="row">
+          <!-- Full Name and Company Name -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="full-name" class="form-label visually-hidden">Full Name *</label>
+            <input type="text" id="full-name" class="form-control" placeholder="Full Name *" required>
+          </div>
+          <div class="col-md-6 mb-3 p-2">
+            <label for="company-name" class="form-label visually-hidden">Company Name *</label>
+            <input type="text" id="company-name" class="form-control" placeholder="Company Name *" required>
+          </div>
+      
+          <!-- Contact and Email -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="contact-number" class="form-label visually-hidden">Contact *</label>
+            <input type="tel" id="contact-number" class="form-control" placeholder="Contact *" required>
+          </div>
+          <div class="col-md-6 mb-3 p-2">
+            <label for="email" class="form-label visually-hidden">Email *</label>
+            <input type="email" id="email" class="form-control" placeholder="Email *" required>
+          </div>
+      
+          <!-- Coverage Required -->
+          <div class="col-12 mb-3 p-2">
+            <label for="coverage-required" class="form-label">Coverage Required (Select all that apply):</label>
+          </div>
+          <div class="col-12">
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="property-damage">
+              <label class="form-check-label" for="property-damage">Property Damage (Building and/or Contents/Stock)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="business-interruption">
+              <label class="form-check-label" for="business-interruption">Business Interruption (Loss of Income)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="burglary-theft">
+              <label class="form-check-label" for="burglary-theft">Burglary/Theft (Contents and Stock)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="cash">
+              <label class="form-check-label" for="cash">Cash (money)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="plate-glass">
+              <label class="form-check-label" for="plate-glass">Plate Glass (internal and external)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="public-liability">
+              <label class="form-check-label" for="public-liability">Public and Products Liability</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="machinery-breakdown">
+              <label class="form-check-label" for="machinery-breakdown">Machinery Breakdown</label>
+            </div>
+          </div>
+      
+          <!-- Submit Button -->
+          <div class="col-12 text-end mt-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+      
+    </div>
+    <div class="rqst-box">
+      <a href="#form">REQUEST A QUOTE</a>
+    </div>
+
+  </div>
+
+
+  <div class="container faq">
+    <h2 class="text-center mb-5 mt-5">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne"
+            aria-expanded="true" aria-controls="faqCollapseOne">
+            1. How Much Insurance Does a Restaurant Need
+          </button>
+        </h2>
+        <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p>The level of insurance coverage can largely vary from one business entity to the other. Your restaurant business size, nature of activities, and likely associated risks are a few that are considered while designing a restaurant insurance policy. Please get in touch with an insurance broker as they come with a deep understanding of every aspect connected to policies, premiums, and claims.</p>
+            <p>For example, if you have rented or leased out a property for your restaurant business, there might be a minimum amount of glass cover and public liability insurance that your property owner may specify.</p>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="col-md-6">
+            <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+            3. What Type Of Insurance Does a Restaurant Need
+          </button>
+        </h2>
+        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+         <p>Typically restaurant insurance will include the following types in consideration of your business size, turnover, and business needs.</p>
+         <ul>
+          <li>1.Public liability</li>
+          <li>2.Product liability</li>
+          <li>3.Property insurance</li>
+          <li>4.Equipment breakdown insurance</li>
+          <li>5.Fire, theft, and other perils</li>
+          <li>6.Worker’s compensation</li>
+          <li>7.Business interruption insurance</li>
+         </ul>
+
+        
+          </div>
+        </div>
+      </div>
+
+        </div>
+        <div class="col-md-6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                2. How Much Restaurant Insurance Cost
+              </button>
+            </h2>
+            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+               <p>The cost of restaurant insurance can vary notably from one business entity to another. While one may spend approximately $110 per month and another may spend significantly more, depending on factors that include the below:</p>
+               <ul><li>The size of your business</li>
+               <li>Number of staff employed</li>
+               <li>The type of restaurant business
+              </li>
+               <li>Location of your business</li>
+               <li>The type of coverage you look for</li>
+               <li>The level of cover</li>
+               <li>Your claims history</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeadingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+              4. Are Restaurant Business Insurance Claims Taxable Income
+            </button>
+          </h2>
+          <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+            <p>Insurance claims are generally claimed against a loss/ damage and tend to be seen as an ordinary income. However, there are a lot of aspects that determine whether the said claim falls under taxable income or not. How an insurance payout is treated depends on what the payout is for, how the insurance is used, the amount of payout, the kind of property (owned/rented), and its value.</p>
+            <p>Claims and their accounting mandates can be tricky with several factors in consideration. You may speak to our insurance expert to rightly understand your situation and guide to through the process.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+      
+
+    
+
+      <!-- FAQ 3 -->
+      
+     
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer-bg text-white mt-5 py-5">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mt-3">
+          <h3>Useful links</h3>
+          <div class="mt-4"></div>
+          <li><a href="https://www.cbn.au/privacy-policy">Privacy Policy</a></li>
+          <li><a href="https://www.cbn.au/complaints-disputes-handling">Complaints & Disputes Handling Policy</a></li>
+          <li><a href="https://www.niba.com.au/insurance-brokers-code-of-practice">Insurance Brokers Code of
+              Practice</a></li>
+          <li><a href="https://ilinkinsurance.com.au/wp-content/uploads/2022/12/Statement-of-Services-1-1.pdf">Statement
+              Of Services</a></li>
+          <li><a
+              href="https://ilinkinsurance.com.au/wp-content/uploads/2024/10/FSG___iLink_Insurance_Brokers_Pty_Ltd_V021_08_October_2024.pdf">Financial
+              Services Guide</a></li>
+          <li><a href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/Major-Uninsured-Risks-Review.pdf">Major
+              Uninsured Risks Review</a></li>
+          <li><a
+              href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/JLG-Emergeny-Response-Flyer_iLink-Insurance.pdf">iLink
+              -JLG Emergeny Response Flyer</a></li>
+
+        </div>
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 mb-4 mt-3">
+          <h3>Products</h3>
+          <ul class="list-unstyled mt-4" style="list-style:none">
+            <li><a href="business.html">Business Insurance</a></li>
+            <li><a href="truck&trailer.html">Truck & Trailer Insurance</a></li>
+            <li><a href="Public and Products Liability.html">Public & Products Liability</a></li>
+            <li><a href="Professional Indemnity.html">Professional Indemnity Insurance</a></li>
+           
+          </ul>
+        </div>
+        <!-- Contact Information -->
+        <div class="col-lg-3 col-md-12 mt-3">
+          <h5 class="mt-4">&nbsp;</h5>
+          
+          <li><a href="scaffolding.html">Scaffolding Insurance</a></li>
+          <li><a href="commercial.html">Commercial Property Insurance</a></li>
+          <li><a href="hotel.html">Hotel Insurances</a></li>
+          <li><a href="restuarent.html">Restaurant Insurance</a></li>
+          <!-- Social Media Icons -->
+          
+        </div>
+        <div class="col-lg-3 col-md-12 mt-3">
+
+          <div class="logo">
+            <img src="assets/images/white-logo.png" alt="">
+          </div>
+          <p>Offering a wide range of General Insurance products and Risk Management solutions to clients.</p>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2024 Your Company Name. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="container-fluid footer-btm text-center">
+    <div class="container">
+      <p class="p-3"><i class="fa-solid fa-location-dot" style="color:#F26121;font-size:20px"></i>&nbsp;Suite 16, Level
+        2, 1 Ricketts Road, Mount Waverley VIC 3149 &nbsp;&nbsp;
+        <i class="fa-brands fa-whatsapp" style="color: #F26121;font-size:20px"></i>&nbsp;1300 170 328 &nbsp;&nbsp;
+        <i class="fa-regular fa-envelope" style="color:#F26121;font-size:20px"></i> &nbsp;info@ilinkinsurance.com.au
+        &nbsp;&nbsp;
+        <a href="https://www.facebook.com/iLinkInsuranceBrokers/"><i class="fa-brands fa-square-facebook" style="color: #F26121;font-size:20px"></i></a>   
+      </p>
+      <i class="fa-thin fa-phone"></i>
+      <div class="hr-foot"></div>
+      <div class="row">
+        <div class="col-8 foot-para mt-3 text-center">
+          <p>iLink Insurance Brokers Pty Ltd (CAR 418137) | ABN 91 155 898 525 Corporate Authorised Representative of
+            Community Broker Network Pty Ltd | AFSL 233750 | ACN 096 916 184 © Copyright 2016 iLink Insurance Brokers
+            Pty Ltd, All rights reserved.</p>
+
+        </div>
+        <div class="col-4"><img src="assets/images/new-steadfast-logo.png" alt=""></div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

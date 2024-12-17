@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ilink</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2097aac339.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="assets/images/cropped-website-logo.webp" alt="Logo" width="90" height="auto">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Offcanvas -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">ABOUT US</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              PRODUCTS
+                          </a>
+                          <ul class="dropdown-menu">
+                            <div class="row drp">
+                              <div class="col-lg-4 col-md-12">
+                               <ul>
+                                <a href="hotel.html"><li>Hotel Insurance</li></a> 
+                                 <a href="restuarent.html"><li>Restaurant Insurance</li></a>
+                                 <a href="truck&trailer.html"><li>Truck Trailer Insurance</li></a>
+                                 <a href="Professional Indemnity.html"><li>Professional Indemnity Insurance</li></a>
+                                 <a href="other.html"><li>Other Insurances</li></a>
+                               </ul>
+                              </div>
+                              <div class="col-lg-4 col-md-12">
+                               <ul>
+                                 <a href="cargo.html"><li>Marine Cargo Insurance</li></a>
+                                 <a href="cyber.html"><li>Cyber Insurance</li></a>
+                                 <a href="scaffolding.html"><li>Scaffolding Insurance</li></a>
+                                 <a href="commercial.html"><li>Commercial Building Insurance</li></a>
+                                
+                                
+                               </ul>
+                              </div>
+                              <div class="col-lg-4 col-md-12">
+                               <ul>
+                                 <a href="plant-machinery.html"><li>
+                                   Plant Machinery Insurance
+                                   </li></a>
+                                 <a href="accident.html"><li>Accident & Sickness Insurance</li></a>
+                                 <a href="business.html"><li>Business Insurance</li></a>
+                                 <a href="asebestos.html"><li>Asbestos Insurance</li></a>
+                                 <a href="Public and Products Liability.html"><li>Public & Products Liability</li></a>
+                                 <a href="builder.html"><li>Builders Insurance</li></a>
+                                
+                               </ul>
+                              </div>
+
+                             </div>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="doc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              DOCUMENTS
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="claims.html">CLAIMS</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              BLOG
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="blog1.html">Business Interruption Insurance For Restaurants</a></li>
+                              <li><a class="dropdown-item" href="blog2.html">Scaffolding Liability Insurance Coverage</a></li>
+                              <li><a class="dropdown-item" href="blog3.html">What Type of Insurance Does a Scaffolding Company Need?</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">CONTACT US</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="fa-regular fa-envelope" style="color:#F26121;font-size:20px"></i>&nbsp; EMAIL</a>
+                      </li>
+                      <a class="nav-link" href="tel:+611300170328">
+                        <i class="fa-solid fa-phone" style="color:#F26121; font-size:20px"></i>
+                        &nbsp;1300170328
+                    </a>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+  </div>
+  </div>
+
+  <div class="container-fluid prhero">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 prhero-text">
+        <h5 class="text">Hotel Insurance</h5>
+        <h1>Comprehensive Hotel Insurance Coverage.</h1>
+      
+        <button class="btn btn-outline-light"><a href="#form">Get Quote</a></button>
+      </div>
+    </div>
+    <div class="rqst-box">
+      <a href="#form">REQUEST A QUOTE</a>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="container-fluid paras" style="background-color: #F5F0E0;">
+    <div class="container">
+
+
+      <h3>Hotel Insurance</h3>
+      <p>Hotel insurance majorly covers both liability and property coverage to help hotel businesses to safeguard
+        themselves from lawsuits and claims that accuse them of harm/loss to others, and also cover their property for
+        damages. A single policy may cover different coverages from buildings, other structures, equipment, and
+        inventory to that covered from uncertain incidents to staff and guests as well.</p>
+
+      <h3>Why Hotel Insurance Is Needed?</h3>
+      <p>Any property carrying a business activity is advised to have their property insured. A hotel business carries
+        both liability risks as well as the risk of fire accidents in general. No two businesses are the same, however,
+        the use of multiple electronic and electrical appliances as a source for ignition, and on-premises food
+        preparations are some of the common activities that leave your hotel business at high risk for electrical
+        mishaps and fire accidents. From vandalism to accidents occurring due to intoxicated customers are other risks
+        associated with hotel business, apart from standard slips, falls, and property damage that you should be
+        cautious about.</p>
+
+      <p>Hotel business is a service sector with hospitality at its core, hence you are dealing with a number of clients
+        and your staff on an everyday basis. In such a scenario having your hotel business covered for property,
+        equipment, as well as public liability remains crucial for your business. Get hotel property insurance and hotel
+        liability insurance tailored to your specific needs.</p>
+
+      <h3>Who Needs Hotel Insurance?</h3>
+      <p>Owners and operators of accommodation services such as motels, hotels, guest houses, pubs, and bars are
+        recommended to have a planned insurance policy that can cover your property, assets, and staff as well as
+        peacefully manage clients’ and other third-party claims.</p>
+
+      <h3>When To Take Insurance?</h3>
+      <p>No matter the size of your hotel business, the risk and the expense to get back after a natural calamity, a
+        fire mishap, or handling the costs of a machinery breakdown can be high. Often standard falls, slips, or food
+        poisoning are something so unexpected that you got to be prepared for claims coming against you, which can
+        hamper your business and its reputation. It is recommended that as and when you invest in your hotel business,
+        you also it insured. Hotel insurance brokers are trained to holistically look into your business activity,
+        nature, and size and then provide you with hotel insurance with the best possible coverage for both property and
+        people.</p>
+      <h3>Benefits Of Having The Insurance</h3>
+      <p>A proper well-planned hotel insurance can help cover the following aspects, deal financial losses, third-party
+        claims, handle costs and business interruption.</p>
+
+
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-12 col-md-6">
+            <ul>
+              <li><i class="fa-solid fa-circle-check"></i> Fire/ building collapse</li>
+              <li><i class="fa-solid fa-circle-check"></i> Theft/ Burglary/civil commotion</li>
+              <li><i class="fa-solid fa-circle-check"></i> Natural calamity/power outages</li>
+              <li><i class="fa-solid fa-circle-check"></i> Property damage</li>
+              <li><i class="fa-solid fa-circle-check"></i> Business interruption</li>
+              <li><i class="fa-solid fa-circle-check"></i> Machinery breakdown and food spoilage</li>
+              <li><i class="fa-solid fa-circle-check"></i> Equipment repair or replacement</li>
+            </ul>
+          </div>
+      
+          <!-- Right Column -->
+          <div class="col-12 col-md-6">
+            <ul>
+              <li><i class="fa-solid fa-circle-check"></i> Liquor liability</li>
+              <li><i class="fa-solid fa-circle-check"></i> Fake advertising/slander</li>
+              <li><i class="fa-solid fa-circle-check"></i> Theft of assets and vandalism</li>
+              <li><i class="fa-solid fa-circle-check"></i> Cyber-crime & employee dishonesty</li>
+              <li><i class="fa-solid fa-circle-check"></i> Workspace risk and compensation</li>
+              <li><i class="fa-solid fa-circle-check"></i> & more</li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Additional Section -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <h3>What Is Covered Under The Insurance</h3>
+            <p>
+              Typically, the following are covered under hotel insurance, subject to modifications based on individual needs and business goals:
+            </p>
+            <ul>
+              <li><i class="fa-solid fa-circle-check"></i> Public and product liability insurance</li>
+              <li><i class="fa-solid fa-circle-check"></i> Commercial property and asset insurance</li>
+              <li><i class="fa-solid fa-circle-check"></i> Worker’s compensation insurance</li>
+              <li><i class="fa-solid fa-circle-check"></i> Business income protection insurance</li>
+              <li><i class="fa-solid fa-circle-check"></i> Management liability insurance</li>
+              <li><i class="fa-solid fa-circle-check"></i> Cyber liability insurance</li>
+            </ul>
+          </div>
+        </div>
+
+      <h3>Liability Coverage</h3>
+      <h4>1. Public and product liability insurance</h4>
+      <p>It provides a cover for all the obligations including property damage, and personal loss/injury that is caused
+        due to the negligent action of you or your employees to your clients or any third-party, due to your business
+        activities. This also includes the food you have supplied or served resulting in a mishap. Public and product
+        liability insurance comes as part of a commercial lease document for hotel operators.</p>
+      <p>A holistic cover against claims done by the guests for illness/food poisoning, pollution coverage, bodily
+        injury, or property damage to clients that occurred in your hotel premises, is what liability insurance is all
+        about.</p>
+      <h4>2. Business interruption insurance</h4>
+      <p>It is a policy that helps you cover an insured event and provide for the ongoing costs and safeguard the gross
+        profit margins for the period of your business activity that got interrupted due to a natural disaster. This
+        helps claim for business downtime and loss of income due to reasons like outages, equipment breakdown, and other
+        unforeseen perils.</p>
+      <h4>3. Employee practices liability</h4>
+      <p>This helps the business to cover settlements, management’s defense costs, employee claims for breach, violation
+        of laws, and any kind of claims from third parties that include past employees, vendors, contractors, clients,
+        and others.</p>
+      <h4>4. Cyber liability</h4>
+      <p>Cyber liability insurance provides recovery from network privacy breaches and any kind of compromise on the
+        data and information of the guests.</p>
+      <h4>5. Employee dishonesty</h4>
+      <p>This insurance covers you for any fraudulent activity by your employed staff with an intent to make financial
+        gain through an act of dishonesty.</p>
+      <h4>6. Liquor liability</h4>
+      <p>If your hotel space has bars and offers liquor, liquor liability insurance gives cover for damage or injuries
+        and claims demanded by customers.</p>
+      <h4>7. Workers' compensation coverage</h4>
+      <p>This helps to provide cover for any kind of medical expenses for illness/injury that occurred to your
+        staff/employees while they are on the job or because of your hotel business. While worker’s compensation
+        insurance will provide a cover only for business hours, it is important for employees to look into injury
+        insurance and income protection and how it can benefit them and their families.</p>
+      <h4>8. Personal accidents and illness cover</h4>
+      <p>If you are someone running a business under a proprietary holding (self-employed) or are part of the
+        management, and if your State does not provide you a cover under the worker’s compensation insurance, you are
+        recommended to look out for personal accidents and illness cover and a business continuance expenses cover.</p>
+      <p>Accidents and illness cover can give you a financial cover of around 85% of your weekly income (if all terms
+        are satisfied, and are applicable) for a said short-term period until you recover, and also claim for lump sum
+        benefits if permanent damage occurs. Every event is unique, so it is highly recommended that you go through the
+        PDS document carefully, with the help of an insurance broker who can simplify information for you.</p>
+      <h4>9. Income protection insurance</h4>
+      <p>Income protection insurance provides long-term cover for the time that you are unable to work and gives you
+        accidental finance cover for a loss of income during your recovery period.</p>
+
+      <h3>Property Coverage</h3>
+      <h4>1. Equipment & machine breakdown</h4>
+      <p>Property insurance that helps to cover your expenses for the repair or replacement of equipment and machinery
+        and also provides cover for the deterioration of stock following such a breakdown. Although machinery breakdown
+        is the most common insurance undertaken by hotel operators, it also is complex in ways where some equipment may
+        not be eligible for a cover, while others do. Therefore, it is highly important to read and know the level of
+        coverage specified under the said policy you are wanting to take.</p>
+      <h4>2. Food spoil/Deterioration of stock</h4>
+      <p>Compensation for the loss/ food spoilage after an incident at the premises or as a result of machinery
+        breakdown. Hotels have a lot of food stocked in cold storage and often face a huge financial burden not just
+        with handling an accident/property loss, but also the impact of it due to loads of food wastage.</p>
+      <h4>3. Auto liability insurance</h4>
+      <p>For hotels that own vehicles to carry inventory and stock, which requires State-level mandates.</p>
+      <h3>How Much Is Covered Under The Hotel Insurance Coverage?</h3>
+      <p>Whether you run a hotel, motel, or guest house business, as a property owner, or on a property that is
+        commercially leased for business, the price for insurance and the level of coverage depend on a lot of factors.
+        Your business turnover is an indicator to estimate and arrive at an appropriate insurance plan that provides you
+        with the right amount and kind of coverage.</p>
+      <p>There is no ‘one size fits all’ kind of coverage that hotel insurance prescribes to. Therefore, the coverage
+        depends on the various factors that influence your hotel business including business size, customer base, the
+        kind of equipment you use, and risks associated.</p>
+      <h3>How To Renew Insurance?</h3>
+      <p>If you already have taken an insurance plan with ilink insurance, our team will contact you well in advance to
+        remind you of the renewal date and also to have an update about your business. In case of any changes to your
+        business that may require a change/upgrade to your hotel insurance, we will recommend the same to you. We are
+        here to carefully review your hotel insurance plan, and coverage levels, and once you are okay with everything,
+        you can go ahead and pay to renew your insurance.</p>
+      <h3>Claim Process & What Are The Documents Required?</h3>
+      <p>When it comes to claim process and getting the required documents ready, it is important for any business to
+        have an expert look into the nitty-gritty of the matter. Ilink insurance has been one of the most trusted
+        insurance companies for its premium insurance plans and continued service. We are a team of expert insurance
+        specialists, who have worked with a number of hospitality establishments across Australia, helping them with
+        their business insurance and stepping forward when it came to claiming process. Our hotel insurance brokers
+        happy to help you with information as well as the claim process for an insurance policy that you have taken
+        through us.</p>
+    </div>
+  </div>
+
+  <div class="container-fluid htl py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Cards Section -->
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="htl-card text-center p-3 mx-2 my-2">
+              <img src="assets/images/5-stars.png" alt="Property Insurance" class="img-fluid">
+              <p>Property Insurance</p>
+            </div>
+            <div class="htl-card text-center p-3 mx-2 my-2">
+              <img src="assets/images/cybercrime-hotel.png" alt="Cyber Liability Insurance" class="img-fluid">
+              <p>Cyber Liability Insurance</p>
+            </div>
+            <div class="htl-card text-center p-3 mx-2 my-2">
+              <img src="assets/images/briefcase-hotel.png" alt="Business Interruption Insurance" class="img-fluid">
+              <p>Business Interruption Insurance</p>
+            </div>
+            <div class="htl-card text-center p-3 mx-2 my-2">
+              <img src="assets/images/fixed-asset-hotel.png" alt="Equipment/Asset Damage Cover" class="img-fluid">
+              <p>Equipment/Asset Damage Cover</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Text Section -->
+        <div class="col-lg-6 col-md-12 text-center text-lg-start">
+          <h3>What Can You Expect Under Hotel/Motel Insurance?</h3>
+          <h4 class="mt-3">Specific, comprehensive, fast turnaround, and instant cover</h4>
+          <p class="mt-3">
+            Find excellent professional services provided by experts who have complete knowledge of your business and give
+            cost-effective solutions.
+          </p>
+          <a href="claims.html" class="btn btn-primary mt-3">Claim Process</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid text-center py-5">
+    <div class="container">
+      <h1>Why Choose Us</h1>
+      <p>
+        We have worked and supported an extensive portfolio of small and medium business clients across Australia
+        falling under the different hotel and hospitality businesses.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-start">
+            <img src="assets/images/claim (1)-hotel.png" alt="Expert to Help" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Expert to Help</h4>
+              <p>
+                We bring you tailored insurance plans that are up-to-date, benefitting your hotel business for its
+                value and specific risks associated.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mt-3">
+            <img src="assets/images/claim (1)-hotel.png" alt="Best of Premiums" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Best of Premiums</h4>
+              <p>
+                Hotel insurance brokers come with high expertise and knowledge in the field of the hospitality
+                business to support you at every step and find you an appropriate hotel insurance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-start">
+            <img src="assets/images/premium-hotel.png" alt="Pay for What’s Needed" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Pay for What’s Needed</h4>
+              <p>
+                A network of over 100+ APRA-authorized insurers enables us to bring you competitive plans, broad
+                coverage, and premiums.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mt-3">
+            <img src="assets/images/benefits-hotel.png" alt="Unique & Up-to-Date" class="me-3 img-fluid" style="max-width: 50px;">
+            <div>
+              <h4>Unique & Up-to-Date</h4>
+              <p>
+                Avoid expensive overlaps and pay for insurance policies with features that exactly match and cater to
+                your current hotel business needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <div class="container-fluid my-5 mt-4" style="background-color:#F5F5F5">
+    <div class="container">
+      <div class="row company">
+        <div class="col-6 col-md-12 col-sm-12">
+          <h2 class=" mt-5 ">How Our Insurance
+            Company Works</h2>
+
+        </div>
+        <div class="col-6 col-md-12 col-sm-12 mt-5">
+          <p class="text-end text-muted mb-5 " style="text-align: justify;">ILINK INSURANCE offers a wide range of General Insurance products and
+            Risk Management solutions to SME clients. We provide you with insurance solutions that are value-for-money,
+            with unsurpassed support from insurance experts. We provide end-to-end insurance solutions based on the risk
+            exposure to you and your business, for you to successfully achieve your business goals.</p>
+
+        </div>
+      </div>
+
+
+      <div class="row justify-content-center align-items-center">
+
+
+        <div class="col-md-3 col-12 process-step link">
+          <div class="step-number link">01</div>
+          <img src="assets/images/quick-note.jpg" alt="Step 1">
+          <h5>Obtain a quick quote</h5>
+          <p class="text-muted">Connect with an insurance expert, share your concerns and requirements, and get an
+            initial quote.</p>
+
+        </div>
+        <div class="col-md-3 col-12 process-step link">
+          <div class="step-number">02</div>
+          <img src="assets/images/detail.jpg" alt="Step 2">
+          <h5>Detailed consultation</h5>
+          <p class="text-muted">We take time to understand your business and risk factors to find the best insurance.
+          </p>
+
+        </div>
+        <div class="col-md-3 col-12 process-step link">
+          <div class="step-number">03</div>
+          <img src="assets/images/policy.jpg" alt="Step 3">
+          <h5>Submit documents</h5>
+          <p class="text-muted">Mail us the required documents. We ensure minimal and easy paperwork.</p>
+
+        </div>
+        <div class="col-md-3 col-12 process-step">
+          <div class="step-number">04</div>
+          <img src="assets/images/insurance-covered-1.jpg" alt="Step 4">
+          <h5>You are covered!</h5>
+          <p class="text-muted">Broad policy coverage at competitive prices, delivered through a hassle-free process.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="testimonials-section py-5">
+
+    <div class="container">
+      <div class="testi">
+
+        <div class="heading">
+          <h1>What Our customers have to say</h1>
+        </div>
+        <div class="par">
+          <p>We aim to keep you and your business covered and protected from potential business risks, so that you can
+            run your business uninterrupted</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- First Testimonial -->
+
+        <div class="col-md-6">
+
+
+          <div class="testimonial-card">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+              <img src="assets/images/unnamed.webp" alt="Google Icon" style="width: 40px; height: 40px;">
+              <!-- Replace with your image -->
+            </div>
+            <h5 class="text-center">Joshua Savage</h5>
+            <div class="text-warning mb-2 star text-center">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-center">I have dealt with Shalin and he has made the process stress-free, easy, and very
+              responsive. Thank you.</p>
+            <div class="quote-icon">“</div>
+          </div>
+        </div>
+        <!-- Second Testimonial -->
+        <div class="col-md-6">
+
+          <div class="testimonial-card">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+              <img src="assets/images/unnamed.webp" alt="Google Icon" style="width: 60px; height: 60px;">
+              <!-- Replace with your image -->
+            </div>
+            <h5 class="text-center">Adrian Gadaldi</h5>
+            <div class="text-warning mb-2 star text-center">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-center">Friendly, fast, and good.</p>
+            <div class="quote-icon">“</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="container-fluid" id="form">
+    <div class="container form">
+      <form>
+        <h4 class="text-center p-4">REQUEST A QUOTE</h4>
+        <div class="row">
+          <!-- Full Name and Company Name -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="full-name" class="form-label visually-hidden">Full Name *</label>
+            <input type="text" id="full-name" class="form-control" placeholder="Full Name *" required>
+          </div>
+          <div class="col-md-6 mb-3 p-2">
+            <label for="company-name" class="form-label visually-hidden">Company Name *</label>
+            <input type="text" id="company-name" class="form-control" placeholder="Company Name *" required>
+          </div>
+      
+          <!-- Contact and Email -->
+          <div class="col-md-6 mb-3 p-2">
+            <label for="contact-number" class="form-label visually-hidden">Contact *</label>
+            <input type="tel" id="contact-number" class="form-control" placeholder="Contact *" required>
+          </div>
+          <div class="col-md-6 mb-3 p-2">
+            <label for="email" class="form-label visually-hidden">Email *</label>
+            <input type="email" id="email" class="form-control" placeholder="Email *" required>
+          </div>
+      
+          <!-- Coverage Required -->
+          <div class="col-12 mb-3 p-2">
+            <label for="coverage-required" class="form-label">Coverage Required (Select all that apply):</label>
+          </div>
+          <div class="col-12">
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="property-damage">
+              <label class="form-check-label" for="property-damage">Property Damage (Building and/or Contents/Stock)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="business-interruption">
+              <label class="form-check-label" for="business-interruption">Business Interruption (Loss of Income)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="burglary-theft">
+              <label class="form-check-label" for="burglary-theft">Burglary/Theft (Contents and Stock)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="cash">
+              <label class="form-check-label" for="cash">Cash (money)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="plate-glass">
+              <label class="form-check-label" for="plate-glass">Plate Glass (internal and external)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="public-liability">
+              <label class="form-check-label" for="public-liability">Public and Products Liability</label>
+            </div>
+            <div class="form-check mb-2">
+              <input type="checkbox" class="form-check-input" id="machinery-breakdown">
+              <label class="form-check-label" for="machinery-breakdown">Machinery Breakdown</label>
+            </div>
+          </div>
+      
+          <!-- Submit Button -->
+          <div class="col-12 text-end mt-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+      
+    </div>
+
+  </div>
+
+
+  <div class="container faq">
+    <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne"
+            aria-expanded="true" aria-controls="faqCollapseOne">
+            1. What kind of insurance does a hotel need?
+          </button>
+        </h2>
+        <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p>A hotel would need both property insurance as well as liability insurance. Typically customized hotel insurance should include:</p>
+            <ul>
+
+            <li>Public and product liability insurance</li>
+            <li>Commercial property and asset insurance</li>
+            <li>Worker’s compensation insurance</li>
+            <li>Business income protection insurance</li>
+            <li>Management liability insurance</li>
+            <li>Cyber liability insurance</li>
+            </ul>
+            <p>Hotel businesses can vary extensively with respect to the size of the business, kind of property, customers, location, and the niche audience that a specific hotel may cater to. A hotel may have just a dining service, whereas another can have an extended bar and a pub attached. So, even the kind of services may differ from one hotel entity to another. Therefore, it is recommended to take support from expert hotel insurance brokers who can help simplify the entire process for you and suggest a suitable insurance plan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+            2. Why do hospitality establishments have public liability insurance?
+          </button>
+        </h2>
+        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+         <p>Public liability claims can be very costly, hence it is recommended for hotel operators to have insurance coverage in accordance with their size and nature of business. Hospitality establishment and their business activities are largely connected to people and their needs. It is a service based sector, from taking bookings, housekeeping, food, and entertainment to comfort, everything involves people and management on a daily basis. This widely puts hotels and hospitality establishments at high risk of potential liabilities</p>
+
+         <p>From public claims for an unforeseen accident when it occurs, or for sensitive data getting breached because of management negligence, at every step, the hotel business is prone to vulnerability. Therefore, public and product liability insurance is common insurance taken that ensures hospitality establishments have comprehensive coverage against all these business associated risks and vulnerabilities.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+            3. Is hotel insurance worth it?
+          </button>
+        </h2>
+        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+           <p>Hotel insurance is worth every penny, as the cost you might have to bear otherwise might be far higher. Hotel insurance coverage can help you and your business to financially survive any insurable event. From building, fixtures, and the machinery that you would have invested into the very peaceful management of the daily hotel operations, to your staff and your customers; an appropriate hotel business insurance can come in as a savior in times of adversity.</p>
+          </div>
+        </div>
+      </div>
+     
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer-bg text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mt-3">
+          <h3>Useful links</h3>
+          <div class="mt-4"></div>
+          <li><a href="https://www.cbn.au/privacy-policy">Privacy Policy</a></li>
+          <li><a href="https://www.cbn.au/complaints-disputes-handling">Complaints & Disputes Handling Policy</a></li>
+          <li><a href="https://www.niba.com.au/insurance-brokers-code-of-practice">Insurance Brokers Code of
+              Practice</a></li>
+          <li><a href="https://ilinkinsurance.com.au/wp-content/uploads/2022/12/Statement-of-Services-1-1.pdf">Statement
+              Of Services</a></li>
+          <li><a
+              href="https://ilinkinsurance.com.au/wp-content/uploads/2024/10/FSG___iLink_Insurance_Brokers_Pty_Ltd_V021_08_October_2024.pdf">Financial
+              Services Guide</a></li>
+          <li><a href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/Major-Uninsured-Risks-Review.pdf">Major
+              Uninsured Risks Review</a></li>
+          <li><a
+              href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/JLG-Emergeny-Response-Flyer_iLink-Insurance.pdf">iLink
+              -JLG Emergeny Response Flyer</a></li>
+
+        </div>
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 mb-4 mt-3">
+          <h3>Products</h3>
+          <ul class="list-unstyled mt-4" style="list-style:none">
+            <li><a href="business.html">Business Insurance</a></li>
+            <li><a href="truck&trailer.html">Truck & Trailer Insurance</a></li>
+            <li><a href="Public and Products Liability.html">Public & Products Liability</a></li>
+            <li><a href="Professional Indemnity.html">Professional Indemnity Insurance</a></li>
+           
+          </ul>
+        </div>
+        <!-- Contact Information -->
+        <div class="col-lg-3 col-md-12 mt-3">
+          <h5 class="mt-4">&nbsp;</h5>
+          
+          <li><a href="scaffolding.html">Scaffolding Insurance</a></li>
+          <li><a href="commercial.html">Commercial Property Insurance</a></li>
+          <li><a href="hotel.html">Hotel Insurances</a></li>
+          <li><a href="restuarent.html">Restaurant Insurance</a></li>
+          <!-- Social Media Icons -->
+          
+        </div>
+        <div class="col-lg-3 col-md-12 mt-3">
+
+          <div class="logo">
+            <img src="assets/images/white-logo.png" alt="">
+          </div>
+          <p>Offering a wide range of General Insurance products and Risk Management solutions to clients.</p>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2024 Your Company Name. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="container-fluid footer-btm text-center">
+    <div class="container">
+      <p class="p-3"><i class="fa-solid fa-location-dot" style="color:#F26121;font-size:20px"></i>&nbsp;Suite 16, Level
+        2, 1 Ricketts Road, Mount Waverley VIC 3149 &nbsp;&nbsp;
+        <i class="fa-brands fa-whatsapp" style="color: #F26121;font-size:20px"></i>&nbsp;1300 170 328 &nbsp;&nbsp;
+        <i class="fa-regular fa-envelope" style="color:#F26121;font-size:20px"></i> &nbsp;info@ilinkinsurance.com.au
+        &nbsp;&nbsp;
+        <a href="https://www.facebook.com/iLinkInsuranceBrokers/"><i class="fa-brands fa-square-facebook" style="color: #F26121;font-size:20px"></i></a>   
+      </p>
+      <i class="fa-thin fa-phone"></i>
+      <div class="hr-foot"></div>
+      <div class="row">
+        <div class="col-8 foot-para mt-3 text-center">
+          <p>iLink Insurance Brokers Pty Ltd (CAR 418137) | ABN 91 155 898 525 Corporate Authorised Representative of
+            Community Broker Network Pty Ltd | AFSL 233750 | ACN 096 916 184 © Copyright 2016 iLink Insurance Brokers
+            Pty Ltd, All rights reserved.</p>
+
+        </div>
+        <div class="col-4"><img src="assets/images/new-steadfast-logo.png" alt=""></div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

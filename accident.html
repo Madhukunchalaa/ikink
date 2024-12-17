@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2097aac339.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Accident Insurance</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/cropped-website-logo.webp" alt="Logo" width="90" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Offcanvas -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT US</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    PRODUCTS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <div class="row drp">
+                                        <div class="col-lg-4 col-md-12">
+                                            <ul>
+                                                <a href="hotel.html">
+                                                    <li>Hotel Insurance</li>
+                                                </a>
+                                                <a href="restuarent.html">
+                                                    <li>Restaurant Insurance</li>
+                                                </a>
+                                                <a href="truck&trailer.html">
+                                                    <li>Truck Trailer Insurance</li>
+                                                </a>
+                                                <a href="Professional Indemnity.html">
+                                                    <li>Professional Indemnity Insurance</li>
+                                                </a>
+                                                <a href="other.html">
+                                                    <li>Other Insurances</li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <ul>
+                                                <a href="cargo.html">
+                                                    <li>Marine Cargo Insurance</li>
+                                                </a>
+                                                <a href="cyber.html">
+                                                    <li>Cyber Insurance</li>
+                                                </a>
+                                                <a href="scaffolding.html">
+                                                    <li>Scaffolding Insurance</li>
+                                                </a>
+                                                <a href="commercial.html">
+                                                    <li>Commercial Building Insurance</li>
+                                                </a>
+
+
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <ul>
+                                                <a href="plant-machinery.html">
+                                                    <li>
+                                                        Plant Machinery Insurance
+                                                    </li>
+                                                </a>
+                                                <a href="accident.html">
+                                                    <li>Accident & Sickness Insurance</li>
+                                                </a>
+                                                <a href="business.html">
+                                                    <li>Business Insurance</li>
+                                                </a>
+                                                <a href="asebestos.html">
+                                                    <li>Asbestos Insurance</li>
+                                                </a>
+                                                <a href="plant-machinery.html">
+                                                    <li>Public & Products Liability</li>
+                                                </a>
+                                                <a href="builder.html">
+                                                    <li>Builders Insurance</li>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="doc.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DOCUMENTS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="claims.html">CLAIMS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    BLOG
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="blog1.html">Business Interruption Insurance For
+                                            Restaurants</a></li>
+                                    <li><a class="dropdown-item" href="blog2.html">Scaffolding Liability Insurance
+                                            Coverage</a></li>
+                                    <li><a class="dropdown-item" href="blog3.html">What Type of Insurance Does a
+                                            Scaffolding Company Need?</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-regular fa-envelope"
+                                        style="color:#F26121;font-size:20px"></i>&nbsp; EMAIL</a>
+                            </li>
+                            <a class="nav-link" href="tel:+611300170328">
+                                <i class="fa-solid fa-phone" style="color:#F26121; font-size:20px"></i>
+                                &nbsp;1300170328
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </div>
+    <div class="container-fluid prhero10">
+
+        <div class="display-4">Accident & Sickness Insurance</div>
+        <button>
+            <h4><a href="#form"style="text-decoration:none;color:white">REQUEST INSTANT QUOTE</a></h4>
+        </button>
+
+       
+        <div class="rqst-box">
+            <a href="#form">REQUEST A QUOTE</a>
+          </div>
+
+    </div>
+    <div class="container">
+        <h3 class="text-center">Accident & Sickness Insurance</h3>
+        <ul>
+            <div class="line"><i class="fa-solid fa-check"></i>
+              <li>Personal Accident & Sickness Cover (24/7, Worldwide Cover)</li>
+            </div>
+            <div class="line"><i class="fa-solid fa-check"></i>
+           <li>
+            For Employee Or Self Employed</li>
+            </div> 
+            <div class="line"><i class="fa-solid fa-check"></i>
+              
+                <li>
+                    Weekly Benefits Payable For Up To 104 Weeks (Up To 85% Of Your Weekly Income) Lump Sum Payment For Accidental Death Or Permanent Disabilities</li>
+
+                 </div> 
+               <div class="line">
+                <i class="fa-solid fa-check"></i>
+                <li>No Medical Or Blood Test Required</li>
+
+               </div>  
+               <div class="line">
+                <i class="fa-solid fa-check"></i>
+                <li>Tax Deductible</li>
+
+               </div>  
+                
+        </ul>
+
+
+        <h3>Why Personal Accident & Sickness Insurance?</h3>
+        <p>if you are a sole trader or partnership or are a director of a Company, you should consider personal injury / accident insurance policy. This type of policy is typically provide coverage 24/7 worldwide cover (including coverage outside of working hours, unlike Workcover insurance policies).</p>
+
+    </div>
+   
+   
+
+    
+    
+    <div class="container mt-4"id="form">
+        <h4 class="text-center" style="color: #e64a19;">REQUEST A QUOTE</h4>
+        <form action="">
+            <div class="row g-3">
+               
+             
+
+            
+                <div class="col-md-4">
+                    <label for="fullName" class="form-label">Full Name <span
+                            class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="fullName" class="form-label">Full address<span
+                            class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter location" required>
+                </div>
+               
+                <div class="col-md-4">
+                    <label for="fullName" class="form-label">Contact Number<span
+                            class="text-danger">(Required)</span></label>
+                    <input type="Number" class="form-control" id="email" placeholder="Contact" required>
+                </div>
+
+                <div class="col-md-12">
+                    <label for="" class="form-label">Email <span
+                            class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="fullName" placeholder="" required>
+                </div>
+                <h5>OCCUPATION DETAILS</h5>
+                <div class="col-md-4">
+                    <label for="" class="form-label">Your Occupation<span
+                            class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="Occupation" placeholder="" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="carryingCapacity" class="form-label">
+    
+                        Self Employed
+    
+                        <span class="text-danger">(Required)</span></label>
+                    <select id="
+    Professional Indemnity 
+    
+    " class="form-select" required>
+                        <option value="">please select</option>
+                     <option value="yes">yes</option>
+                     <option value="No">no</option>
+
+            
+    
+    
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="carryingCapacity" class="form-label">How long in this occupation
+                        <span class="text-danger">(Required)</span></label>
+                    <select id="Public Liability (PL) Required" class="form-select" required>
+                        <option value="">please select</option>
+                        <option value="morethan">More than 12 Months</option>
+                        <option value="lessthan">Less than 12 Months</option>
+                    </select>
+                </div>
+                <h5>Level of Coverage required (Sums Insured)</h5>
+                <div class="col-md-4">
+                    <label for="carryingCapacity" class="form-label">Type of Coverage required
+                        <span class="text-danger">(Required)</span></label>
+                    <select id="Type of Coverage required" class="form-select" required>
+                        <option value="">please select</option>
+                        <option value="morethan">Personal Accident and Sickness</option>
+                        <option value="lessthan">Personal Accident only</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="" class="form-label">Accident - Weekly Benefit ($) <span
+                            class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="fullName" placeholder="" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="" class="form-label">
+                        Sickness - Weekly Benefit ($)<span
+                            class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="fullName" placeholder="" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="carryingCapacity" class="form-label">Benefit Period (Weeks)
+                        <span class="text-danger">(Required)</span></label>
+                    <select id="Type of Coverage required" class="form-select" required>
+                        <option value="">please select</option>
+                        <option value="52 weeks">52 weeks</option>
+                        <option value="104 weeks">104 weeks</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="carryingCapacity" class="form-label">Death & Capital Benefits ($)
+                        <span class="text-danger">(Required)</span></label>
+                    <select id="Type of Coverage required" class="form-select" required>
+                        <option value="">please select</option>
+                        <option value="none">None</option>
+                        <option value="$50,000">$50,000</option>
+                        <option value="$1,00,000">$1,00,000</option>
+                        <option value="$2,50,000">$2,50,000</option>
+                        <option value="$5,00,000">$5,00,000</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="carryingCapacity" class="form-label">
+                        Waiting Period – Excess (days)
+                        <span class="text-danger">(Required)</span></label>
+                    <select id="Type of Coverage required" class="form-select" required>
+                        <option value="">please select</option>
+                      <option value="28days">28 days</option>
+                      <option value="21days">21 days</option>
+                      <option value="14days">14 days</option>
+                      <option value="7days">7 days</option>
+                        
+                    </select>
+                </div>
+
+                <div class="col-md-7">
+                    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+
+                </div>
+                
+    
+    
+            </div>
+    
+    
+            
+        </form>
+    
+
+    </div>
+    <div class="container-fluid toll">
+        <h3>Our Toll-Free Number:</h3>
+        <h3 style="color: #F26121;"><i class="fa-solid fa-phone"></i>&nbsp;1300 170 328</h3>
+        <h3>Call us if you have any questions - We are happy to help you</h3>
+    </div>
+    <div class="container">
+
+        <h3 class="text-center">Accident & Sickness Insurance for:</h3>
+        <ul>
+            <div class="line"><i class="fa-solid fa-check"></i>
+              <li>Truck Drivers (Short haul & Long haul – interstate)</li>
+            </div>
+            <div class="line"><i class="fa-solid fa-check"></i>
+           <li>
+            Machine Operators</li>
+            </div> 
+            <div class="line"><i class="fa-solid fa-check"></i>
+              
+                <li>
+                 
+Trade people</li>
+
+                 </div> 
+               <div class="line">
+                <i class="fa-solid fa-check"></i>
+                <li>
+                    Construction workers</li>
+
+               </div>  
+               <div class="line">
+                <i class="fa-solid fa-check"></i>
+                <li>Consultants & all other Self-employed & Sub-contractors individuals</li>
+
+               </div>  
+                
+        </ul>
+    </div>
+
+    <footer class="footer-bg text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-3 col-md-6 mb-4 mt-3">
+                    <h3>Useful links</h3>
+                    <div class="mt-4"></div>
+                    <li><a href="https://www.cbn.au/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://www.cbn.au/complaints-disputes-handling">Complaints & Disputes Handling
+                            Policy</a></li>
+                    <li><a href="https://www.niba.com.au/insurance-brokers-code-of-practice">Insurance Brokers Code of
+                            Practice</a></li>
+                    <li><a
+                            href="https://ilinkinsurance.com.au/wp-content/uploads/2022/12/Statement-of-Services-1-1.pdf">Statement
+                            Of Services</a></li>
+                    <li><a
+                            href="https://ilinkinsurance.com.au/wp-content/uploads/2024/10/FSG___iLink_Insurance_Brokers_Pty_Ltd_V021_08_October_2024.pdf">Financial
+                            Services Guide</a></li>
+                    <li><a
+                            href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/Major-Uninsured-Risks-Review.pdf">Major
+                            Uninsured Risks Review</a></li>
+                    <li><a
+                            href="https://ilinkinsurance.com.au/wp-content/uploads/2024/04/JLG-Emergeny-Response-Flyer_iLink-Insurance.pdf">iLink
+                            -JLG Emergeny Response Flyer</a></li>
+
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6 mb-4 mt-3">
+                    <h3>Products</h3>
+                    <ul class="list-unstyled mt-4" style="list-style:none">
+                      <li><a href="business.html">Business Insurance</a></li>
+                      <li><a href="truck&trailer.html">Truck & Trailer Insurance</a></li>
+                      <li><a href="Public and Products Liability.html">Public & Products Liability</a></li>
+                      <li><a href="Professional Indemnity.html">Professional Indemnity Insurance</a></li>
+                     
+                    </ul>
+                  </div>
+                  <!-- Contact Information -->
+                  <div class="col-lg-3 col-md-12 mt-3">
+                    <h5 class="mt-4">&nbsp;</h5>
+                    
+                    <li><a href="scaffolding.html">Scaffolding Insurance</a></li>
+                    <li><a href="commercial.html">Commercial Property Insurance</a></li>
+                    <li><a href="hotel.html">Hotel Insurances</a></li>
+                    <li><a href="restuarent.html">Restaurant Insurance</a></li>
+                    <!-- Social Media Icons -->
+                    
+                  </div>
+                <div class="col-lg-3 col-md-12 mt-3">
+
+                    <div class="logo">
+                        <img src="assets/images/white-logo.png" alt="">
+                    </div>
+                    <p>Offering a wide range of General Insurance products and Risk Management solutions to clients.</p>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 Your Company Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container-fluid footer-btm text-center">
+        <div class="container">
+            <p class="p-3"><i class="fa-solid fa-location-dot" style="color:#F26121;font-size:20px"></i>&nbsp;Suite 16,
+                Level 2, 1 Ricketts Road, Mount Waverley VIC 3149 &nbsp;&nbsp;
+                <i class="fa-brands fa-whatsapp" style="color: #F26121;font-size:20px"></i>&nbsp;1300 170 328
+                &nbsp;&nbsp;
+                <a href="mailto:info@ilinkinsurance.com.au" style="text-decoration:none; color:inherit;">
+                    <i class="fa-regular fa-envelope" style="color:#F26121; font-size:20px"></i>
+                    &nbsp; info@ilinkinsurance.com.au
+                  </a>
+                  &nbsp;&nbsp;
+                  
+                <a href="https://www.facebook.com/iLinkInsuranceBrokers/"><i class="fa-brands fa-square-facebook" style="color: #F26121;font-size:20px"></i></a>   
+            </p>
+            <i class="fa-thin fa-phone"></i>
+            <div class="hr-foot"></div>
+            <div class="row">
+                <div class="col-8 foot-para mt-3 text-center">
+                    <p>iLink Insurance Brokers Pty Ltd (CAR 418137) | ABN 91 155 898 525 Corporate Authorised
+                        Representative of Community Broker Network Pty Ltd | AFSL 233750 | ACN 096 916 184 © Copyright
+                        2016 iLink Insurance Brokers Pty Ltd, All rights reserved.</p>
+
+                </div>
+                <div class="col-4"><img src="assets/images/new-steadfast-logo.png" alt=""></div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

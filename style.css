@@ -1935,6 +1935,18 @@ form{
   
 
 }
+.ofc .line {
+
+display: flex;
+align-items: start;
+justify-content: start;
+gap: 2px;
+  
+
+}
+.ofc i{
+  font-size: 15px;
+}
 
 
 

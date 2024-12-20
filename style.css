@@ -262,6 +262,7 @@ font-size: medium;
 flex-direction: column;
 justify-content: center;
 height: 300px;
+box-shadow: 0.4px 0.4px 1px;
 
 }
 
@@ -274,12 +275,9 @@ color: white;
 
 cursor: pointer;
 transition: transform 0.3s ease,  0.3s ease;
-
 }
 .card-1 button:hover{
 transform: translateY(-10px); 
-
-
 }
 .card-1:nth-child(1){
 color: white;
@@ -1174,7 +1172,7 @@ iframe{
 
 }
 .blog{
-  margin-top: 10%;
+  margin-top: 3%;
   height: auto;
   width: 100%;
 }
@@ -1213,12 +1211,7 @@ iframe{
 
   }
 
-  .post{
-  display: hidden;
-  width: 100%;
-  height: auto;
-    
-  }
+ 
   .line{
     width: 100%;
     height: auto;
@@ -1994,4 +1987,12 @@ p{
 }
 .i-img img{
   width: 20%;
+}
+.accordion-item ul li{
+  list-style: disc;
+}
+
+/* blog pages*/
+.img-section ul li{
+  list-style: disc;
 }

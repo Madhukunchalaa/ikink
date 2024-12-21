@@ -75,25 +75,22 @@ color: #000;
 }
 .hero-text h5{
 color: #F26121;
+margin-left: 15px;
+font-size: 10px;
 
 }
 .hero-text h1{
 
-font-size: 3rem;
+font-size: 5rem;
 font-weight: bold;
+padding-left: 40px;
 }
 
 .left-section p {
 font-size: 1.1rem;
 }
 
-.hero-text button{
-padding: 10px 20px 10px 20px;
-border: 2px solid #F26121;
-color: black;
-border-radius: 25px;
 
-}
 .hero-text i{
   color: black;
 
@@ -272,6 +269,9 @@ border-radius: 20px;
 width: 100%;
 background-color: black;
 color: white;
+padding: 10px;
+
+
 
 cursor: pointer;
 transition: transform 0.3s ease,  0.3s ease;
@@ -534,7 +534,7 @@ align-items: center;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  height: 30vh;
+ 
 }
 
 .quote-icon {
@@ -1241,6 +1241,7 @@ i{
     align-items: center;
     justify-content: center;
   }
+
   
   .prhero-text {
     padding-top: 100px;
@@ -1839,12 +1840,26 @@ justify-content: center;
 }
   .prhero{
     background-image:url('assets/images/hotel-1-1024x681-hotel.webp');
-   
+   background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
   }
+
+  .hero-text h1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     color: black;
+     height: auto;margin-left: 15px;
+     font-size: 6px;
+    }
+    .hero-text h5{
+      margin-left: 50px;
+      font-size: 40px;
+    }
   .prhero2{
     background-image:url('assets/images/Restaurant-Insurance-1024x539.webp');
    
@@ -1930,8 +1945,9 @@ justify-content: center;
    justify-content: center;
    align-items: center;
    flex-direction: column;
- color: white;
-   height: auto;
+   color: white;
+   height: auto;margin-left: 15px;
+   font-size: 15px;
   }
   .testi{
     
@@ -1949,6 +1965,18 @@ form{
   width: 100%;
 }
 }
+.hero-text button{
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #F26121;
+  color: black;
+  border-radius: 25px;
+  margin-left: 40px;
+  
+  }
+  .hero-text h5{
+    margin-left: 50px;
+    font-size: 40px;
+  }
 
     
   
@@ -1995,4 +2023,7 @@ p{
 /* blog pages*/
 .img-section ul li{
   list-style: disc;
+}
+.head{
+  color: #F26121;
 }

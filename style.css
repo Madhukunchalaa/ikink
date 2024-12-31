@@ -18,7 +18,9 @@ body {
   align-items: center;
   gap: 1em;
 
-  background-color: white !important;
+  background-color:white !important;
+  margin-top: -1% !important;
+  
 }
 
 .navbar-nav a:hover {
@@ -92,7 +94,7 @@ body {
   padding-left: 40px;
 }
 
-.left-section p {
+.left-section  {
   font-size: 1.1rem;
 }
 
@@ -1232,21 +1234,25 @@ button {
 
 /* retuarent */
 .prhero2 {
-  height: 70vh;
+  height: 90vh;
   width: 100%;
-  background-image: url("assets/images/restra.webp");
-  background-size: contain;
+  background-image: url("assets/banners/rest.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 /* truck */
 .prhero3 {
+  position: relative; /* Allows layering */
   width: 100%;
-  height: 70vh;
-  background-image: url("assets/images/pexels-mikhail-nilov-7731330-1-scaled truck.webp");
+  height: 80vh;
+  background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 1.7), transparent), /* Black gradient at the bottom */
+    url("assets/banners/Layer\ 5.png"); /* Background image */
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -1258,6 +1264,23 @@ button {
   text-align: center;
   padding: 20px;
 }
+
+.prhero3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.0); /* Black filter with 70% opacity */
+  z-index: 1; /* Ensure the overlay is behind the text */
+}
+
+.prhero3 > * {
+  position: relative; /* Keep content above the overlay */
+  z-index: 2;
+}
+
 .toll {
   height: auto; /* Adjust height for flexibility */
   background-color: black;
@@ -1312,10 +1335,10 @@ button {
   text-align: justify;
   font-size: 16px;
 }
-.prof {
+.prof{
   width: 100%;
-  height: 70vh;
-  background-image: url("assets/images/girl.jpg");
+  height: 100vh;
+  background-image: url("assets/banners/proffesional.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -1326,6 +1349,7 @@ button {
   border-top: 3px solid #e64a19;
   text-align: center;
   padding: 20px;
+
 }
 
 .transport-op h3,
@@ -1449,7 +1473,8 @@ button {
   width: 100%;
   height: 80vh;
   background-image: url("assets/banners/cargo.png");
-  background-size:contain;
+  background-size:cover;
+  background-position: bottom;
   background-repeat: no-repeat;
   color: white;
  background-position: left;
@@ -1542,17 +1567,17 @@ button {
 .card img {
   height: 10vh;
 }
-.prhero7 {
+/* .prhero7 {
   height: 70vh;
   width: 100%;
-  background-image: url("assets/images/New-Project-31-1.webp");
+  background-image: 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .prhero8 {
   height: 70vh;
   width: 100%;
@@ -1724,7 +1749,7 @@ button {
   text-align: center;
   padding: 20px;
 }
-.prhero14 {
+.prhero14{
   width: 100%;
   height: 70vh;
   background-image: url("assets/images/builder.jpg");
@@ -1787,14 +1812,7 @@ p {
     color: white;
   }
 
-  .prhero5 {
-    background-image: url("assets/images/hotel-1-1024x681-hotel.webp");
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-  }
+ 
   .prhero6 {
     background-image: url("assets/images/hotel-1-1024x681-hotel.webp");
 
@@ -1998,16 +2016,15 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .hero-banner {
-    flex-direction: column;
-  }
+ 
 
   .card-wrapper {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px; 
   }
 
   .circle-card {
+    margin-top: 20%;
     width: 90px;
     height: 90px;
   }
@@ -2056,3 +2073,313 @@ p {
   font-size: 1rem;
  
 }
+.card-titles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 605px) {
+  .prhero5{
+    background-image: none;
+   
+
+  }
+  .right{
+ display: none;
+  }
+  .black-section{
+    display: flex;
+    height: 10vh;
+   
+  }
+  .orange-section{
+    background-image: url("assets/banners/cargo.png");
+    padding: 30px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin: 5px auto;
+  }
+ 
+
+  .card-titles {
+    font-size: 0.8rem;
+  }
+
+  .right .top h2 {
+    font-size: 1rem;
+  }
+
+  .right .bottom a {
+    font-size: 0.8rem;
+  }
+}
+
+.text-card{
+  background-color: black;
+  border-radius: 10px;
+  
+}
+.text-card .btn{
+  background-color: #FF4E00;
+  border: 2px solid white;
+  font-weight: bolder;
+  padding: 10px 30px 10px 30px;
+  
+  
+}
+
+.text-card h1{
+  position: absolute;
+  background-color: white;
+  color: #FF4E00;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  
+  text-align: left;
+  padding: 20px;
+}
+.scaff-text h1{
+  font-size: 4rem;
+}
+.details{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+ 
+  text-align: left;
+  padding-left:30px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  
+}
+.hero-btm{
+  height: 20vh;
+  width: 100%;
+  background-color: #FF4E00;
+  padding: 10px;
+}
+.cntc{
+  display: flex;
+  flex-direction: column;
+}
+.wrap{
+  height: 20vh; /* Takes 30% of the left column height */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3em;
+  margin-top: -8%;
+  color: white;
+}
+
+/* resturaent */
+.rest-card .title b{
+  background-color: white;
+  color: black;
+  padding: 10px 30px 8px 30px;
+  width: auto;
+  font-size: 7rem;
+  color: red;
+  
+}
+.rest-card h2{
+  padding: 20px 0px 0px 0px;
+  font-weight: bolder;
+}
+
+.rest-card{
+  background-color: #303030;
+  color: white;
+  padding: 30px;
+  border: 10px;
+}
+.rest-card .btn{
+  background-color: #ff4e00;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+}
+ .rest-cards{
+  background-color:#FF4E00;
+  display: flex;
+  /* border: 1px solid black; */
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+ }
+ .claim-card{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-left: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 0.5px 0.5px 0.5px;
+  z-index: 2;
+  
+ }
+ .rest-btm{
+  
+  padding: 30px;
+  padding-top: 0px;
+ 
+ }
+ .claim-card .circle-card{
+  margin-top: -70%;
+ }
+ 
+ .black-card{
+  position: absolute;
+  height: 28vh;
+  background: linear-gradient(to right, #303030 30%, #393431 90%);
+  padding-right:200px ;
+  width: 40%;
+  z-index: 0;
+  padding-left: 0px;
+  opacity: 90%;
+ 
+ 
+
+ }
+ .bar{
+ 
+  height: 8vh;
+  width: 300%;
+  background-color: #FF4E00;
+  z-index: -2;
+ }
+
+ /* scaffolding insurance */
+.right{
+  height: 120vh;
+  border: 1px solid white;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding-top: 90px;
+  padding-left: 20px;
+  background-color: #FF4E00;
+
+  margin-top: -20%;
+  margin-left: 10%;
+  z-index: 1;
+}
+.scaff-img{
+  height: 120vh;
+  width: 100%; /* Optional, adjust as needed */
+  border: 1px solid white;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  background-color: white;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden; 
+}
+.scaff-img img{
+  width: 100%; 
+  height: 70%; 
+  object-fit: cover; 
+  padding-bottom: 100px;
+  object-fit: cover;
+}
+.scaff-img .bottom{
+  margin-top: -20%;
+  background-color: white;
+  columns: #FF4E00;
+}
+.scaff-text .btn{
+  background-color: #ff4e00;
+  color: white;
+  padding: 10px 30px 10px 30px;
+}
+.scaff-img .bottom a{
+  color: #FF4E00;
+}
+.scaff-img .bottom .btn{
+  background-color: #FF4E00;
+  color: white;
+  padding: 10px;
+}
+.left{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 9em;
+  background-color:#2C2C2C;
+  color: white;
+}
+.scaff-title{
+  position: absolute;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #FF4500;
+  padding: 20px;
+}
+.left .claim-card{
+  color: #FF4500;
+  border: 2px solid green;
+  box-shadow: none;
+}
+.left .rest-cards{
+  background-color: white;
+  padding: 0px;
+  border-radius: 30px;
+}
+.left .claim-card{
+border: 1px solid white;
+}
+
+.left .claim-card{
+ 
+  border-radius: 20px;
+}
+.left .circle-card{
+  box-shadow: 1px 3px 4px black;
+}
+/* professional indmenity insuranec */
+.pro-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pro-text h3{
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.pro-text p{
+  color: black;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.prof h2{
+background-color: #FB5003;
+padding: 10px;
+color: white;
+margin-right: auto;
+}
+.prof .btn{
+  border:3px solid #fb5003;
+  padding: 10px;
+}
+

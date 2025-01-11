@@ -1,4 +1,9 @@
 /* Global styles */
+:root {
+  --main-color: #FE4C02;
+  --dark-color:#2C2C2C;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,21 +33,174 @@ body {
 }
 
 /* Hero Section */
-/* Hero Section Styles */
-.hero-section {
-  height: 100vh;
+/* ------------------------ home Section Styles------------------------- */
+.home{
+  height: 90vh;
   background:
-    url("assets/banners/home\ page\ image.png");
-    background-repeat: no-repeat;
+    url("assets/images/Other\ Insurances.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  padding: 50px 20px;
-  color: #fff;
+ 
+}
+.home-left{
+  height: 100%;
+  background-color: rgba(216, 78, 15, 0.5); /* 50% transparency */
+  padding: 40px;
+  height: 80vh;
+  display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: start;
+
+
+
+
+
+}
+.home-text h2{
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+}
+.home-text p{
+  color: white;
+}
+.home-title h1{
+  background-color: white;
+  padding: 10px;
+}
+
+.main-card{
+  margin-top: -18%;
+  position: absolute;
+
+  height: 10vh;
+  z-index: 1;
+}
+.homeCircle-container{
+  display: flex;
+  gap: 2em;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  height: 18vh;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  
+}
+.circle-image img{
+  height: 30%;
+  
+}
+.homecard2{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  
+  padding-left: 0px  !important;
+  padding-right: 0px  !important;
+  justify-content: space-between;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 0px;
+  height: 40vh;
+ 
+
+
+
+}
+.card2-btm{
+  background-color:var(--main-color);
+  
+  border: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+  padding: 5px 50px 5px 40px;
+  width: 100%;
+  margin-top: -5%;
+  
+}
+.homecard-3{
+  height: 35vh;
+  background-color:var(--dark-color);
+  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 88%);
+ 
+ 
+  
+}
+.homecard-1{
+  height: 30vh;
+  background-color: var(--dark-color);
+  clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 100%);
+  
+  box-shadow: 0 0 10px 3px white; /* Simulates a border */
+}
+.homeCircle-card{
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 48px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-top: 100%;
+  border: 1px solid var(--main-color);
+}
+.homeCircle-card img{
+  height:60%;
+  width: 60%;
+}
+.homecard-3{
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid rgb(242, 97, 33);
+  flex-direction: column;
+
 }
+
+.home-cta a{
+  font-size: 1rem;
+  color: white;
+}
+.homecall-btn{
+  background-color: white;
+  padding: 10px;
+  border: 4px solid var(--main-color);
+  border-radius: 10px;
+}
+.homecard-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+.homecard-1 .btn {
+  background-color: white;
+  padding: 10px;
+  border: 4px solid var(--main-color);
+  border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
 
 .overlay {
   background: rgba(255, 255, 255, 0.6);
@@ -64,6 +222,7 @@ body {
   text-align: left;
   padding: 20px;
 }
+
 
 .left-section h1 {
   font-size: 1rem;
@@ -917,14 +1076,15 @@ ul li a:hover {
 }
 
 /* About page */
-.hero1 {
+.aboutus{
   border-top: 2px solid #e64a19;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("assets/images/footer.jpg");
+  background-image: url("assets/banners/about\ us.jpg");
+  background-size: cover;
   color: white;
   background-repeat: no-repeat;
 }
@@ -1140,17 +1300,118 @@ i {
 /**************************** production section ****************************************/
 
 /* hotel */
-.prhero {
-  height: 90vh;
+.hotel{
+  height: 100vh;
   width: 100%;
-  background-image: url("assets/images/New-Project-34-hotel.webp");
-  background-size: contain;
+  background-image: url("assets/images/hotel.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 3em;
 }
+.hotel-left{
+  height: 100vh;
+  width: 80%;
+  background-color: var(--main-color);
+  clip-path: polygon(0 0, 81% 0, 100% 100%, 0% 100%);
+}
+.hotel-or{
+  height: 100vh;
+  
+  background-color: var(--dark-color);
+  clip-path: polygon(0 0, 72% 0, 94% 100%, 0% 100%);
+
+}
+.hotel-textcard{
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  
+}
+
+.hotel-content{
+  height: 100vh;
+  gap: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 60%;
+
+}
+.hotel-title h1{
+  background-color: white;
+  color: var(--main-color);
+  padding: 20px;
+  font-weight: bold;
+  font-size: 3rem;
+  padding-right: 550px;
+  
+}
+.hotel-text h2{
+  color: white;
+  font-weight: bolder;
+  font-size: 4rem;
+
+}
+.hotel-text .btn{
+  background-color: white;
+  color: var(--main-color);
+  font-weight: bold;
+  padding: 20px;
+  border: 2px solid var(--main-color);
+}
+.hotel-textbotm{
+  background-color: white;
+  color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  gap: 4em;
+  border: 1px solid black;
+
+}
+.hotel-cta a{
+  color: black;
+  
+}
+.hotel-right{
+  background-color: red;
+}
+.hotel-right .circle-container{
+  padding: 0px;
+ background-color: white;
+ padding: 20px;
+}
+.home-circle-container img{
+border: none;
+}
+.circle-container-btm{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+}
+.hotel-call-btn{
+  background-color: var(--main-color);
+  color: white;
+  box-shadow: 2px 3px 4px black;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+
+
+
+
+
+
 
 .prhero-text {
   padding-top: 100px;
@@ -1234,9 +1495,9 @@ button {
 
 /* retuarent */
 .prhero2 {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
-  background-image: url("assets/banners/rest.png");
+  background-image: url("assets/images/restaurant.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -1252,7 +1513,7 @@ button {
   height: 80vh;
   background-image: 
     linear-gradient(to top, rgba(0, 0, 0, 1.7), transparent), /* Black gradient at the bottom */
-    url("assets/banners/Layer\ 5.png"); /* Background image */
+    url("assets/images/truck.png"); /* Background image */
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -1338,7 +1599,7 @@ button {
 .prof{
   width: 100%;
   height: 100vh;
-  background-image: url("assets/banners/proffesional.png");
+  background-image: url("");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -1349,6 +1610,8 @@ button {
   border-top: 3px solid #e64a19;
   text-align: center;
   padding: 20px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), 
+  url('assets/images/Professional\ Indemnity\ Insurance.png') no-repeat center center;
 
 }
 
@@ -1472,7 +1735,7 @@ button {
 .prhero5{
   width: 100%;
   height: 80vh;
-  background-image: url("assets/banners/cargo.png");
+  background-image: url("assets/images/cargo\ \(1\).png");
   background-size:cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -1570,7 +1833,7 @@ button {
 /* .prhero7 {
   height: 70vh;
   width: 100%;
-  background-image: 
+  background-image: url('assets/images/scaffolding-insurance-blog-1-min-1-1536x480.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -1578,33 +1841,206 @@ button {
   align-items: center;
   justify-content: center;
 } */
-.prhero8 {
-  height: 70vh;
+
+/* commercial insurance banner   */
+.commercial{
+  height: 100vh;
   width: 100%;
-  background-image: url("assets/images/New-Project-30-1.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.prhero9 {
-  width: 100%;
-  height: 70vh;
-  background-image: url("assets/images/plant-machniery.jpg");
+  height: 85vh;
+  background-image: url('assets/images/Commercial\ Building.png');
   background-size: cover;
   background-repeat: no-repeat;
+}
+.commercial-left{
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.commercial-left .circle-title{
+  background-color: transparent;
+  box-shadow: none;
+  margin-bottom: -8%;
+  z-index: 1;
+  color: white;
+  gap: 2em;
+}
+.commercial-left .circle-card{
+  box-shadow: 2px 3px 4px solid black;
+}
+.commercial .botm{
+  background-color: var(--main-color);
+  height: 15vh;
+}
+.commercial-right{
+  height: 85vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+background-color: var(--dark-color);
+padding: 0;
+}
+.commercial-right .commercial-title{
+  background-color: var(--main-color);
+  padding: 10px;
+  color: var(--main-color);
+  font-size:4rem !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+}
+ .commercial-text{
+  display: flex;
   flex-direction: column;
   color: white;
-  border-top: 3px solid #e64a19;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.text-top{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 4rem;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
-.sect-2 {
+.text-top .btn{
+  background-color: white;
+  color: var(--main-color);
+
+}
+.text-botm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.text-botm .btn{
+  background-color: var(--main-color);
+   color: white;
+  padding: 10px;
+}
+.text-botm a{
+  color: white;
+}
+.left-btm{
+  height: 10vh;
+  background-color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* plan machineary insurance */
+.pm{
+  width: 100%;
+  height: 100vh;
+  background-image: url("assets/images/Plant\ Machinery.png");
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.pm-left{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+}
+.pm-text{
+  height: 70vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0;
+  gap: 0px;
+  
+}
+.pm-text h1{
+  z-index: 2;
+  background-color: white;
+  padding: 40px;
+  color: var(--main-color);
+  font-size: 4rem;
+  text-align: center;
+}
+.pm-content{
+  background-color: var(--main-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: -6%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  
+}
+.pm-content h2{
+  font-size:2em;
+}
+.pm-content .btn{
+  background-color: white;
+  color: var(--main-color);
+  padding: 10px 40px 10px 40px;
+  box-shadow: 2px 4px 2px black;
+}
+.pm-center .circle-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+
+  margin-left: -50%;
+  padding: 30px;
+  gap: 4em;
+}
+.pm-center .circle-title{
+  background-color: var(--dark-color);
+  color: white;
+  border-radius: 0px;
+}
+.pm-right{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: end;
+}
+.pm-right .text-botm{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+
+
+.sect-2{
   text-align: justify;
   font-size: 18px;
   margin-top: 30px;
@@ -1635,95 +2071,477 @@ button {
   margin-right: 10px;
   font-size: 1.2rem;
 }
-.prhero9 {
-  width: 100%;
-  height: 70vh;
-  background-image: url("assets/images/plant-machniery.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  border-top: 3px solid #e64a19;
-  text-align: center;
-  padding: 20px;
-}
+
+/* ctp insurance banner */
 .ctp {
   width: 100%;
-  height: 70vh;
-  background-image: url("assets/images/footer.jpg");
+  height: 100vh;
+  background-image: url("assets/images/certified\ treasury.png");
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  border-top: 3px solid #e64a19;
-  text-align: center;
-  padding: 20px;
+  
 }
-.prhero10 {
-  width: 100%;
-  height: 70vh;
-  background-image: url("assets/images/plant-machniery.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+.ctp-left{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+gap: 4em;
+}
+.ctp-text h2{
+  font-size: 2.5rem;
+}
+.ctp-text{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border: 4px solid var(--main-color);
+  padding: 60px;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
   color: white;
-  border-top: 3px solid #e64a19;
   text-align: center;
-  padding: 20px;
+
+}
+.ctp-text .btn{
+  background-color: white;
+  color: var(--main-color);
+  padding: 10px;
+  font-weight: bolder;
+}
+.ctp-botm .cta a{
+  color: white;
+  
+}
+.ctp-botm .btn{
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+}
+.ctp-right{
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+.card-name{
+  display: flex;
+  gap: 5em;
+  
+  background-color: white;
+  border: 4px solid var(--main-color);
+  align-items: center;
+  justify-content: center;
+  
+  color: var(--main-color);
+}
+.ctp-right .circle-title{
+  background-color: white;
 }
 
-.prhero11 {
-  height: 70vh;
+
+
+
+/*------------------------------------------------ accident insurance banner styling ------------------------------------*/
+
+.accident{
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
-    url("assets/images/business.jpg");
+  height: 100vh;
+  background-image: url("assets/");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.accident-left{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: #2C2C2C;
+}
+.accident-title{
+  background-color: white;
+  padding-left: 60px;
+  
+  color: #FE4C02;
+  font-weight: bold;
+}
+.accident-title h1{
+  font-size: 3rem;
+
+}
+.accident-text h1{
   color: white;
+  font-size: 4rem !important;
+  padding-left: 60px;
+}
+.accident-text .btn{
+  background-color: white;
+  margin-left: 20%;
+  padding: 10px;
+  color: #FE4C02;
+}
+.accident-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.accident-img{
+  width: 100%;
+  height: 60vh;
+  
+  background-image: url('assets/images/Accident\ &\ Sickness\ Insurance.png');
+  background-size: contain;
+  
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+.circle-container{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2em;
 }
+.circle-title{
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ background-color: #FE4C02;
+ border-radius: 17px;
+  padding: 2px 30px 2px 30px;
+  box-shadow: 0 3px 2px black;
+  margin-top: -8%;
+}
+.circle-container .circle-card{
+  margin-top: -25%;
+  box-shadow: 0 3px 2px black;
+}
+.accident-services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+ 
+}
+.accident-services .btn{
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  box-shadow: 0 3px 2px black;
+}
+.accident-services a{
+  color: var(--main-color);
+}
+/* end accident insurance */
+
+
+
+/*------------------------------ business  insurance banner ------------------------------------------*/
+
+.business{
+  height: 100vh;
+  width: 100%;
+  background-image:url("assets/images/business\ insurance.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.business-left{
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+.business-text{
+  background-color: var(--dark-color);
+  height: 80vh;
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.business-left .btn{
+  background-color: var(--main-color);
+  color: white;
+  border: 2px solid white;
+}
+.business-left .cta a{
+  color: white;
+}
+.business-right{
+  display: flex;
+  align-items: end;
+}
+.business-right .circle-container{
+  background-color: var(--main-color);
+ 
+  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1.5%;
+  padding-right: 30px;
+  color: white;
+ 
+
+  
+}
+.business-right .circle-title{
+  background-color: transparent;
+  box-shadow: none;
+}
+.business-right .circle-card{
+  margin-top: 0px;
+}
+.business-right .circle-title{
+  margin-top: 0;
+}
+
+
+/* business insurance end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .prhero11 .hero-text {
   color: white;
 }
-.prhero12 {
+
+/*----------------- asbestos insurance------------------------ */
+.asbestos{
   width: 100%;
-  height: 70vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
-    url("assets/images/asesbsto.webp");
+  height: 80vh;
+ background-image: url('assets/images/asbestos.png');
   background-size: cover;
   background-repeat: no-repeat;
+ 
+}
+.asbestos-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+.asbestos-text{
+  background-color: var(--dark-color);
+  padding: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem !important;
+  display: flex;
+  flex-direction: column;
+}
+.asbestos-text h2{
+  font-size: 4rem;
+}
+.asbestos .btn{
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+
+}
+.asbestos-center{
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 20px;
+}
+.asbestos-center .circle-title{
+  background-color: white;
+  padding: 40px;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 1rem;
+  gap: 2em;
+
+
+}
+.asbestos-right{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  justify-content: end;
+  align-items: center;
+}
+.asbestos-right .btn{
+  background-color: white;
+  color: var(--main-color);
+  font-weight: bolder;
+  padding: 20px;
+  box-sizing: 1px 4px 2px solid black;
+}
+.asbestos-btm{
+  height: 20vh;
+  background-color: var(--main-color);
+}
+.asbestos-sec-1 h3{
+  color: var(--main-color);
+font-weight: bolder;
+font-size: 2rem;
+}
+.asbestos-sec-1-left,.asbestos-sec-1-right{
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 1rem; 
+}
+ .line i{
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.asbestos-sec-2-left,.asbestos-sec-2-right{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.asbestos-sec-2-left i{
+  font-size: 3rem;
+
+}
+.asbestos-sec-2-right i{
+  font-size: 3rem;
+
+}
+.asbestos-sec-3-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  line-height: 40px;
+
+}
+.asbestos-sec-3-right h3{
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: -20%;
+  text-decoration: underline;
+  
+}
+.asbestos-sec-4{
+  background-color: var(--main-color);
+  padding: 40px;
+  color: white;
+  font-weight: bolder;
+  font-size: 4rem;
+}
+.asbestos-sec-4-right{
+  font-size: 4rem;
+}
+.asbestos-sec-5{
+  background-color: #F0F0F0;
+
+}
+.asbestos-sec-5 h3{
+  color: var(--main-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/* ---------------------claims page------------------------------------ */
+.claims {
+  width: 100%;
+  height: 100vh;
+  background-image: url("assets/images/documents.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.claim-left{
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
-  border-top: 3px solid #e64a19;
-  text-align: center;
-  padding: 20px;
 }
-.claims {
+.claim-title{
+  background-color:var(--dark-color);
+  color: white;
+  padding: 30px;
   width: 100%;
-  height: 40vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("assets/images/footer.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  color: white;
+ 
+  
 }
+.claim-title h1{
+  font-weight: bold;
+  font-size: 4rem;
+}
+.claim-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  border: 2px solid white;
+ 
+  
+  
+}
+.claim-textbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+  border-top-left-radius:50%;
+  border-top-right-radius:50%;
+  
+
+}
+.claim-textbox h2{
+  background-color: white;
+  color: var(--main-color);
+  padding: 20px;
+  font-size: 1rem;
+}
+.claim-textbox .btn{
+  background-color: white;
+  color: var(--main-color);
+  padding: 10px;
+  box-shadow: 2px 3px 3px black;
+}
+
+
+
+
+
+
+
 .download a {
   text-decoration: none;
   color: black;
@@ -1734,36 +2552,141 @@ button {
 .download a:hover {
   color: #db2200;
 }
-.prhero13 {
+/* public and product liability insurance banner */
+.public{
   width: 100%;
   height: 70vh;
-  background-image: url("assets/images/professional.jpg");
+  background-image: url("assets/images/Public\ &\ product\ Liability.png");
   background-size: cover;
   background-repeat: no-repeat;
+  
+}
+.public-left{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.public-text{
+  background-color: white;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.5); /* 50% transparent black */
+}
+.public-text h1{
+  font-size: 5rem;
+  font-weight: bolder;
+}
+.public-text .btn{
+  background-color: var(--main-color);
+  color: white;
+  padding: 10 20px 10px 20px;
+  border: 4px solid white;
+  font-size: 2rem;
+}
+.public-right{
+  display: flex;
+  align-items: end;
+}
+.public-right .circle-container{
+  margin-bottom: 20%;
+}
+
+
+.public-botm{
+  height: 20vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+.public-botm .text-botm{
+  margin-top: -10%;
+}
+.public-sec-4  li{
+  text-align: left;
+
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------- builder insurance -----------------------------------------*/
+.builder{
+  width: 100%;
+ height: 75vh;
+  background-image: url("assets/images/Builders\ Insurance.png");
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.builder-btm{
+  background-color:var(--main-color);
+  height: 15vh;
+}
+.builder-left{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.builder-title{
+  border: 3px solid white;
+  color: white;
+  background-color: var(--dark-color);
+  background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
+  padding: 50px;
+  z-index: 2;
+
+}
+.builder-title .btn{
+  background-color: white;
+  color: var(--main-color);
+  z-index: 3;
+}
+.btm-left .circle-title{
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+.business-right{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  color: white;
-  border-top: 3px solid #e64a19;
-  text-align: center;
-  padding: 20px;
 }
-.prhero14{
-  width: 100%;
-  height: 70vh;
-  background-image: url("assets/images/builder.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  border-top: 3px solid #e64a19;
-  text-align: center;
-  padding: 20px;
+.business-right .cta a{
+  color:  white;
+
 }
+
+.business-right .btn{
+  background-color: white;
+  padding: 10px;
+  box-shadow: 1px 3px 2px sold black;
+  font-weight: bold;
+}
+/*------------------- builder insurance end --------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 p {
   text-align: justify;
 }
@@ -1811,8 +2734,6 @@ p {
     height: auto;
     color: white;
   }
-
- 
   .prhero6 {
     background-image: url("assets/images/hotel-1-1024x681-hotel.webp");
 
@@ -2097,7 +3018,7 @@ p {
    
   }
   .orange-section{
-    background-image: url("assets/banners/cargo.png");
+    background-image: url("assets/banners/caro.png");
     padding: 30px;
     width: 100%;
     background-size: cover;
@@ -2189,7 +3110,7 @@ p {
   color: black;
   padding: 10px 30px 8px 30px;
   width: auto;
-  font-size: 7rem;
+  font-size: 1rem;
   color: red;
   
 }
@@ -2230,6 +3151,7 @@ p {
   border-radius: 5px;
   box-shadow: 1px 0.5px 0.5px 0.5px;
   z-index: 2;
+  height: 30vh;
   
  }
  .rest-btm{
@@ -2244,16 +3166,13 @@ p {
  
  .black-card{
   position: absolute;
-  height: 28vh;
+  height: 34vh;
   background: linear-gradient(to right, #303030 30%, #393431 90%);
   padding-right:200px ;
   width: 40%;
   z-index: 0;
   padding-left: 0px;
   opacity: 90%;
- 
- 
-
  }
  .bar{
  
@@ -2264,21 +3183,21 @@ p {
  }
 
  /* scaffolding insurance */
-.right{
-  height: 120vh;
+.scaff-right{
+  height: 107vh;
   border: 1px solid white;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  padding-top: 90px;
-  padding-left: 20px;
+  padding-top: 70px;
+  padding-left: 54px;
   background-color: #FF4E00;
 
-  margin-top: -20%;
-  margin-left: 10%;
-  z-index: 1;
+  margin-top: -19%;
+  margin-left: auto;
+
 }
 .scaff-img{
-  height: 120vh;
+  height: 107vh;
   width: 100%; /* Optional, adjust as needed */
   border: 1px solid white;
   border-bottom-left-radius: 50%;
@@ -2361,6 +3280,19 @@ border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #303030;
+  padding: 20px;
+  gap: 3em;
+  border-radius: 10px;
+ box-shadow: 10px 10px 1px  #FF4E00;
+}
+.circle-card{
+ 
+
+
+}
+.circle-image{
+  background-color: pink;
 }
 .pro-text h3{
   color: black;
@@ -2382,4 +3314,111 @@ margin-right: auto;
   border:3px solid #fb5003;
   padding: 10px;
 }
+.prof-foot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #303030;
+  margin-right: auto;
+}
+.prof-foot a{
+ color: white;
+}
+
+/* cyber insurances */
+.cyber{
+  height: 100vh;
+
+}
+.cybertext-card{
+  background-color: var(--dark-color);
+  padding: 30px;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.cyber-left{
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+}
+.cybertext-card .cyber-title{
+  background-color: white;
+  color: var(--main-color);
+ padding: 10px 100px 10px 10px;
+ font-size: 5rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-right: auto;
+
+}
+.cybertext-card .btn{
+  background-color: white;
+  color: var(--main-color);
+  font-size: 2rem;
+  padding: 5px 10px 5px 10px;
+  margin-left: 20%;
+}
+.cyber-text h1{
+  font-size: 4rem !important;
+ 
+  padding: 20px;
+  font-size: 20px;
+}
+.cta a{
+color: white;
+font-size: 2rem;
+}
+.call-btn{
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 2px  black;
+
+}
+.cyber-img{
+  height: 70vh;
+  background-image: url('assets/images/cyber.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ .cybercircle-title{
+  background-color: transparent;
+  padding-bottom: 20px;  
+}
+/* Center the form and reduce its width */
+.frm {
+  max-width: 300px; /* Adjust the max-width to reduce size */
+  margin: 0 auto; /* Center the form horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional: Adjust padding and spacing for a cleaner look */
+.cyberform-container {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Optional: Adjust button styling */
+.form-container button {
+  width: 100%;
+  padding: 10px;
+}
+/* cyber crime end */
 

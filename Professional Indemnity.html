@@ -116,7 +116,7 @@
       </nav>
       </div>
       </div>
-    <div class="container-fluid prof">
+    <div class="container-fluid prof p-0">
        <h2>Professional Indemnity insurance</h2>
         <div class="container">
             <div class="row">
@@ -129,7 +129,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 d-flex justify-content-start align-items-end mt-5">
                 <div class="pro-cards">
                     <div class="card-titles">
                         <div class="circle-card">
@@ -154,6 +154,14 @@
                 </div>
 
             </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 prof-foot p-3  my-0 mx-0">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center justify-content-center"><a href="claims.html">moer services</a></div>
+                <div class="col-md-6 d-flex">
+                    <a href=""><div class="btn btn-light w-00%">call: 1300170328</div></a>
+                </div>
             </div>
         </div>
 
@@ -185,112 +193,70 @@
         </div>
     </div>
     
-    <div class="container mt-4" id="form">
+    <div class="container mt-4 prof-form text-center w-50 border border-dark p-3" id="form">
         <h4 class="text-center" style="color: #e64a19;">REQUEST A QUOTE</h4>
         <form action="">
             <div class="row g-3">
                 <div class="col-8">
                     <label for="dateInput" class="form-label">Select Date</label>
-                    <input type="date" class="form-control" id="dateInput">
-                </div>
-             
-
-            
-                <div class="col-md-6">
-                    <label for="fullName" class="form-label">Full Name <span
-                            class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                    <input type="date" class="form-control border-dark" id="dateInput">
                 </div>
                 <div class="col-md-6">
-                    <label for="fullName" class="form-label">Company/Business Name(if any)<span
-                            class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="Business" placeholder="Business Name" required>
+                    <label for="fullName" class="form-label">Full Name <span class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control border-dark" id="fullName" placeholder="Full Name" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="fullName" class="form-label">Contact Number<span
-                            class="text-danger">(Required)</span></label>
-                    <input type="number" class="form-control" id="Contact" placeholder="Contact" required>
+                    <label for="businessName" class="form-label">Company/Business Name (if any) <span class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control border-dark" id="businessName" placeholder="Business Name" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="fullName" class="form-label">Email <span
-                            class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="email" placeholder="Email" required>
+                    <label for="contact" class="form-label">Contact Number <span class="text-danger">(Required)</span></label>
+                    <input type="number" class="form-control border-dark" id="contact" placeholder="Contact" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="fullName" class="form-label">Business address <span
-                            class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="fullName" placeholder="Location" required>
+                    <label for="email" class="form-label">Email <span class="text-danger">(Required)</span></label>
+                    <input type="email" class="form-control border-dark" id="email" placeholder="Email" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="fullName" class="form-label">Business Description<span
-                            class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="fullName" placeholder="Business description" required>
+                    <label for="businessAddress" class="form-label">Business Address <span class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control border-dark" id="businessAddress" placeholder="Location" required>
                 </div>
-                <div class="col-md-4">
-                    <label for="carryingCapacity" class="form-label">
-    
-                        Professional Indemnity (PI)Required
-    
-                        <span class="text-danger">(Required)</span></label>
-                    <select id="
-    Professional Indemnity 
-    
-    " class="form-select" required>
-                        <option value="">please select</option>
+                <div class="col-md-6">
+                    <label for="businessDescription" class="form-label">Business Description <span class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control border-dark" id="businessDescription" placeholder="Business Description" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="piRequired" class="form-label">Professional Indemnity (PI) Required <span class="text-danger">(Required)</span></label>
+                    <select id="piRequired" class="form-select" required>
+                        <option value="">Please select</option>
                         <option value="$1M">$1M</option>
                         <option value="$2M">$2M</option>
                         <option value="$5M">$5M</option>
                         <option value="$10M">$10M</option>
                         <option value="$20M">$20M</option>
-                        <option value="others">others</option>
-    
-    
+                        <option value="others">Others</option>
                     </select>
                 </div>
-                <div class="col-md-4">
-                    <label for="carryingCapacity" class="form-label">
-    
-                        Public Liability (PL) Required
-    
-    
-    
-                        <span class="text-danger">(Required)</span></label>
-                    <select id="
-    
-                    Public Liability (PL) Required
-    
-    
-    " class="form-select" required>
-                        <option value="">please select</option>
-                        <option value="$1M">$10M</option>
-                        <option value="$2M">$20M</option>
-    
-    
-    
-    
+                <div class="col-md-6">
+                    <label for="plRequired" class="form-label">Public Liability (PL) Required <span class="text-danger">(Required)</span></label>
+                    <select id="plRequired" class="form-select" required>
+                        <option value="">Please select</option>
+                        <option value="$10M">$10M</option>
+                        <option value="$20M">$20M</option>
                     </select>
                 </div>
-                <div class="col-md-6">Upload your current insurance policy schedule for free insurance review
+                <div class="col-md-12">
+                    <p>Upload your current insurance policy schedule for a free insurance review:</p>
                     <label for="customFile" class="form-label">Choose File</label>
-                    <input class="form-control" type="file" id="customFile">
+                    <input class="form-control border-dark" type="file" id="customFile">
                 </div>
-
-                <div class="col-md-7">
-                    <button type="submit" class="btn btn-primary mt-4">Submit</button>
-
+                <div class="col text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-                
-    
-    
             </div>
-    
-    
-            
         </form>
-    
-
     </div>
-
+    
 
 
 

@@ -1869,15 +1869,15 @@ button {
 
 /* commercial insurance banner   */
 .commercial{
-  height: 100vh;
+  
   width: 100%;
-  height: 85vh;
   background-image: url('assets/images/Commercial\ Building.png');
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 90%;
 }
 .commercial-left{
-  height: 85vh;
+ 
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -1898,7 +1898,7 @@ button {
   height: 15vh;
 }
 .commercial-right{
-  height: 85vh;
+ 
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -2172,13 +2172,13 @@ gap: 4em;
 
 .accident{
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   background-image: url("assets/");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .accident-left{
-  height: 100vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -2257,7 +2257,7 @@ gap: 4em;
   background-color: var(--main-color);
   color: white;
   padding: 10px;
-  box-shadow: 0 3px 2px black;
+  margin-top: -80%;
 }
 .accident-services a{
   color: var(--main-color);
@@ -2269,14 +2269,14 @@ gap: 4em;
 /*------------------------------ business  insurance banner ------------------------------------------*/
 
 .business{
-  height: 100vh;
+ 
   width: 100%;
   background-image:url("assets/images/business\ insurance.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .business-left{
-  height: 100vh;
+ 
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -2304,8 +2304,7 @@ gap: 4em;
 }
 .business-right .circle-container{
   background-color: var(--main-color);
- 
-  
+
   width: 100%;
   display: flex;
   align-items: center;
@@ -2313,6 +2312,7 @@ gap: 4em;
   margin-left: -1.5%;
   padding-right: 30px;
   color: white;
+  margin-top: 30%;
  
 
   
@@ -2681,6 +2681,7 @@ font-size: 2rem;
   color: white;
 }
 .business-right{
+  margin-top: -8%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2693,7 +2694,7 @@ font-size: 2rem;
 .business-right .btn{
   background-color: white;
   padding: 10px;
-  box-shadow: 1px 3px 2px sold black;
+  
   font-weight: bold;
 }
 /*------------------- builder insurance end --------------- */
@@ -3393,10 +3394,7 @@ margin-right: auto;
 }
 
 /* cyber insurances */
-.cyber{
-  height: 100vh;
 
-}
 .cybertext-card{
   background-color: var(--dark-color);
   padding: 30px;
@@ -3445,14 +3443,14 @@ margin-right: auto;
 color: white;
 font-size: 2rem;
 }
-.call-btn{
+/* .call-btn{
   background-color: var(--main-color);
   color: white;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
   box-shadow: 1px 3px 2px  black;
 
-}
+} */
 .cyber-img{
   height: 70vh;
   background-image: url('assets/images/cyber.png');
@@ -3500,4 +3498,33 @@ font-size: 2rem;
   .hero-btm{
     display: none;
   }
+  .accident-right{
+    display: none;
+  }
+  .asbestos-center{
+    display: none;
+  }
+  .asbestos-text{
+    opacity: 90%;
+    margin-top: -26%;
+  }
+  .builder-right{
+    display: none;
+  }
+  .builder-btm{
+    display: none;
+  }
+  .business-right{
+    display: none;
+  }
+  .business-left{
+    opacity: 90%;
+  }
+.commercial-btm{
+  display: none;
 }
+.circle-container{
+  display: none;
+}
+}
+

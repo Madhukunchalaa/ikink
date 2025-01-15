@@ -974,6 +974,7 @@ li a {
 }
 li {
   list-style: none;
+  text-align: left;
 }
 a:hover {
   color: #e64a19;
@@ -1397,13 +1398,36 @@ border: none;
   padding: 10px;
   align-items: center;
 }
-.hotel-call-btn{
+.home-call-btn{
   background-color: var(--main-color);
   color: white;
   box-shadow: 2px 3px 4px black;
   padding: 10px;
   border-radius: 10px;
 
+}
+.home-text .btn{
+  background-color: white;
+  padding: 10px;
+  border: 2px solid white;
+  color:black;
+  display: none;
+}
+
+/* home page media quires */
+@media screen and (max-width:1000px) {
+  .main-card{
+    display: none;
+  }
+  .home-text .btn{
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid white;
+    color:black;
+ 
+  }
+  
 }
 
 
@@ -1454,6 +1478,7 @@ border: none;
 }
 .htl-card img {
   height: 50%;
+  margin-top: 10%;
 }
 .htl-card {
   margin-top: 40%;
@@ -1510,7 +1535,7 @@ button {
 .prhero3 {
   position: relative; /* Allows layering */
   width: 100%;
-  height: 80vh;
+
   background-image: 
     linear-gradient(to top, rgba(0, 0, 0, 1.7), transparent), /* Black gradient at the bottom */
     url("assets/images/truck.png"); /* Background image */
@@ -1598,8 +1623,9 @@ button {
 }
 .prof{
   width: 100%;
-  height: 100vh;
-  background-image: url("");
+  
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), 
+  url('assets/images/Professional\ Indemnity\ Insurance.png') no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -1610,8 +1636,6 @@ button {
   border-top: 3px solid #e64a19;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), 
-  url('assets/images/Professional\ Indemnity\ Insurance.png') no-repeat center center;
 
 }
 
@@ -1637,6 +1661,7 @@ button {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  text-align: left;
 }
 
 .transport-op ul li i,
@@ -3018,7 +3043,7 @@ p {
    
   }
   .orange-section{
-    background-image: url("assets/banners/caro.png");
+    background-image: url("assets/images/cargo\ \(1\).png");
     padding: 30px;
     width: 100%;
     background-size: cover;
@@ -3026,6 +3051,27 @@ p {
     object-fit: cover;
     background-repeat: no-repeat;
     margin: 5px auto;
+color: var(--main-color);
+ background-color: red;
+padding: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .orange-section p{
+    background-color: white;
+
+  }
+  .orange-section h1{
+    background-color: rgba(216, 78, 15, 0.5);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .card-wrapper{
+    display: none;
+  }
+  .orange-section .btn{
+    border: 1px solid var(--main-color);
   }
  
 
@@ -3110,7 +3156,7 @@ p {
   color: black;
   padding: 10px 30px 8px 30px;
   width: auto;
-  font-size: 1rem;
+  font-size: 28px;
   color: red;
   
 }
@@ -3181,6 +3227,24 @@ p {
   background-color: #FF4E00;
   z-index: -2;
  }
+ /* resturaent insurance media quires */
+ @media (max-width:1000px){
+  .rest-cards{
+    flex-direction: column;
+    background-color: white;
+    color:black;
+    gap: 3em;
+    margin-top: 10%;
+   
+  }
+  .black-card{
+    display: none;
+  }
+  .bottom .btn{
+    display: none;
+  }
+ }
+
 
  /* scaffolding insurance */
 .scaff-right{
@@ -3282,6 +3346,7 @@ border: 1px solid white;
   justify-content: center;
   background-color: #303030;
   padding: 20px;
+  width: 100%;
   gap: 3em;
   border-radius: 10px;
  box-shadow: 10px 10px 1px  #FF4E00;
@@ -3313,6 +3378,7 @@ margin-right: auto;
 .prof .btn{
   border:3px solid #fb5003;
   padding: 10px;
+  width: 128%;
 }
 .prof-foot{
   display: flex;
@@ -3422,3 +3488,16 @@ font-size: 2rem;
 }
 /* cyber crime end */
 
+
+/* responsive */
+
+/* truck trailer insurance */
+@media(max-width:1000px){
+  .wrap{
+    display: none;
+    
+  }
+  .hero-btm{
+    display: none;
+  }
+}

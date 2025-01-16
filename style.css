@@ -408,6 +408,9 @@ border-bottom-right-radius: 12px; */
 .drp {
   width: 100%;
 }
+.drp li{
+  font-size: 15px;
+}
 
 .card-1 {
   display: flex;
@@ -1250,7 +1253,7 @@ iframe {
 }
 
 /* blog section  */
-.img-section img {
+.simg-section img {
   height: auto;
   width: 100%;
 }
@@ -3110,6 +3113,13 @@ padding: 10px;
 .scaff-text h1{
   font-size: 4rem;
 }
+.scaff-text{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .details{
  
   display: flex;
@@ -3274,6 +3284,8 @@ padding: 10px;
   object-fit: cover; 
   padding-bottom: 100px;
   object-fit: cover;
+  z-index: 2;
+ 
 }
 .scaff-img .bottom{
   margin-top: -20%;
@@ -3312,11 +3324,14 @@ padding: 10px;
   background-color: white;
   color: #FF4500;
   padding: 20px;
+  z-index: 1;
+  margin-top: -2%;
 }
 .left .claim-card{
   color: #FF4500;
   border: 2px solid green;
   box-shadow: none;
+  z-index: 2;
 }
 .left .rest-cards{
   background-color: white;
@@ -3334,6 +3349,8 @@ border: 1px solid white;
 .left .circle-card{
   box-shadow: 1px 3px 4px black;
 }
+
+
 /* professional indmenity insuranec */
 .pro-cards{
   display: flex;
@@ -3518,6 +3535,12 @@ font-size: 2rem;
   display: none;
 }
 .circle-container{
+  display: none;
+}
+.rest-cards{
+  display: none;
+}
+.scaff-right{
   display: none;
 }
 }

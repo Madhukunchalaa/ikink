@@ -191,7 +191,9 @@ justify-content: start;
   padding: 10px;
   border: 4px solid var(--main-color);
   border-radius: 10px;
-
+}
+.homecard-1 .btn:hover{
+  background-color: white;
 }
 
 
@@ -1211,11 +1213,11 @@ input {
 /* contact page */
 
 .hero3 {
-  height: 60vh;
+  
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("assets/images/footer.jpg");
+  align-items: end;
+ height: 100vh;
+  background-image: url("assets/images/contact\ us.png");
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -1740,20 +1742,12 @@ button {
   font-size: 1.2rem;
 }
 
-.prhero4 {
+.other{
   width: 100%;
-  height: 70vh;
-  background-image: url("assets/images/footer.jpg");
+  background-image: url("assets/images/Other\ Insurances.png");
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  border-top: 3px solid #e64a19;
-  text-align: center;
-  padding: 20px;
+ 
 }
 /* cargo */
 
@@ -3527,4 +3521,66 @@ font-size: 2rem;
   display: none;
 }
 }
+.other-text{
+  background-color: black;
+  opacity: 90%;
+  color: white;
+  font-weight: bold;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 90%;
+  gap: 5em;
+  padding: 40px;
+  margin-bottom: 20%;
+  margin-top: 20%;
+  border-radius: 10px;
+}
+.coverage-container{
+  display: flex;
+background-color: white;
+opacity: 90%;
+  color: var(--main-color);
+}
+.card-cont img{
+  width: 50%;
+
+  background-color: white;
+ padding: 10px;
+  border-radius: 40%;
+ 
+ 
+}
+.card-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.other-title .btn{
+  background-color: white;
+  color: var(--main-color);
+  padding: 10px;
+}
+.contact{
+  background-color: var(--dark-color);
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 10%;
+  }
+  .contact .btn{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid var(--main-color);
+    margin-right: auto;
+    font-size: 3rem;
+    
+  }
+
 

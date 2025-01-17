@@ -3277,6 +3277,7 @@ padding: 10px;
   align-items: center;
   justify-content: space-around;
   overflow: hidden; 
+  margin-top: 5%;
 }
 .scaff-img img{
   width: 100%; 
@@ -3348,6 +3349,9 @@ border: 1px solid white;
 }
 .left .circle-card{
   box-shadow: 1px 3px 4px black;
+}
+.claim-textbox .btn:hover{
+  background-color: white;
 }
 
 

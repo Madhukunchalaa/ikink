@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+      .home {
+      min-height: 90vh;
+      background: url("assets/images/home.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .home-left {
+      background-color: rgba(216, 78, 15, 0.5);
+      padding: 2rem;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      max-width: 600px;
+      margin-left: 0;
+    }
+    
+    .home-text h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: white;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    
+    .home-text p {
+      color: white;
+      font-size: clamp(1rem, 3vw, 1.2rem);
+    }
+    
+    .home-title h1 {
+      background-color: white;
+      padding: 0.75rem 1rem;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+    
+    .cards-wrapper {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 1rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .side-panel {
+      background: #303030;
+      width: 100%;
+      max-width: 300px;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      border: 3px solid white;
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+    
+    .center-panel {
+      width: 100%;
+      max-width: 500px;
+      background-color: #2D2D2D;
+      border-radius: 14px;
+      border: 4px solid white;
+      margin: 0 auto;
+    }
+    
+    .top-section {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      border: 2px solid #F26121;
+      margin-bottom: 2rem;
+    }
+    
+    .top-section h3 {
+      font-size: clamp(1.25rem, 3vw, 1.5rem);
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+    
+    .circles {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .circle {
+      width: clamp(80px, 15vw, 130px);
+      height: clamp(80px, 15vw, 130px);
+      border-radius: 50%;
+      background: white;
+      border: 2px solid #F26121;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .circle img {
+      width: 60%;
+      height: 60%;
+      object-fit: contain;
+    }
+    
+    .bottom-bar {
+      background: #F26121;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 0 0 12px 12px;
+      font-weight: 500;
+      border: 4px solid white;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    .white-button {
+      background: white;
+      color: #F26121;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    
+    /* Responsive breakpoints */
+    @media (max-width: 1200px) {
+      .cards-wrapper {
+        padding: 1rem;
+        justify-content: center;
+      }
+      
+      .side-panel {
+        margin-bottom: 1rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .home-left {
+        margin-left: 0;
+        padding: 1rem;
+      }
+      
+      .center-panel {
+        margin: 1rem auto;
+      }
+      
+      .circles {
+        gap: 0.5rem;
+      }
+      
+      .bottom-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0.5rem;
+      }
+      
+      .white-button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .home {
+        min-height: auto;
+        padding-bottom: 2rem;
+      }
+      
+      .cards-wrapper {
+        position: relative;
+        padding: 0.5rem;
+      }
+      
+      .circle {
+        width: 70px;
+        height: 70px;
+      }
+      
+      .top-section {
+        padding: 1rem;
+      }
+    }
+    </style>
+</head>
+<body>
+  
+  
+  
+<div class="container-fluid home ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 home-left mt-5 ">
+        <div class="home-title">
+          <h1>Ilink <span style="color: #D84E0F;">insurance</span></h1>
+        </div>
+        <div class="home-text">
+          <h2>Simplifying Insurance For You At Every Step</h2>
+          <p>From quotes,policies,renewal remainders claim support to expert to expert advice we have it all in one place.</p>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="cards-wrapper mb-5">
+      <!-- Left Card -->
+      <div class="side-panel hleft">
+        <a href="#form" style="text-decoration: none;">
+          <div class="white-button">
+            <img src="assets/images/claim.png" alt="" class="icon">
+            Claim Process
+          </div>
+        </a>
+        
+      </div>
+      
+      <!-- Center Card -->
+      <div class="center-panel">
+        <div class="top-section">
+          <h3>Plan It Right</h3>
+          <div class="circles">
+            <div class="circle">
+              <img src="assets/images/claim.png" alt="">
+            </div>
+            <div class="circle">
+              <img src="assets/images/money.png" alt="">
+            </div>
+                  <div class="circle">
+                      <img src="assets/images/contract.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-bar">
+                  <span>Instant Cover</span>
+                  <span>Easier Claims</span>
+                  <span>Competitive Coverage</span>
+                </div>
+              </div>
+
+      <!-- Right Card -->
+      <div class="side-panel hright">
+        <a href="claims.html" style="color: white; font-weight: bold;">More insurances</a>
+        <a href="tel:1300170328"style="text-decoration:none">
+          <div class="white-button phone">Call 1300 170 328</div>
+        </a>
+      </div>
+    </div>
+
+    
+    
+  </div>
+</div>
+
+</body>
+</html>

@@ -386,6 +386,198 @@ border-bottom-right-radius: 12px; */
   color: black;
   font-weight: bold;
 }
+/*--------------------------------------------------- */
+
+
+
+
+.cards-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 2rem;
+ 
+}
+.home-left {
+  margin-left:-12% ;
+}
+
+.side-panel {
+  background: #303030;
+  width: 30%;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 3px solid white;
+  position: relative;
+  padding: 2rem;
+  
+}
+
+.hleft {
+  clip-path: polygon(0 0, 100% 17%, 106% 90%, 0 100%);
+  margin-bottom: -1%;
+  height: 39vh;
+  border-radius: 20px;
+}
+
+.hright {
+  clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 86%);
+  margin-bottom: -1%;
+  height: 39vh;
+  border-radius: 20px;
+}
+
+.center-panel {
+  width: 50%;
+  background-color: #2D2D2D;
+  position: relative;
+  margin-bottom: -2rem;
+  z-index: 2;
+  border-radius: 14px;
+  border: 4px solid white;
+}
+
+.top-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid #F26121;
+  margin-bottom: 14%;
+}
+
+.top-section h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.circles {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  
+}
+
+.circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #F26121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  margin-bottom: -15%;
+}
+
+.circle img {
+  width: 75px;
+  height: 75px;
+}
+
+.bottom-bar {
+  background: #F26121;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0 0 12px 12px;
+  font-weight: 500;
+  border: 4px solid white;
+  margin-bottom: 3%;
+}
+
+.white-button {
+  background: white;
+ color: #F26121;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  
+}
+
+.white-button.phone {
+  margin-top: 0.5rem;
+}
+
+.white-button .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Add these curved connectors */
+.side-panel::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background: #303030;
+  z-index: -1;
+}
+
+.hleft::hafter {
+  right: -25px;
+  transform: skew(10deg);
+}
+
+.hright::hafter {
+  left: -25px;
+  transform: skew(-10deg);
+
+}
+
+@media (max-width: 1200px) {
+  .hero-text h1 {
+      font-size: 3rem;
+  }
+  
+  .circle {
+      width: 80px;
+      height: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards-wrapper {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 1rem;
+  }
+
+  .side-panel, .center-panel {
+      width: 100%;
+      clip-path: none;
+      margin-bottom: 1rem;
+  }
+
+  .hero-content {
+      padding: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
 .rqst-btn a {
   text-decoration: none;
   color: white;
@@ -1340,13 +1532,13 @@ i {
   height: 100vh;
   width: 80%;
   background-color: var(--main-color);
-  clip-path: polygon(0 0, 81% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 63% 0, 80% 100%, 0% 100%);
 }
 .hotel-or{
   height: 100vh;
   
   background-color: var(--dark-color);
-  clip-path: polygon(0 0, 72% 0, 94% 100%, 0% 100%);
+  clip-path: polygon(0 0, 55% 0, 75% 100%, 0% 100%);
 
 }
 .hotel-textcard{
@@ -1354,54 +1546,68 @@ i {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: space-between;
-  
+  justify-content: center;
+  height: 100vh;
+  gap: 1em;
 }
 
 .hotel-content{
-  height: 100vh;
   gap: 2em;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  width: 60%;
+  width: 100%;
 
+}
+.hotel-title{
+  width: 300%;
+  height: 10vh;
 }
 .hotel-title h1{
   background-color: white;
   color: var(--main-color);
-  padding: 20px;
+  padding: 10px;
   font-weight: bold;
   font-size: 3rem;
-  padding-right: 550px;
+  
   
 }
-.hotel-text h2{
+.hotel-text p{
   color: white;
   font-weight: bolder;
-  font-size: 4rem;
+  font-size: 3rem;
 
 }
 .hotel-text .btn{
   background-color: white;
   color: var(--main-color);
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
   border: 2px solid var(--main-color);
 }
 .hotel-textbotm{
   background-color: white;
-  color: black;
-  width: 100%;
+ color: var(--main-color);
+  width: 300%;
   display: flex;
   align-items: center;
-  justify-content:space-around;
-  gap: 4em;
+  justify-content:start;
+  gap: 20em;
   border: 1px solid black;
+  padding-left: 20px;
+ 
 
 }
+.hotel-call-btn a{
+  color: red;
+}
+.hotel-textbotm a{
+  color: var(--main-color);
+}
+
 .hotel-cta a{
+
   color: black;
   
 }
@@ -1648,23 +1854,7 @@ button {
   text-align: justify;
   font-size: 16px;
 }
-.prof{
-  width: 100%;
-  
-  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), 
-  url('assets/images/Professional\ Indemnity\ Insurance.png') no-repeat center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  border-top: 3px solid #e64a19;
-  text-align: center;
-  padding: 20px;
 
-}
 
 .transport-op h3,
 .transport-op h4,
@@ -3046,6 +3236,19 @@ p {
   justify-content: center;
   gap: 1em;
 }
+.thank{
+  background-image: url('assets/images/footer.jpg');
+  height: 50vh;
+  color: white;
+  font-weight: bold;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
 
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 605px) {
@@ -3378,58 +3581,172 @@ border: 1px solid white;
 
 
 /* professional indmenity insuranec */
-.pro-cards{
+.prof-section {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  position: relative;
+  background: linear-gradient(to right, 
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0.1) 100%
+      ),
+      url('assets/images/Professional\ Indemnity\ Insurance.png');
+  padding: 0;
+  margin: 0;
+}
+
+.header-banner {
+  background-color: #FF4E00;
+  color: white;
+  padding: 15px 30px;
+  font-size: 44px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.left-content h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.quote-btn {
+ 
+  color:white;
+  padding: 15px 40px;
+  border: 3px solid white;
+  background-color:#FF4E00 ;
+  font-size: 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 3px black;
+}
+
+.quote-btn:hover {
+  background-color: #FF4E00;
+  color: white;
+}
+
+.features-card {
+  background-color: #303030;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 0 #FF4E00;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  color: white;
+  min-width: 120px;
+}
+
+.feature-icon {
+  background-color: #FF4E00;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto 15px;
+}
+.feature p{
+
+  margin-left: 10%;
+}
+
+.feature-icon img {
+  width: 70px;
+  height: 70px;
+}
+
+.footer {
   background-color: #303030;
   padding: 20px;
-  width: 100%;
-  gap: 3em;
-  border-radius: 10px;
- box-shadow: 10px 10px 1px  #FF4E00;
-}
-.circle-card{
- 
-
-
-}
-.circle-image{
-  background-color: pink;
-}
-.pro-text h3{
-  color: black;
-  font-size: 2rem;
-  font-weight: bolder;
-}
-.pro-text p{
-  color: black;
-  font-size: 1rem;
-  font-weight: bolder;
-}
-.prof h2{
-background-color: #FB5003;
-padding: 10px;
-color: white;
-margin-right: auto;
-}
-.prof .btn{
-  border:3px solid #fb5003;
-  padding: 10px;
-  width: 128%;
-}
-.prof-foot{
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  color: white;
-  background-color: #303030;
-  margin-right: auto;
-}
-.prof-foot a{
- color: white;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
+.services-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.phone-btn {
+  background-color: white;
+  color: #333;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+      flex-direction: column;
+      padding: 20px;
+  }
+  
+  .left-content h1 {
+      font-size: 36px;
+  }
+  
+  .features-card {
+      justify-content: center;
+  }
+  
+  .footer {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .header-banner {
+      font-size: 20px;
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-content h1 {
+      font-size: 28px;
+  }
+  
+  .features-card {
+      padding: 20px;
+  }
+  
+  .feature {
+      min-width: 100px;
+  }
+}
 /* cyber insurances */
 
 .cybertext-card{
@@ -3633,3 +3950,153 @@ opacity: 90%;
   }
 
 
+
+
+
+
+
+
+
+  /* home page responsive */
+
+  @media screen and (max-width: 1400px) {
+    .cards-wrapper {
+      padding: 0 1rem;
+    }
+    
+    .home-left {
+      margin-left: -8%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .side-panel {
+      width: 35%;
+      min-height: 220px;
+    }
+    
+    .center-panel {
+      width: 45%;
+    }
+    
+    .circle {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .circle img {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .home-left {
+      margin-left: -5%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .cards-wrapper {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding: 1rem;
+    }
+    
+    .side-panel {
+      width: 90%;
+      margin: 1rem 0;
+      clip-path: none;
+    }
+    
+    .center-panel {
+      width: 90%;
+      margin: 1rem 0;
+    }
+    
+    .hleft, .hright {
+      clip-path: none;
+      height: auto;
+      min-height: 200px;
+    }
+    
+    .home-left {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .circles {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    .circle {
+      margin-bottom: 0;
+    }
+    
+    .bottom-bar {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.5rem;
+    }
+    
+    .white-button {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .top-section {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .circles {
+      gap: 0.5rem;
+    }
+    
+    .circle {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .circle img {
+      width: 45px;
+      height: 45px;
+    }
+    
+    .top-section h3 {
+      font-size: 1.25rem;
+    }
+    
+    .side-panel {
+      width: 100%;
+      padding: 1rem;
+    }
+    
+    .center-panel {
+      width: 100%;
+    }
+  }
+  
+  /* Fix for potential overflow issues */
+  .home {
+    overflow-x: hidden;
+  }
+  
+  /* Ensure minimum spacing on very small devices */
+  @media screen and (max-width: 360px) {
+    .cards-wrapper {
+      padding: 0.5rem;
+    }
+    
+    .white-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  }
+
+
+
+
+  

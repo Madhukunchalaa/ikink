@@ -16,151 +16,7 @@
 </head>
 
 <body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/cropped-website-logo.webp" alt="Logo" width="90" height="auto">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT US</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  PRODUCTS
-                </a>
-                <div class="dropdown-menu ">
-                  <div class="row drp">
-                    <div class="col-lg-4">
-                      <ul>
-                        <a href="hotel.html">
-                          <li>Hotel Insurance</li>
-                        </a>
-                        <a href="restuarent.html">
-                          <li>Restaurant Insurance</li>
-                        </a>
-                        <a href="truck&trailer.html">
-                          <li>Truck Trailer Insurance</li>
-                        </a>
-                        <a href="Professional Indemnity.html">
-                          <li>Professional Indemnity Insurance</li>
-                        </a>
-                        <a href="cargo.html">
-                          <li>Marine Cargo Insurance</li>
-                        </a>
-                        <a href="cyber.html">
-                          <li>Cyber Insurance</li>
-                        </a>
-                      </ul>
-                    </div>
-                    <div class="col-lg-4 ">
-                      <ul>
-                        <a href="scaffolding.html">
-                          <li>Scaffolding Insurance</li>
-                        </a>
-                        <a href="commercial.html">
-                          <li>Commercial Building Insurance</li>
-                        </a>
-                        <a href="plant-machinery.html">
-                          <li>
-                            Plant Machinery Insurance
-                          </li>
-                        </a>
-                        <a href="accident.html">
-                          <li>Accident & Sickness Insurance</li>
-                        </a>
-                        <a href="CTP.html">
-                          <li>CTP insurance</li>
-                        </a>
-
-
-                      </ul>
-                    </div>
-                    <div class="col-lg-4">
-                      <ul>
-                        
-                        
-                        <a href="business.html">
-                          <li>Business Insurance</li>
-                        </a>
-                        <a href="asebestos.html">
-                          <li>Asbestos Insurance</li>
-                        </a>
-                        <a href="Public and Products Liability.html">
-                          <li>Public & Products Liability</li>
-                        </a>
-                        <a href="builder.html">
-                          <li>Builders Insurance</li>
-                        </a>
-                        <a href="other.html">
-                          <li>Other Insurance</li>
-                        </a>
-
-                      </ul>
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="doc.html" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  DOCUMENTS
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="claims.html">CLAIMS</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  BLOG
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Business Interruption Insurance-For-Restaurants.html">Business
-                      Interruption Insurance For Restaurants</a></li>
-                  <li><a class="dropdown-item" href="scaffolding-liability-insurance-coverage.html">Scaffolding
-                      Liability Insurance Coverage</a></li>
-                  <li><a class="dropdown-item" href="what-type-of-insurance-a-scaffolding-company-need.html">What Type
-                      of Insurance Does a Scaffolding Company Need?</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT US</a>
-              </li>
-              <li class="nav-item">
-              <li class="nav-item"><a class="nav-link" href="mailto:info@ilinkinsurance.com.au"
-                  aria-label="Email us at info@ilinkinsurance.com.au">EMAIL</a></li>
-              </li>
-              <a class="nav-link" href="tel:+611300170328">
-                <i class="fa-solid fa-phone" style="color:#F26121; font-size:20px"></i>
-                &nbsp;1300170328
-              </a>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-  </div>
-  </div>
+  <div id="header"></div>
     
     <div class="container blog">
 
@@ -306,6 +162,15 @@
 
   </div>
   <script src="https://kit.fontawesome.com/2097aac339.js" crossorigin="anonymous"></script>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+  
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 
 </body>
 

@@ -17,71 +17,19 @@
 
 <body>
   <div id="header"></div>
-  <div class="container-fluid business p-0">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 business-left pr-0 ">
-          <div class="business-text">
-            <div class="business-title">
-
-              <h1>BUSINESS INSURANCE</h1>
-              <a href="#form"><div class="btn">
-                Get a Quote
-              </div></a>
-            </div>
-
-            <div class="business-btn ">
-              <div class="cta ">
-                <a href="claims.html">More Insurance Services</a>
-            </div>
   
-  
-              <div class="call-btn mt-3">
-                <a href="tel:+1300170128">
-                  <div class="btn"><i class="fa-solid fa-phone" style="color:white"></i>&nbsp;call 1300 170 128</div>
-                </a>
-              </div>
+  <div class="container-fluid business">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 business-text">
+        <h1 class="text">Business insurance that works for you.</h1>
+        <h5>Get the right type of easy-to-manage business insurance, that covers you for uncertainties and business associated risks..</h5>
 
-            </div>
-
-            
-        </div>
-
-        </div>
-        <div class="col-md-8 business-right p-0">
-          <div class="circle-container">
-            <div class="circle-title">
-                <div class="circle-card">
-                    <img src="assets/images/claim.png" alt="">
-                 </div>
-                 <p>Instan cover</p>
-
-            </div>
-            <div class="circle-title">
-                <div class="circle-card">
-                    <img src="assets/images/money.png" alt="">
-                 </div>
-                 <p>eaiser claims</p>
-
-            </div>
-            <div class="circle-title">
-                <div class="circle-card">
-                    <img src="assets/images/contract.png" alt="">
-                 </div>
-                 <p>Competitive <br>coverage</p>
-
-            </div>
-        </div>
-
-        </div>
+        <button class="btn btn-outline-light"><a href="#form">Get Quote</a></button>
       </div>
-
     </div>
-    
 
 
   </div>
-
 
   <div class="container sec-1 mt-5">
     <div class="row">
@@ -474,70 +422,71 @@
 
         </div>
         <div class="col-md-6 mt-5" id="form">
-            <form>
-                <h4 class="text-center p-4">REQUEST A QUOTE</h4>
-                <div class="row">
+            <form action="business_form.php" method="POST">
+              <h4 class="text-center p-4">REQUEST A QUOTE</h4>
+              <div class="row">
                   <!-- Full Name and Company Name -->
                   <div class="col-md-6 mb-3 p-2">
-                    <label for="full-name" class="form-label visually-hidden">Full Name *</label>
-                    <input type="text" id="full-name" class="form-control" placeholder="Full Name *" required>
+                      <label for="full-name" class="form-label visually-hidden">Full Name *</label>
+                      <input type="text" id="full-name" name="full_name" class="form-control" placeholder="Full Name *" required>
                   </div>
                   <div class="col-md-6 mb-3 p-2">
-                    <label for="company-name" class="form-label visually-hidden">Company Name *</label>
-                    <input type="text" id="company-name" class="form-control" placeholder="Company Name *" required>
+                      <label for="company-name" class="form-label visually-hidden">Company Name *</label>
+                      <input type="text" id="company-name" name="company_name" class="form-control" placeholder="Company Name *" required>
                   </div>
-              
+          
                   <!-- Contact and Email -->
                   <div class="col-md-6 mb-3 p-2">
-                    <label for="contact-number" class="form-label visually-hidden">Contact *</label>
-                    <input type="tel" id="contact-number" class="form-control" placeholder="Contact *" required>
+                      <label for="contact-number" class="form-label visually-hidden">Contact *</label>
+                      <input type="tel" id="contact-number" name="contact" class="form-control" placeholder="Contact *" required>
                   </div>
                   <div class="col-md-6 mb-3 p-2">
-                    <label for="email" class="form-label visually-hidden">Email *</label>
-                    <input type="email" id="email" class="form-control" placeholder="Email *" required>
+                      <label for="email" class="form-label visually-hidden">Email *</label>
+                      <input type="email" id="email" name="email" class="form-control" placeholder="Email *" required>
                   </div>
-              
+          
                   <!-- Coverage Required -->
                   <div class="col-12 mb-3 p-2">
-                    <label for="coverage-required" class="form-label">Coverage Required (Select all that apply):</label>
+                      <label for="coverage-required" class="form-label">Coverage Required (Select all that apply):</label>
                   </div>
                   <div class="col-12">
-                    <div class="form-check mb-2">
-                      <input type="checkbox" class="form-check-input" id="property-damage">
-                      <label class="form-check-label" for="property-damage">Property Damage (Building and/or Contents/Stock)</label>
-                    </div>
-                    <div class="form-check mb-2">
-                      <input type="checkbox" class="form-check-input" id="business-interruption">
-                      <label class="form-check-label" for="business-interruption">Business Interruption (Loss of Income)</label>
-                    </div>
-                    <div class="form-check mb-2">
-                      <input type="checkbox" class="form-check-input" id="burglary-theft">
-                      <label class="form-check-label" for="burglary-theft">Burglary/Theft (Contents and Stock)</label>
-                    </div>
-                    <div class="form-check mb-2">
-                      <input type="checkbox" class="form-check-input" id="cash">
-                      <label class="form-check-label" for="cash">Cash (money)</label>
-                    </div>
-                    <div class="form-check mb-2">
-                      <input type="checkbox" class="form-check-input" id="plate-glass">
-                      <label class="form-check-label" for="plate-glass">Plate Glass (internal and external)</label>
-                    </div>
-                    <div class="form-check mb-2">
-                      <input type="checkbox" class="form-check-input" id="public-liability">
-                      <label class="form-check-label" for="public-liability">Public and Products Liability</label>
-                    </div>
-                    <div class="form-check mb-2">
-                      <input type="checkbox" class="form-check-input" id="machinery-breakdown">
-                      <label class="form-check-label" for="machinery-breakdown">Machinery Breakdown</label>
-                    </div>
+                      <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input" name="coverage[]" value="Property Damage">
+                          <label class="form-check-label">Property Damage (Building and/or Contents/Stock)</label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input" name="coverage[]" value="Business Interruption">
+                          <label class="form-check-label">Business Interruption (Loss of Income)</label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input" name="coverage[]" value="Burglary/Theft">
+                          <label class="form-check-label">Burglary/Theft (Contents and Stock)</label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input" name="coverage[]" value="Cash">
+                          <label class="form-check-label">Cash (money)</label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input" name="coverage[]" value="Plate Glass">
+                          <label class="form-check-label">Plate Glass (internal and external)</label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input" name="coverage[]" value="Public and Products Liability">
+                          <label class="form-check-label">Public and Products Liability</label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input" name="coverage[]" value="Machinery Breakdown">
+                          <label class="form-check-label">Machinery Breakdown</label>
+                      </div>
                   </div>
-              
+          
                   <!-- Submit Button -->
                   <div class="col-6 text-end mt-3">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn" style="background-color:#E64A19; color:white;">Submit</button>
                   </div>
-                </div>
-              </form>
+              </div>
+          </form>
+          
 
         </div>
     </div>
@@ -694,6 +643,9 @@
       fetch('footer.html')
         .then(response => response.text())
         .then(data => document.getElementById('footer').innerHTML = data);
+
+
+        
     </script>
   <script src="https://kit.fontawesome.com/2097aac339.js" crossorigin="anonymous"></script>
 

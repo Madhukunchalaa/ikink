@@ -17,58 +17,16 @@
 
 <body>
   <div id="header"></div>
-    <div class="container-fluid ctp">
-        <div class="row">
-            <div class="col-md-6 ctp-left">
-                <div class="ctp-text">
-                    <h2>CERTIFIED TREASURY PROFESSIONAL INSURANCE</h2>
-                    <a href="#form">
-                        <div class="btn">Check Your Coverage</div>
-                    </a>
-                </div>
-                <div class="ctp-botm">
-                    <div class="cta ">
-                        <a href="claims.html">More Insurance Services</a>
-                    </div>
-                      <div class="call-btn mt-3">
-                        <a href="tel:+1300170128">
-                          <div class="btn"><i class="fa-solid fa-phone" style="color:white"></i>&nbsp;call 1300 170 128</div>
-                        </a>
-                      </div>
+  <div class="container-fluid ctp">
 
-                </div>
-    
-            </div>
-            <div class="col-md-6 ctp-right">
-                <div class="circle-container">
-                    <div class="circle-title">
-                        <div class="circle-card">
-                            <img src="assets/images/claim.png" alt="">
-                         </div>
-                         <p>Instan cover</p>
-          
-                    </div>
-                    <div class="circle-title">
-                        <div class="circle-card">
-                            <img src="assets/images/money.png" alt="">
-                         </div>
-                         <p>eaiser claims</p>
-          
-                    </div>
-                    <div class="circle-title">
-                        <div class="circle-card">
-                            <img src="assets/images/contract.png" alt="">
-                         </div>
-                         <p>Competitive <br>coverage</p>
-          
-                    </div>
-                </div>   
-            </div>
-        </div>
+    <div class="display-4">CTP Insurance</div>
+    <button>
+        <h4>
+            REQUEST INSTANT QUOTE</h4>
+    </button>
 
 
-
-    </div>
+</div>
     <div class="container-fluid toll">
         <h3>Our Toll-Free Number:</h3>
         <h3 style="color: #F26121;"><i class="fa-solid fa-phone"></i>&nbsp;1300 170 328</h3>
@@ -79,62 +37,62 @@
     
     <div class="container mt-4" id="form">
         <h4 class="text-center" style="color: #e64a19;">REQUEST A QUOTE</h4>
-        <form action="">
+        <form action="ctp_form.php" method="post"> <!-- Added action and method -->
             <div class="row g-3">
                <div class="col-md-6">
                     <label for="fullName" class="form-label">Full Name <span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                    <input type="text" class="form-control" id="fullName" name="full-name" placeholder="Full Name" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="fullName" class="form-label">Full address<span
+                    <label for="address" class="form-label">Full address<span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="address" placeholder="Enter location" required>
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Enter location" required>
                 </div>
                
                 <div class="col-md-6">
-                    <label for="fullName" class="form-label">Contact Number<span
+                    <label for="contactNumber" class="form-label">Contact Number<span
                             class="text-danger">(Required)</span></label>
-                    <input type="Number" class="form-control" id="email" placeholder="Contact" required>
+                    <input type="number" class="form-control" id="contactNumber" name="contact-number" placeholder="Contact" required>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="" class="form-label">Email <span
+                    <label for="email" class="form-label">Email <span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="fullName" placeholder="" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                 </div>
                 
                 <div class="col-md-6">
-                    <label for="" class="form-label">Your Occupation<span
+                    <label for="occupation" class="form-label">Your Occupation<span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="Occupation" placeholder="" required>
+                    <input type="text" class="form-control" id="occupation" name="occupation" placeholder="Occupation" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">Billing Number<span
+                    <label for="billingNumber" class="form-label">Billing Number<span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="billing NUmber" placeholder="" required>
+                    <input type="text" class="form-control" id="billingNumber" name="billing-number" placeholder="Billing Number" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">Plate number<span
+                    <label for="plateNumber" class="form-label">Plate number<span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="Plate Number" placeholder="" required>
+                    <input type="text" class="form-control" id="plateNumber" name="plate-number" placeholder="Plate Number" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">VIN number/Chassis number<span
+                    <label for="vinNumber" class="form-label">VIN number/Chassis number<span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="VIN number" placeholder="" required>
+                    <input type="text" class="form-control" id="vinNumber" name="vin-number" placeholder="VIN number" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">customer number<span
+                    <label for="customerNumber" class="form-label">Customer number<span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="customer number" placeholder="" required>
+                    <input type="text" class="form-control" id="customerNumber" name="customer-number" placeholder="Customer number" required>
                 </div>
                
                 <div class="col-md-6">
-                    <label for="carryingCapacity" class="form-label">
+                    <label for="vehicleStatus" class="form-label">
                         Is the vehicle
                         <span class="text-danger">(Required)</span></label>
-                    <select id="Public Liability (PL) Required" class="form-select" required>
+                    <select id="vehicleStatus" name="vehicle-status" class="form-select" required>
                         <option value="">please select</option>
                        <option value="current">current</option>
                        <option value="brand new">brand new</option>
@@ -143,33 +101,32 @@
                 </div>
                 <h5>Vehicle details</h5>
                 <div class="col-md-6">
-                    <label for="" class="form-label">Year of manufacture? (refer RMS registration paper)<span
+                    <label for="yearManufacture" class="form-label">Year of manufacture? (refer RMS registration paper)<span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="RMS" placeholder="" required>
+                    <input type="text" class="form-control" id="yearManufacture" name="year-manufacture" placeholder="Year of manufacture" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">
+                    <label for="makeVehicle" class="form-label">
                         Make of vehicle?<span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="
-Make of vehicle" placeholder="" required>
+                    <input type="text" class="form-control" id="makeVehicle" name="make-vehicle" placeholder="Make of vehicle" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">Vehicle shape? (this is noted as a 3-letter code of your registration paper)
+                    <label for="vehicleShape" class="form-label">Vehicle shape? (this is noted as a 3-letter code of your registration paper)
                         <span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="Vehicle shape" placeholder="" required>
+                    <input type="text" class="form-control" id="vehicleShape" name="vehicle-shape" placeholder="Vehicle shape" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">Vehicle GVM<span
+                    <label for="vehicleGVM" class="form-label">Vehicle GVM<span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="Vehicle GVM" placeholder="" required>
+                    <input type="text" class="form-control" id="vehicleGVM" name="vehicle-gvm" placeholder="Vehicle GVM" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="carryingCapacity" class="form-label">
+                    <label for="vehicleUsage" class="form-label">
                         Vehicle usage? (this is noted as a 4-letter code on the bottom of your RMS papers)
                         <span class="text-danger">(Required)</span></label>
-                    <select id="vehicle usage" class="form-select" required>
+                    <select id="vehicleUsage" name="vehicle-usage" class="form-select" required>
                         <option value="">please select</option>
                        <option value="commercial">commercial</option>
                        <option value="Private">Private</option>
@@ -178,64 +135,52 @@ Make of vehicle" placeholder="" required>
                 </div>
               
                 <div class="col-md-6">
-                    <label for="" class="form-label">
+                    <label for="postcode" class="form-label">
                         At what postcode do you garage the vehicle?
                         <span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="postcode" placeholder="" required>
+                    <input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">
+                    <label for="suburb" class="form-label">
                         At what suburb do you garage the vehicle?<span
                             class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="suburb" placeholder="" required>
+                    <input type="text" class="form-control" id="suburb" name="suburb" placeholder="Suburb" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="carryingCapacity" class="form-label">What type of customer are you?
+                    <label for="customerType" class="form-label">What type of customer are you?
                         <span class="text-danger">(Required)</span></label>
-                    <select id="Type of customer" class="form-select" required>
+                    <select id="customerType" name="customer-type" class="form-select" required>
                         <option value="">please select</option>
-                        <option value="individual/sole trader">Company</option>
-                        <option value="used cars">Used car Dealer</option>
-                        <option value="feet">fleet</option>
+                        <option value="Company">Company</option>
+                        <option value="Used car dealer">Used car Dealer</option>
+                        <option value="Fleet">fleet</option>
                     </select>
                 </div>
                 <div class="col-md-6">
-                    <label for="carryingCapacity" class="form-label">What duration of insurance would you like?
+                    <label for="insuranceDuration" class="form-label">What duration of insurance would you like?
                         <span class="text-danger">(Required)</span></label>
-                    <select id="duration" class="form-select" required>
+                    <select id="insuranceDuration" name="insurance-duration" class="form-select" required>
                         <option value="">please select</option>
-                        <option value="12 months">6 Months</option>
-                        <option value="6 Months">12 Months</option>
+                        <option value="6 months">6 Months</option>
+                        <option value="12 months">12 Months</option>
                        
                     </select>
                 </div>
                 <div class="col-md-6">
-                    <label for="carryingCapacity" class="form-label">
-                      
+                    <label for="inputTaxCredit" class="form-label">
                            Are you entitled to an input tax credit?
-
                         <span class="text-danger">(Required)</span></label>
-                    <select id="input tax" class="form-select" required>
+                    <select id="inputTaxCredit" name="input-tax-credit" class="form-select" required>
                         <option value="">please select</option>
                       <option value="Yes">Yes</option>
                       <option value="No">No</option>
-                    
-                        
                     </select>
                 </div>
-
                 <div class="col-md-7">
-                    <button type="submit" class="btn btn-primary mt-4">Submit</button>
-
+                    <button type="submit" class="btn  mt-4">Submit</button>
                 </div>
-                
-    
-    
             </div>
-    
-    
-            
         </form>
     
 

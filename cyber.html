@@ -18,108 +18,19 @@
 <body>
   <div id="header"></div>
 
+  
   <div class="container-fluid cyber">
-    <div class="container">
     <div class="row">
-      <div class="col-md-6 cyber-left p-0">
-        <div class="cybertext-card p-0">
-          <div class="cyber-title">
-          <h1> CYBER INSURANCE</h1> 
-          </div>
-          <div class="cyber-text">
-            <h1>Defend  Aganist Cyber Threats</h1>
-            <a href="#form"><div class="btn">
-              Get a Quote
-            </div></a>
-          </div>
-          <div class="cta ">
-            <a href="claims.html">More Insurance Services</a>
-        </div>
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 hero-text">
+        <h1 class="text">Cyber Insurance</h1>
+        <h4>Securing Your Digital Future With Cyber Insurance: Explore Our Cyber Insurance Services for Comprehensive Protection!.</h4>
 
-        </div>
-        <div class="call-btn mt-3">
-          <a href="tel:+1300170128">
-            <div class="btn"><i class="fa-solid fa-phone" style="color:white"></i>&nbsp;call 1300 170 128</div>
-          </a>
-        </div>
-       
-      </div>
-
-      <div class="col-md-6 cyber-right ">
-        <div class="cyber-img">
-
-        </div>
-        <div class="circle-container">
-          <div class="cybercircle-title">
-              <div class="circle-card">
-                  <img src="assets/images/claim.png" alt="">
-               </div>
-               <p>Instan cover</p>
-  
-          </div>
-          <div class="cybercircle-title">
-              <div class="circle-card">
-                  <img src="assets/images/money.png" alt="">
-               </div>
-               <p>eaiser claims</p>
-  
-          </div>
-          <div class="cybercircle-title">
-              <div class="circle-card">
-                  <img src="assets/images/contract.png" alt="">
-               </div>
-               <p>Competitive Coverage</p>
-  
-          </div>
-      </div>
-
-
-
-      </div>
-      
-    </div>
-  </div>
-
-
-  </div>
-
-
-  <div class="container-fluid cyber-cards p-5"style="background-color:#F8F8F8">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card">
-            <img src="assets/images/evaluation.png" alt="">
-            <h5>Risk Assessment</h5>
-            <p>Identify and assess potential cyber threats and vulnerabilities in your organization’s IT infrastructure.</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="assets/images/quote-request.png" alt="">
-            <h5>Get an instant quote</h5>
-            <p>Contact an insurance specialist, explain your needs and concerns, and obtain a preliminary quotation..</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="assets/images/consulting-1.png" alt="">
-            <h5>Complete consultation</h5>
-            <p>We take the time to comprehend your company’s operations and the risk variables involved before recommending the most appropriate Insurance.</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="assets/images/protection.png" alt="">
-            <h5>You are protected</h5>
-            <p>You will receive comprehensive coverage at a reasonable cost that prioritizes your interests through an easy-to-use procedure.</p>
-          </div>
-        </div>
+        <button class="btn btn-outline-light"><a href="#form">Get Quote</a></button>
       </div>
     </div>
 
-  </div>
 
+  </div>
 
 
   <div class="container-fluid paras "style="background-color: #F5F0E0;">
@@ -300,41 +211,41 @@
   <div class="container cyber-table" id="form">
     <h1 class="text-center mb-4">REQUEST A QUOTE</h1>
     <div class="container my-5 frm">
-        <form class="cyberform-container">
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <label for="full-name" class="form-label">Full Name <span class="required">(Required)</span></label>
-                    <input type="text" class="form-control" id="full-name" placeholder="Enter your full name" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="company-name" class="form-label">Company Name <span class="required">(Required)</span></label>
-                    <input type="text" class="form-control" id="company-name" placeholder="Enter your company name" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="contact-no" class="form-label">Contact No <span class="required">(Required)</span></label>
-                    <input type="tel" class="form-control" id="contact-no" placeholder="Enter your contact number" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="email" class="form-label">Email <span class="required">(Required)</span></label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="occupation" class="form-label">Your Occupation <span class="required">(Required)</span></label>
-                    <input type="text" class="form-control" id="occupation" placeholder="Enter your occupation" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="turnover" class="form-label">Estimated Turnover of Business <span class="required">(Required)</span></label>
-                    <input type="text" class="form-control" id="turnover" placeholder="Enter estimated turnover" required>
-                </div>
-                <div class="col-12">
-                    <label for="employees" class="form-label">Total Number of Employees (Including Directors) <span class="required">(Required)</span></label>
-                    <input type="number" class="form-control" id="employees" placeholder="Enter total number of employees" required>
-                </div>
-                <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
-                </div>
+      <form class="cyberform-container" action="cyber_form.php" method="post"> <!-- Updated with correct method and action -->
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="full-name" class="form-label">Full Name <span class="required">(Required)</span></label>
+                <input type="text" class="form-control" id="full-name" name="full-name" placeholder="Enter your full name" required>
             </div>
-        </form>
+            <div class="col-md-6">
+                <label for="company-name" class="form-label">Company Name <span class="required">(Required)</span></label>
+                <input type="text" class="form-control" id="company-name" name="company-name" placeholder="Enter your company name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="contact-no" class="form-label">Contact No <span class="required">(Required)</span></label>
+                <input type="tel" class="form-control" id="contact-no" name="contact-no" placeholder="Enter your contact number" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email <span class="required">(Required)</span></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+             <div class="col-md-6">
+                <label for="occupation" class="form-label">Your Occupation <span class="required">(Required)</span></label>
+                <input type="text" class="form-control" id="occupation" name="occupation" placeholder="Enter your occupation" required>
+            </div>
+             <div class="col-md-6">
+                <label for="turnover" class="form-label">Estimated Turnover of Business <span class="required">(Required)</span></label>
+                <input type="text" class="form-control" id="turnover" name="turnover" placeholder="Enter estimated turnover" required>
+            </div>
+            <div class="col-12">
+                <label for="employees" class="form-label">Total Number of Employees (Including Directors) <span class="required">(Required)</span></label>
+                <input type="number" class="form-control" id="employees" name="employees" placeholder="Enter total number of employees" required>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </div>
+        </div>
+    </form>
     </div>
 </div>
 

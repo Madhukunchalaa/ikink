@@ -6,6 +6,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ilink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,41 +21,37 @@
 <body>
   <div id="header"></div>
   
-    <div class="rqst-box">
-      <a href="#form">REQUEST A QUOTE</a>
-    </div>
-    
-    </div>
-    <div class="conatiner-lg aboutus">
+  <div class="conatiner-lg aboutus">
+    <h2>About Us</h2>
+        </div>
+        <div class="rqst-box">
+          <a href="#form">REQUEST A QUOTE</a>
 
-    </div>
-    
-    <div class="container">
-        <h1 class="display-5">About us</h1>
+        </div>
+
+
+    <div class="container aboutp" style="font-family:Poppins,serif";>
+        <h1 class="about-title">About us</h1>
         <div class="hr"></div>
-        <div class="para mt-3">
-        <p>iLink Insurance Brokers are a young and proactive team of General Insurance brokers. At iLink Insurance Brokers we are dedicated to providing our clients with expert and innovative advice to service their precise insurance needs</p>
-        <p>We offer a wide range of General Insurance products and Risk Management solutions to clients. We know and study the General Insurance marketplace and its trends.</p>
-        <p>At iLink Insurance Brokers, our clients are our number one priority and we place their interests first. We are dedicated to provide an ‘end to end’ insurance service to our clients by identifying and analysing the risk exposure of our clients and/or their business, to tailor insurance solutions accordingly.</p>
-        <p>We provide a holistic service to all clients. An initial business planning session is essential to gain an insight into our client’s business or personal requirements, followed by negotiations with insurers for the most appropriate insurance cover to best represent their needs.</p>
-        <p>We work for you as your appointed agent to represent your interests first and foremost with your insurance arrangements, not the insurance company. Protecting your interests is our prime concern and we take personal care to structure your insurance cover to align with your insurance needs and budget. We have access to over 100 of Australia’s leading insurers and underwriting agencies. As your professional broker, we represent you (the client), not the insurance company – to ensure that you get the best available products and services at the best available price to suit your insurance requirements.</p>
-        <p>We don’t claim to be big, but our goal is to exceed our client’s expectations by offering tailored products with broad policy coverage at competitive price, and excellent professional service including claims services. We strongly believe that our role is not merely to sell insurances but to provide holistic services and advice to our clients to assist in managing risk exposure and ensuring peace of mind.</p>
-        <p>We provide advice and assistance to make sure you are properly protected against any unexpected losses.</p>
-    </div>
-    <div class="rqst-btn">
-      <a href="#quote">REQUEST A QUOTE</a>
-    </div>
+        <div class="para mt-5">
+        <p class="mt-4">iLink Insurance Brokers are a young and proactive team of General Insurance brokers. At iLink Insurance Brokers we are dedicated to providing our clients with expert and innovative advice to service their precise insurance needs</p>
+        <p class="mt-4">We offer a wide range of General Insurance products and Risk Management solutions to clients. We know and study the General Insurance marketplace and its trends.</p>
+        <p class="mt-4">At iLink Insurance Brokers, our clients are our number one priority and we place their interests first. We are dedicated to provide an ‘end to end’ insurance service to our clients by identifying and analysing the risk exposure of our clients and/or their business, to tailor insurance solutions accordingly.</p>
+        <p class="mt-4">We provide a holistic service to all clients. An initial business planning session is essential to gain an insight into our client’s business or personal requirements, followed by negotiations with insurers for the most appropriate insurance cover to best represent their needs.</p>
+        <p class="mt-4">We work for you as your appointed agent to represent your interests first and foremost with your insurance arrangements, not the insurance company. Protecting your interests is our prime concern and we take personal care to structure your insurance cover to align with your insurance needs and budget. We have access to over 100 of Australia’s leading insurers and underwriting agencies. As your professional broker, we represent you (the client), not the insurance company – to ensure that you get the best available products and services at the best available price to suit your insurance requirements.</p>
+        <p class="mt-4">We don’t claim to be big, but our goal is to exceed our client’s expectations by offering tailored products with broad policy coverage at competitive price, and excellent professional service including claims services. We strongly believe that our role is not merely to sell insurances but to provide holistic services and advice to our clients to assist in managing risk exposure and ensuring peace of mind.</p>
+        <p class="mt-4">We provide advice and assistance to make sure you are properly protected against any unexpected losses.</p>
     </div>
 
-    <div class="container-fluid tollfree py-4">
-      <div class="text-c">
-        <h3 class="mb-2">Our Toll Free</h3>
-        <h3 class="mb-3" style="color: #F26121;">
-          <i class="fa-solid fa-phone" style="color: #F26121;"></i> 1300 170 328
-        </h3>
-        <h3 class="mb-0">Call us if you have any questions - We are happy to help you</h3>
-      </div>
     </div>
+
+  <div class="container-fluid contact-section">
+    <div class="cta">
+      <h2>Our Toll free No :</h2>
+     <a href="tel:1300 170 328" style="text-decoration: none;"> <span><i class="fa-solid fa-phone"></i>1300 170 328</span></a>
+      <h2>Call us if you have any questions - We are happy to help you</h2>
+    </div>
+  </div>
     
 
 
@@ -150,64 +149,65 @@
     
         <!-- Form Section -->
         <div class="col-md-6">
-          <form style="border: 1px solid; border-radius: 10px; padding: 70px;">
+          <form action="about.php" method="POST" style="border: 1px solid; border-radius: 10px; padding: 70px;">
             <div class="row">
-              <!-- Full Name and Contact Number -->
-              <div class="col-md-6 mb-3">
-                <label for="full-name" class="form-label visually-hidden">Full Name *</label>
-                <input type="text" id="full-name" class="form-control border-dark" placeholder="Full Name *" required>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="contact" class="form-label visually-hidden">Contact Number *</label>
-                <input type="number" id="contact" class="form-control border-dark" placeholder="Contact Number *" required>
-              </div>
-    
-              <!-- Email and City -->
-              <div class="col-md-6 mb-3">
-                <label for="email" class="form-label visually-hidden">Email *</label>
-                <input type="email" id="email" class="form-control border-dark" placeholder="Email *" required>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="city" class="form-label visually-hidden">City *</label>
-                <input type="text" id="city" class="form-control border-dark" placeholder="City *" required>
-              </div>
-    
-              <!-- Select Insurance -->
-              <div class="col-12 mb-3">
-                <label for="insurance" class="form-label visually-hidden">Select Insurance *</label>
-                <select id="insurance" class="form-select border-dark" required>
-                  <option value="">Select Insurance</option>
-                  <option value="hotel">Hotel Insurance</option>
-                  <option value="scaffolding">Scaffolding Insurance</option>
-                  <option value="business">Business Insurance</option>
-                  <option value="restaurant">Restaurant Insurance</option>
-                  <option value="commercial">Commercial Building Insurance</option>
-                  <option value="aesbestos">Aesbestos Insurance</option>
-                  <option value="truck trailer">Truck Trailer Insurance</option>
-                  <option value="plant machinery">Plant Machinery Insurance</option>
-                  <option value="products and liability">Products and Liability</option>
-                  <option value="professional indemnity">Professional Indemnity Insurance</option>
-                  <option value="accident and sickness">Accident and Sickness Insurance</option>
-                  <option value="builder">Builder Insurance</option>
-                  <option value="marine">Marine Cargo Insurance</option>
-                  <option value="ctp">CTP Insurance</option>
-                  <option value="cyber">Cyber Insurance</option>
-                  <option value="other">Other Insurance</option>
-                </select>
-              </div>
-    
-              <!-- Description -->
-              <div class="col-12 mb-3">
-                <label for="description" class="form-label visually-hidden">Description</label>
-                <textarea id="description" class="form-control border-dark" rows="4" placeholder="Description"></textarea>
-              </div>
-    
-              <!-- Submit Button -->
-              <div class="col-6">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
+                <!-- Full Name and Contact Number -->
+                <div class="col-md-6 mb-3">
+                    <label for="full-name" class="form-label visually-hidden">Full Name *</label>
+                    <input type="text" name="fullName" id="full-name" class="form-control border-dark" placeholder="Full Name *" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="contact" class="form-label visually-hidden">Contact Number *</label>
+                    <input type="number" name="phoneNumber" id="contact" class="form-control border-dark" placeholder="Contact Number *" required>
+                </div>
+        
+                <!-- Email and City -->
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label visually-hidden">Email *</label>
+                    <input type="email" name="userEmail" id="email" class="form-control border-dark" placeholder="Email *" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="city" class="form-label visually-hidden">City *</label>
+                    <input type="text" name="userCity" id="city" class="form-control border-dark" placeholder="City *" required>
+                </div>
+        
+                <!-- Select Insurance -->
+                <div class="col-12 mb-3">
+                    <label for="insurance" class="form-label visually-hidden">Select Insurance *</label>
+                    <select name="serviceType" id="insurance" class="form-select border-dark" required>
+                        <option value="">Select Insurance</option>
+                        <option value="hotel">Hotel Insurance</option>
+                        <option value="scaffolding">Scaffolding Insurance</option>
+                        <option value="business">Business Insurance</option>
+                        <option value="restaurant">Restaurant Insurance</option>
+                        <option value="commercial">Commercial Building Insurance</option>
+                        <option value="aesbestos">Aesbestos Insurance</option>
+                        <option value="truck trailer">Truck Trailer Insurance</option>
+                        <option value="plant machinery">Plant Machinery Insurance</option>
+                        <option value="products and liability">Products and Liability</option>
+                        <option value="professional indemnity">Professional Indemnity Insurance</option>
+                        <option value="accident and sickness">Accident and Sickness Insurance</option>
+                        <option value="builder">Builder Insurance</option>
+                        <option value="marine">Marine Cargo Insurance</option>
+                        <option value="ctp">CTP Insurance</option>
+                        <option value="cyber">Cyber Insurance</option>
+                        <option value="other">Other Insurance</option>
+                    </select>
+                </div>
+        
+                <!-- Description -->
+                <div class="col-12 mb-3">
+                    <label for="description" class="form-label visually-hidden">Description</label>
+                    <textarea name="userMessage" id="description" class="form-control border-dark" rows="4" placeholder="Description"></textarea>
+                </div>
+        
+                <!-- Submit Button -->
+                <div class="col-6">
+                    <button type="submit" class="btn" style="background-color:#F26121">Submit</button>
+                </div>
             </div>
-          </form>
+        </form>
+        
         </div>
       </div>
     </div>

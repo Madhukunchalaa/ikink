@@ -18,46 +18,16 @@
 <body>
   <div id="header"></div>
  
-  <div class="prof-section ">
-    <div class="header-banner mt-5">
-        Professional Indemnity Insurance
-    </div>
-    
-    <div class="main-content">
-        <div class="left-content mt-5">
-            <h1>Protect Your Professional Reputation!</h1>
-            <a href="#form" class="quote-btn">Get a Quote</a>
-        </div>
-        
-        <div class="features-card">
-            <div class="feature">
-                <div class="feature-icon">
-                    <img src="assets/images/whitelog2.png" alt="Instant Cover icon">
-                </div>
-                <p>Instant Cover</p>
-            </div>
-            
-            <div class="feature">
-                <div class="feature-icon">
-                    <img src="assets/images/whitelogo.png" alt="Easier Claims icon">
-                </div>
-                <p>Easier Claims</p>
-            </div>
-            
-            <div class="feature">
-                <div class="feature-icon">
-                    <img src="assets/images/whitelogo5.png" alt="Competitive Coverage icon">
-                </div>
-                <p>Competitive Coverage</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="footer">
-        <a href="#" class="services-link">More insurance services</a>
-        <a href="tel:1300170328" class="phone-btn">Call 1300 170 328</a>
-    </div>
-  </div>
+  <div class="container-fluid proffesional">
+
+    <div class="display-4">Professional Indemnity Insurance</div>
+    <button>
+        <h4>
+            REQUEST INSTANT QUOTE</h4>
+    </button>
+
+
+</div>
     <div class="container text-center">
         <div class="row sect-2">
             <h3 class="text-center">Professional Indemnity Insurance for:</h3>
@@ -83,41 +53,42 @@
         </div>
     </div>
     
-    <div class="container mt-4 prof-form text-center w-100 border border-dark p-3" id="form">
+    <div class="container mt-4 prof-form text-center w-100 border  p-3" id="form">
         <h4 class="text-center" style="color: #e64a19;">REQUEST A QUOTE</h4>
-        <form action="">
+
+        <form action="professional.php" method="post" enctype="multipart/form-data">
             <div class="row g-3">
                 <div class="col-8">
                     <label for="dateInput" class="form-label">Select Date</label>
-                    <input type="date" class="form-control border-dark" id="dateInput">
+                    <input type="date" class="form-control border-dark" id="dateInput" name="date-input">
                 </div>
                 <div class="col-md-6">
                     <label for="fullName" class="form-label">Full Name <span class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control border-dark" id="fullName" placeholder="Full Name" required>
+                    <input type="text" class="form-control border-dark" id="fullName" name="full-name" placeholder="Full Name" required>
                 </div>
                 <div class="col-md-6">
                     <label for="businessName" class="form-label">Company/Business Name (if any) <span class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control border-dark" id="businessName" placeholder="Business Name" required>
+                    <input type="text" class="form-control border-dark" id="businessName" name="business-name" placeholder="Business Name" required>
                 </div>
                 <div class="col-md-6">
                     <label for="contact" class="form-label">Contact Number <span class="text-danger">(Required)</span></label>
-                    <input type="number" class="form-control border-dark" id="contact" placeholder="Contact" required>
+                    <input type="number" class="form-control border-dark" id="contact" name="contact-number" placeholder="Contact" required>
                 </div>
                 <div class="col-md-6">
                     <label for="email" class="form-label">Email <span class="text-danger">(Required)</span></label>
-                    <input type="email" class="form-control border-dark" id="email" placeholder="Email" required>
+                    <input type="email" class="form-control border-dark" id="email" name="email" placeholder="Email" required>
                 </div>
-                <div class="col-md-6">
+                 <div class="col-md-6">
                     <label for="businessAddress" class="form-label">Business Address <span class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control border-dark" id="businessAddress" placeholder="Location" required>
+                    <input type="text" class="form-control border-dark" id="businessAddress" name="business-address" placeholder="Location" required>
                 </div>
                 <div class="col-md-6">
                     <label for="businessDescription" class="form-label">Business Description <span class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control border-dark" id="businessDescription" placeholder="Business Description" required>
+                    <input type="text" class="form-control border-dark" id="businessDescription" name="business-description" placeholder="Business Description" required>
                 </div>
-                <div class="col-md-6">
+                 <div class="col-md-6">
                     <label for="piRequired" class="form-label">Professional Indemnity (PI) Required <span class="text-danger">(Required)</span></label>
-                    <select id="piRequired" class="form-select" required>
+                    <select id="piRequired" class="form-select" name="pi-required" required>
                         <option value="">Please select</option>
                         <option value="$1M">$1M</option>
                         <option value="$2M">$2M</option>
@@ -129,17 +100,17 @@
                 </div>
                 <div class="col-md-6">
                     <label for="plRequired" class="form-label">Public Liability (PL) Required <span class="text-danger">(Required)</span></label>
-                    <select id="plRequired" class="form-select" required>
+                    <select id="plRequired" class="form-select" name="pl-required" required>
                         <option value="">Please select</option>
                         <option value="$10M">$10M</option>
                         <option value="$20M">$20M</option>
                     </select>
                 </div>
-                <div class="col-md-12">
+                  <div class="col-md-12">
                     <p>Upload your current insurance policy schedule for a free insurance review:</p>
                     <label for="customFile" class="form-label">Choose File</label>
-                    <input class="form-control border-dark" type="file" id="customFile">
-                </div>
+                      <input class="form-control border-dark" type="file" id="customFile" name="insurance-policy">
+                 </div>
                 <div class="col text-center">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>

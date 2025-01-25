@@ -17,70 +17,16 @@
 
 <body>
   <div id="header"></div>
-    <div class="container-fluid public p-0">
-        <div class="row">
-            <div class="col-md-6 public-left">
-                <div class="public-text">
-                    <h1>Public And Product Liability Insurance</h1>
-                    <a href="">
-                        <div class="btn">
-                            Get a Quote
-                        </div>
-                    </a>
+  <div class="container-fluid public">
 
-                </div>
-
-            </div>
-            <div class="col-md-6 public-right">
-                <div class="circle-container">
-                    <div class="circle-title">
-                        <div class="circle-card">
-                            <img src="assets/images/claim.png" alt="">
-                        </div>
-                        <p>Instan cover</p>
-
-                    </div>
-                    <div class="circle-title">
-                        <div class="circle-card">
-                            <img src="assets/images/money.png" alt="">
-                        </div>
-                        <p>eaiser claims</p>
-
-                    </div>
-                    <div class="circle-title">
-                        <div class="circle-card">
-                            <img src="assets/images/contract.png" alt="">
-                        </div>
-                        <p>Competitive coverage</p>
-
-                    </div>
-                </div>
+  <div class="display-4">Public & Products Liability</div>
+  <button>
+      <h4>
+          REQUEST INSTANT QUOTE</h4>
+  </button>
 
 
-
-            </div>
-
-        </div>
-
-
-
-
-    </div>
-    <div class="container-fluid public-botm ">
-        <div class="text-botm">
-            <div class="cta ">
-                <a href="claims.html">More Insurance Services</a>
-            </div>
-            <div class="call-btn mt-3">
-                <a href="tel:+1300170128">
-                    <div class="btn"><i class="fa-solid fa-phone" style="color:white"></i>&nbsp;call 1300 170 128</div>
-                </a>
-            </div>
-
-        </div>
-
-
-    </div>
+</div>
     <div class="container">
         <h3 class="text-center mt-4">Public Liability Insurance for:</h3>
         <div class="row">
@@ -176,128 +122,102 @@
 
     <div class="container mt-4">
         <h4 class="text-center" style="color: #e64a19;">REQUEST A QUOTE</h4>
-        <form action="">
+        <form action="ppl.php" method="post" enctype="multipart/form-data">
             <div class="row g-3">
-
-
-
-
                 <div class="col-md-6">
-                    <label for="fullName" class="form-label">Full Name <span
-                            class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                    <label for="fullName" class="form-label">Full Name <span class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="fullName" name="full-name" placeholder="Full Name" required>
                 </div>
-                <div class="col-md-6">
-                    <label for="fullName" class="form-label">Company/ Business Name (if any)<span
-                            class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="company" placeholder="" required>
+                 <div class="col-md-6">
+                    <label for="companyName" class="form-label">Company/ Business Name (if any)<span class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="companyName" name="company-name" placeholder="" required>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="fullName" class="form-label">Contact Number<span
-                            class="text-danger">(Required)</span></label>
-                    <input type="Number" class="form-control" id="email" placeholder="Contact" required>
+                    <label for="contactNumber" class="form-label">Contact Number<span class="text-danger">(Required)</span></label>
+                    <input type="number" class="form-control" id="contactNumber" name="contact-number" placeholder="Contact" required>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="" class="form-label">Email <span class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="fullName" placeholder="" required>
+                    <label for="email" class="form-label">Email <span class="text-danger">(Required)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">Business address <span
-                            class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="business adress" placeholder="" required>
+                    <label for="businessAddress" class="form-label">Business address <span class="text-danger">(Required)</span></label>
+                     <input type="text" class="form-control" id="businessAddress" name="business-address" placeholder="" required>
+                </div>
+                 <div class="col-md-6">
+                    <label for="businessDescription" class="form-label">Business Description<span class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="businessDescription" name="business-description" placeholder="" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">Business Description<span
-                            class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="business description" placeholder="" required>
+                    <label for="numberOfDirectorsEmployees" class="form-label">No. of Directors & employees<span class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="numberOfDirectorsEmployees" name="number-of-directors-employees" placeholder="" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="" class="form-label">No. of Directors & employees
-                        <span class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="No. of Directors & employees
-" placeholder="" required>
+                   <label for="estimatedAnnualTurnover" class="form-label">Estimated Annual Turnover<span class="text-danger">(Required)</span></label>
+                    <input type="text" class="form-control" id="estimatedAnnualTurnover"  name="estimated-annual-turnover" placeholder="" required>
                 </div>
-                <div class="col-md-6">
-                    <label for="" class="form-label">Estimated Annual Turnover
-                        <span class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="Estimated Annual Turnover
-" placeholder="" required>
+                 <div class="col-md-6">
+                    <label for="paymentsToSubcontractors" class="form-label">Payments to Subcontractors <span class="text-danger">(Required)</span></label>
+                     <input type="text" class="form-control" id="paymentsToSubcontractors"  name="payments-to-subcontractors" placeholder="" required>
                 </div>
-                <div class="col-md-6">
-                    <label for="" class="form-label">Payments to Subcontractors
-                        <span class="text-danger">(Required)</span></label>
-                    <input type="text" class="form-control" id="Payments to Subcontractors
-" placeholder="" required>
-                </div>
-                <div class="col-md-6">
-                    <h3>Coverage required</h3>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="  Public and Products Liability">
-                        <label class="form-check-label" for="checkbox1">
-                            Public and Products Liability
-                        </label>
+                 <div class="col-md-6">
+                        <h3>Coverage required</h3>
+                    
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="coverage[]"  id="public-liability" value="Public and Products Liability">
+                         <label class="form-check-label" for="public-liability">
+                           Public and Products Liability
+                          </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="Tools of Trade (and machinery)">
-                        <label class="form-check-label" for="checkbox2">
+                    <input class="form-check-input" type="checkbox" name="coverage[]"  id="tools-of-trade" value="Tools of Trade (and machinery)">
+                       <label class="form-check-label" for="tools-of-trade">
                             Tools of Trade (and machinery)
                         </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="Commercial Motor vehicle">
-                        <label class="form-check-label" for="checkbox3">
-
-                            Commercial Motor vehicle
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="Personal Accident & Sickness">
-                        <label class="form-check-label" for="checkbox3">
-
-                            Personal Accident & Sickness
-                        </label>
-                    </div>
                 </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="coverage[]"  id="commercial-motor-vehicle" value="Commercial Motor vehicle">
+                      <label class="form-check-label" for="commercial-motor-vehicle">
+                           Commercial Motor vehicle
+                        </label>
+                </div>
+                   <div class="form-check">
+                   <input class="form-check-input" type="checkbox"  name="coverage[]"  id="personal-accident-sickness" value="Personal Accident & Sickness">
+                       <label class="form-check-label" for="personal-accident-sickness">
+                          Personal Accident & Sickness
+                        </label>
+                    </div>
+                   
+                    
+              </div>
 
-                <div class="col-md-6">
-                    <label for="carryingCapacity" class="form-label">
+
+                   <div class="col-md-6">
+                        <label for="howDidYouFindUs" class="form-label">
                         How did you find us?
-                        <span class="text-danger">(Required)</span></label>
-                    <select id="How did you find us?" class="form-select" required>
-                        <option value="">please select</option>
-                        <option value="google">Google</option>
-                        <option value="facebook">Facebook</option>
-                        <option value="ilink">ilink website</option>
-                        <option value="friend">friend</option>
-                        <option value="other">other</option>
-                    </select>
-                </div>
-                <div class="col-md-6">
-                    <label for="formFile" class="form-label">Upload your current insurance policy schedule for free
-                        insurance review
-                    </label>
-                    <input class="form-control" type="file" id="formFile">
-                </div>
+                           <span class="text-danger">(Required)</span></label>
+                           <select id="howDidYouFindUs" class="form-select" name="how-did-you-find-us" required>
+                            <option value="">please select</option>
+                           <option value="google">Google</option>
+                             <option value="facebook">Facebook</option>
+                           <option value="ilink">ilink website</option>
+                            <option value="friend">friend</option>
+                         <option value="other">other</option>
+                     </select>
+                  </div>
 
-
-
-
-                <div class="col-md-7">
-                    <button type="submit" class="btn btn-primary mt-4">Submit</button>
-
-                </div>
-
-
-
+                  <div class="col-md-6">
+                        <label for="formFile" class="form-label">Upload your current insurance policy schedule for free
+                        insurance review</label>
+                      <input class="form-control" type="file" id="formFile"  name="insurance-policy">
+                 </div>
+                 <div class="col-md-7">
+                      <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                 </div>
             </div>
-
-
-
         </form>
-
 
     </div>
     <div class="container-fluid toll">

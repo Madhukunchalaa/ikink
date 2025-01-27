@@ -4060,7 +4060,7 @@ p{
       }
       @media(max-width:600px){
         .info-card{
-          height: 30vh;
+          height: 19vh;
         }
       }
       
@@ -4408,5 +4408,8 @@ textarea {
   .form-container{
     width: auto;
     margin: auto;
+  }
+  .hero-text button{
+    width: 50%;
   }
 }

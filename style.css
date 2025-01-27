@@ -2,11 +2,10 @@
 :root {
   --main-color: #FE4C02;
   --dark-color: #2C2C2C;
-  --h2-font: ' sans-serif;' /* Set the default font for h2 */
+  --h2-font: ' sans-serif;'
 }
 h2,h3 {
   
-  font-size: 24px; /* Adjust size as needed */
   font-weight: bold; /* Optional: Adjust weight */
   color: var(--dark-color); /* Using your defined variable */
 }
@@ -16,6 +15,7 @@ p{
 * {
   margin: 0;
   padding: 0;
+  font-family:"poppins";
  
 }
 body {
@@ -547,9 +547,9 @@ body {
     width: 100%;
   }
 }
-.person-img img{
+/* .person-img img{
   height: 630px !important;
-}
+} */
 .testimonial-card {
   border: none;
   padding: 20px;
@@ -588,10 +588,14 @@ body {
   rotate: 90deg;
   float: right;
   margin-left: -70%;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
 }
 .rqst-box a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .rqst-box a:hover {
   color: white;
@@ -649,12 +653,48 @@ body {
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .feature-item img {
   width: 30px;
   height: 30px;
 }
+.accordion-button:not(.collapsed) {
+  background-color:#E64A19 !important; /* Change to your preferred color */
+  color: #000 !important; /* Change text color if needed */
+  border-color: none;
+}
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important; /* Removes the blue focus outline */
+  outline: none !important; /* Removes the default focus outline */
+  border: none !important; /* Removes the border */
+  background-color: #E64A19 !important; /* Customize background color */
+  color: #000 !important; /* Customize text color */
+}
+.main-btn{
+  color: #FFFFFF;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #666;
+  border-radius: 50px 50px 50px 50px;
+  font-family: "Poppins", Sans-serif;
+}
+.main-btn:hover{
+  background-color: black;
+  
+}
+.main-title{
+  font-weight: 800;
+  
+  column-rule: white
+}
+.main-title h3{
+  font-size: 60px;
+}
+
 
 .btn-submit {
   background-color: #007bff;
@@ -873,7 +913,7 @@ ul li a:hover {
 }
 .info a {
   text-decoration: none;
-  color: #db2200;
+  color: white;
 }
 /* General Styles */
 /* Fix for overlapping feature icons */
@@ -1113,15 +1153,17 @@ input {
 
 /* contact page */
 
-.hero3 {
+.contact{
   
   display: flex;
   align-items: end;
  height: 100vh;
-  background-image: url("assets/images/contact\ us.png");
+  background-image: url("assets/images/footer.jpg");
   color: white;
   font-weight: bold;
   font-size: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 iframe {
   width: 100%;
@@ -1335,8 +1377,8 @@ i {
 
   border-radius: 25px;
   width: 30%;
-  background-color: #e64a19;
-  color: white;
+  /* background-color: #e64a19; */
+  /* color: white; */
 
 }
 
@@ -2024,7 +2066,7 @@ padding: 4px;         }
   width: 100%;
   height: 70vh;
   background-image: 
-  url('./assets/images/accident.jpg');
+  url('./assets/images/footer.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -2422,7 +2464,7 @@ padding: 4px;         }
   background-color: #F0F0F0;
   
 }
-.asbestos-sec-5 h3{
+.asbestos-sec-5 h4{
   color: var(--main-color);
   font-size: 2rem;
   font-weight: bold;
@@ -2798,11 +2840,7 @@ p {
 .head {
   color: #f26121;
 }
-.mform form {
-  width: 50%;
-  border: 1px solid black;
-  margin-left: 30%;
-}
+
 
 .orange-section {
   background-color:#FF4E00;
@@ -3477,49 +3515,7 @@ p{
 /* responsive */
 
 /* truck trailer insurance */
-@media(max-width:1000px){
-  .wrap{
-    display: none;
-    
-  }
-  .hero-btm{
-    display: none;
-  }
-  .accident-right{
-    display: none;
-  }
-  .asbestos-center{
-    display: none;
-  }
-  .asbestos-text{
-    opacity: 90%;
-    margin-top: -26%;
-  }
-  .builder-right{
-    display: none;
-  }
-  .builder-btm{
-    display: none;
-  }
-  .business-right{
-    display: none;
-  }
-  .business-left{
-    opacity: 90%;
-  }
-  .commercial-btm{
-    display: none;
-  }
-  .circle-container{
-  display: none;
-}
-.rest-cards{
-  display: none;
-}
-.scaff-right{
-  display: none;
-}
-}
+
 .other-text{
   background-color: black;
   opacity: 90%;
@@ -3875,6 +3871,7 @@ p{
       justify-content: center;
       min-height: 100vh; /* Ensures full height on smaller screens */
       padding: 20px; /* Adds padding for spacing */
+      color: white;
   }
   .commercial{
     background-image:url('assets/images/commerical.webp');
@@ -4018,7 +4015,7 @@ p{
       
       .info-card {
       padding: 20px 5px;
-      height:auto;
+      height:15vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -4032,6 +4029,11 @@ p{
       font-size: 0.9rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      @media(max-width:600px){
+        .info-card{
+          height: 30vh;
+        }
       }
       
       .info-card:hover {
@@ -4161,4 +4163,222 @@ p{
     font-size: 10px;
   }
  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global Responsive Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Responsive Breakpoints */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Hero Section */
+  .main-section {
+      padding: 20px 10px;
+      text-align: center;
+  }
+
+  .hero-text h1 {
+      font-size: 2.8rem;
+  }
+
+  .hero-text h5 {
+      font-size: 1rem;
+  }
+
+  /* Info Cards */
+  .info-card {
+      margin-bottom: 15px;
+      text-align: center;
+  }
+
+  .info-card img {
+      max-width: 50px;
+      margin: 0 auto;
+  }
+
+  /* Service Cards */
+  .cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card-1 {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+
+  /* Expertise Section */
+  .expertise-section .row {
+      flex-direction: column;
+  }
+
+  .expertise-section .i-img {
+      margin-bottom: 10px;
+  }
+
+  /* Quote Section */
+  .quote .row {
+      flex-direction: column;
+  }
+
+  .quote .person-img img {
+      margin-left: 0 !important;
+      width: 100%;
+  }
+
+  /* Form Responsiveness */
+  .quote form .row {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .quote form .col-md-6 {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  /* Testimonials */
+  .testimonials-section .row {
+      text-align: center !important;
+  }
+
+  .testimonials-section .col-md-6 {
+      text-align: center !important;
+      margin-bottom: 15px;
+  }
+}
+
+/* Small devices (tablets, 601px and up) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .main-section {
+      padding: 30px 15px;
+  }
+
+  .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .card-1 {
+      width: 45%;
+      margin: 10px;
+  }
+
+  .quote .row {
+      align-items: center;
+  }
+
+  .quote .person-img img {
+      margin-left: -5%;
+  }
+}
+
+/* Large devices (desktops, 993px and up) */
+@media only screen and (min-width: 993px) {
+  .main-section {
+      padding: 50px 30px;
+  }
+
+  .cards {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .card-1 {
+      width: 22%;
+  }
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 768px) {
+  html {
+      font-size: 14px;
+  }
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Navigation */
+.navbar-toggler {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+      flex-direction: column;
+  }
+
+  .navbar-toggler {
+      display: block;
+  }
+}
+
+/* Flexible Form Elements */
+input, 
+select, 
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  width: auto;
+}
+
+/* Container Adjustments */
+.container, 
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.form-container{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+@media(max-width:500px){
+  .form-container{
+    width: auto;
+    margin: auto;
+  }
 }
